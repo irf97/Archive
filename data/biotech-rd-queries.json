@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "biotech-rd-query-001",
+    "query": "Prime editing for monogenic liver diseases",
+    "domain": "genome editing",
+    "method": "prime editing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "David R. Liu",
+        "institution": "Broad Institute / Harvard University",
+        "archetype": "genome editing researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-001-david-r-liu"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.305Z"
+  },
+  {
+    "id": "biotech-rd-query-002",
+    "query": "Base editing for hematologic disease",
+    "domain": "genome editing",
+    "method": "base editing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Nicole Gaudelli",
+        "institution": "Beam Therapeutics",
+        "archetype": "base editing scientist",
+        "geography": "United States",
+        "expertId": "bio-rd-002-nicole-gaudelli"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-003",
+    "query": "In vivo CRISPR delivery beyond the liver",
+    "domain": "gene therapy delivery",
+    "method": "non-viral delivery",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Daniel G. Anderson",
+        "institution": "MIT / Koch Institute",
+        "archetype": "drug delivery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-003-daniel-g-anderson"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-004",
+    "query": "AAV capsid engineering for tissue tropism",
+    "domain": "gene therapy delivery",
+    "method": "viral vector engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Ben Deverman",
+        "institution": "Broad Institute",
+        "archetype": "AAV engineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-004-ben-deverman"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-005",
+    "query": "ADAR-recruiting RNA editing therapeutics",
+    "domain": "RNA therapeutics",
+    "method": "RNA editing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Thorsten Stafforst",
+        "institution": "University of Tuebingen",
+        "archetype": "RNA editing researcher",
+        "geography": "Germany",
+        "expertId": "bio-rd-005-thorsten-stafforst"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-006",
+    "query": "CRISPR transposases for large DNA insertion",
+    "domain": "genome editing",
+    "method": "targeted integration",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Feng Zhang",
+        "institution": "Broad Institute / MIT",
+        "archetype": "genome engineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-006-feng-zhang"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-007",
+    "query": "Programmable recombinases for genome rewriting",
+    "domain": "genome editing",
+    "method": "recombinase engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Patrick Hsu",
+        "institution": "Arc Institute / UC Berkeley",
+        "archetype": "genome engineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-007-patrick-hsu"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-008",
+    "query": "Epigenome editing without DNA double-strand breaks",
+    "domain": "genome regulation",
+    "method": "epigenome editing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Charles A. Gersbach",
+        "institution": "Duke University",
+        "archetype": "genome engineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-008-charles-a-gersbach"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-009",
+    "query": "Mitochondrial base editing",
+    "domain": "mitochondrial medicine",
+    "method": "organelle genome editing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Joseph D. Mougous",
+        "institution": "University of Washington",
+        "archetype": "microbiology and genome editing researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-009-joseph-d-mougous"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-010",
+    "query": "Clinical safety assays for genome editing",
+    "domain": "genome editing translation",
+    "method": "editing safety",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Fyodor Urnov",
+        "institution": "UC Berkeley / Innovative Genomics Institute",
+        "archetype": "clinical genome editing researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-010-fyodor-urnov"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.306Z"
+  },
+  {
+    "id": "biotech-rd-query-011",
+    "query": "CAR T persistence and exhaustion",
+    "domain": "cell therapy",
+    "method": "T cell engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Carl H. June",
+        "institution": "University of Pennsylvania",
+        "archetype": "cell therapy researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-011-carl-h-june"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-012",
+    "query": "Logic-gated CAR T cells for solid tumors",
+    "domain": "cell therapy",
+    "method": "synthetic cell circuits",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Wendell A. Lim",
+        "institution": "UCSF",
+        "archetype": "synthetic cell therapy researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-012-wendell-a-lim"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-013",
+    "query": "Synthetic Notch receptors in cell therapy",
+    "domain": "cell therapy",
+    "method": "synthetic receptors",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Kole T. Roybal",
+        "institution": "UCSF",
+        "archetype": "synthetic immunology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-013-kole-t-roybal"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-014",
+    "query": "Armored CAR T cells for pediatric solid tumors",
+    "domain": "cell therapy",
+    "method": "CAR T engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Crystal L. Mackall",
+        "institution": "Stanford University",
+        "archetype": "pediatric cell therapy researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-014-crystal-l-mackall"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-015",
+    "query": "TCR-T target discovery and validation",
+    "domain": "cell therapy",
+    "method": "TCR engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Ton N. Schumacher",
+        "institution": "Netherlands Cancer Institute",
+        "archetype": "cancer immunology researcher",
+        "geography": "Netherlands",
+        "expertId": "bio-rd-015-ton-n-schumacher"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-016",
+    "query": "Engineered NK cells and NK engagers",
+    "domain": "cell therapy",
+    "method": "NK cell engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Katy Rezvani",
+        "institution": "MD Anderson Cancer Center",
+        "archetype": "NK cell therapy researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-016-katy-rezvani"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-017",
+    "query": "Gamma-delta T cell therapy",
+    "domain": "cell therapy",
+    "method": "gamma-delta T cells",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Adrian Hayday",
+        "institution": "King's College London / Francis Crick Institute",
+        "archetype": "immunology researcher",
+        "geography": "United Kingdom",
+        "expertId": "bio-rd-017-adrian-hayday"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-018",
+    "query": "TIL therapy response biomarkers",
+    "domain": "cell therapy",
+    "method": "tumor infiltrating lymphocytes",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Steven A. Rosenberg",
+        "institution": "National Cancer Institute",
+        "archetype": "cancer immunotherapy researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-018-steven-a-rosenberg"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-019",
+    "query": "In vivo generation of therapeutic CAR T cells",
+    "domain": "cell therapy delivery",
+    "method": "immune-cell targeted LNPs",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Michael J. Mitchell",
+        "institution": "University of Pennsylvania",
+        "archetype": "nanomedicine researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-019-michael-j-mitchell"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-020",
+    "query": "Cell therapy manufacturing analytics",
+    "domain": "cell therapy manufacturing",
+    "method": "GMP process analytics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Bruce L. Levine",
+        "institution": "University of Pennsylvania",
+        "archetype": "cell therapy manufacturing researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-020-bruce-l-levine"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-021",
+    "query": "mRNA vaccine antigen design",
+    "domain": "RNA therapeutics",
+    "method": "mRNA vaccines",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Drew Weissman",
+        "institution": "University of Pennsylvania",
+        "archetype": "mRNA vaccine researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-021-drew-weissman"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-022",
+    "query": "Self-amplifying RNA vaccine platforms",
+    "domain": "RNA therapeutics",
+    "method": "self-amplifying RNA",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Robin Shattock",
+        "institution": "Imperial College London",
+        "archetype": "RNA vaccine researcher",
+        "geography": "United Kingdom",
+        "expertId": "bio-rd-022-robin-shattock"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-023",
+    "query": "Circular RNA therapeutics",
+    "domain": "RNA therapeutics",
+    "method": "circular RNA biology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Howard Y. Chang",
+        "institution": "Stanford University",
+        "archetype": "RNA biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-023-howard-y-chang"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-024",
+    "query": "tRNA therapeutics for codon rescue",
+    "domain": "RNA therapeutics",
+    "method": "tRNA biology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Anna Greka",
+        "institution": "Broad Institute / Brigham and Women's Hospital",
+        "archetype": "genetic medicine researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-024-anna-greka"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-025",
+    "query": "Splicing modulation for rare disease",
+    "domain": "RNA therapeutics",
+    "method": "splice switching",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Adrian R. Krainer",
+        "institution": "Cold Spring Harbor Laboratory",
+        "archetype": "RNA splicing researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-025-adrian-r-krainer"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-026",
+    "query": "Antisense oligonucleotide chemistry",
+    "domain": "RNA therapeutics",
+    "method": "antisense chemistry",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Frank Bennett",
+        "institution": "Ionis Pharmaceuticals",
+        "archetype": "antisense therapeutics scientist",
+        "geography": "United States",
+        "expertId": "bio-rd-026-frank-bennett"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-027",
+    "query": "GalNAc-conjugated siRNA delivery",
+    "domain": "RNA therapeutics",
+    "method": "siRNA conjugates",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Muthiah Manoharan",
+        "institution": "Alnylam Pharmaceuticals",
+        "archetype": "oligonucleotide chemistry scientist",
+        "geography": "United States",
+        "expertId": "bio-rd-027-muthiah-manoharan"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-028",
+    "query": "Lipid nanoparticle formulation for RNA drugs",
+    "domain": "RNA delivery",
+    "method": "LNP formulation",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Pieter R. Cullis",
+        "institution": "University of British Columbia",
+        "archetype": "lipid nanoparticle researcher",
+        "geography": "Canada",
+        "expertId": "bio-rd-028-pieter-r-cullis"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-029",
+    "query": "Non-liver RNA delivery",
+    "domain": "RNA delivery",
+    "method": "extrahepatic delivery",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Kathryn A. Whitehead",
+        "institution": "Carnegie Mellon University",
+        "archetype": "RNA delivery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-029-kathryn-a-whitehead"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-030",
+    "query": "Endosomal escape engineering for nucleic acid drugs",
+    "domain": "drug delivery",
+    "method": "endosomal escape",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Samir Mitragotri",
+        "institution": "Harvard University",
+        "archetype": "drug delivery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-030-samir-mitragotri"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.307Z"
+  },
+  {
+    "id": "biotech-rd-query-031",
+    "query": "AI protein structure prediction for drug discovery",
+    "domain": "AI biology",
+    "method": "protein structure prediction",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "John Jumper",
+        "institution": "Google DeepMind",
+        "archetype": "AI protein structure researcher",
+        "geography": "United Kingdom",
+        "expertId": "bio-rd-031-john-jumper"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-032",
+    "query": "Generative protein design",
+    "domain": "AI protein engineering",
+    "method": "de novo protein design",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "David Baker",
+        "institution": "University of Washington / Institute for Protein Design",
+        "archetype": "protein design researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-032-david-baker"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-033",
+    "query": "De novo antibody and binder design",
+    "domain": "protein engineering",
+    "method": "computational immunoengineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Bruno E. Correia",
+        "institution": "EPFL",
+        "archetype": "protein engineering researcher",
+        "geography": "Switzerland",
+        "expertId": "bio-rd-033-bruno-e-correia"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-034",
+    "query": "Protein language models for enzyme engineering",
+    "domain": "AI biology",
+    "method": "protein language models",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Alexander Rives",
+        "institution": "EvolutionaryScale",
+        "archetype": "AI protein modeling researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-034-alexander-rives"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-035",
+    "query": "Ultra-large-scale molecular docking",
+    "domain": "computational drug discovery",
+    "method": "virtual screening",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Brian Shoichet",
+        "institution": "UCSF",
+        "archetype": "computational drug discovery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-035-brian-shoichet"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-036",
+    "query": "AI-guided small molecule design",
+    "domain": "AI drug discovery",
+    "method": "machine learning for chemistry",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Regina Barzilay",
+        "institution": "MIT",
+        "archetype": "AI drug discovery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-036-regina-barzilay"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-037",
+    "query": "Active-learning wet lab drug discovery",
+    "domain": "AI drug discovery",
+    "method": "active learning biology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Daphne Koller",
+        "institution": "insitro",
+        "archetype": "AI drug discovery founder-scientist",
+        "geography": "United States",
+        "expertId": "bio-rd-037-daphne-koller"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-038",
+    "query": "Image-based phenomic drug discovery",
+    "domain": "AI drug discovery",
+    "method": "cell painting",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Anne E. Carpenter",
+        "institution": "Broad Institute",
+        "archetype": "phenomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-038-anne-e-carpenter"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-039",
+    "query": "Automated biology and closed-loop discovery labs",
+    "domain": "automation",
+    "method": "robotic science",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Ross D. King",
+        "institution": "University of Cambridge",
+        "archetype": "robotic science researcher",
+        "geography": "United Kingdom",
+        "expertId": "bio-rd-039-ross-d-king"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-040",
+    "query": "Foundation models for cellular biology",
+    "domain": "AI biology",
+    "method": "single-cell foundation models",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Aviv Regev",
+        "institution": "Genentech / Broad Institute",
+        "archetype": "computational biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-040-aviv-regev"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-041",
+    "query": "PROTAC degrader design",
+    "domain": "targeted protein degradation",
+    "method": "PROTACs",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Craig M. Crews",
+        "institution": "Yale University",
+        "archetype": "chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-041-craig-m-crews"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-042",
+    "query": "Molecular glue discovery",
+    "domain": "targeted protein degradation",
+    "method": "molecular glues",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Eric S. Fischer",
+        "institution": "Dana-Farber Cancer Institute",
+        "archetype": "structural chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-042-eric-s-fischer"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-043",
+    "query": "Covalent ligand discovery",
+    "domain": "chemical biology",
+    "method": "chemoproteomics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Benjamin F. Cravatt",
+        "institution": "Scripps Research",
+        "archetype": "chemical proteomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-043-benjamin-f-cravatt"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-044",
+    "query": "Chemoproteomic target discovery",
+    "domain": "chemical biology",
+    "method": "covalent chemical biology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Daniel K. Nomura",
+        "institution": "UC Berkeley",
+        "archetype": "chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-044-daniel-k-nomura"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-045",
+    "query": "KRAS covalent inhibitor resistance",
+    "domain": "oncology drug discovery",
+    "method": "covalent inhibitors",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Kevan M. Shokat",
+        "institution": "UCSF",
+        "archetype": "chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-045-kevan-m-shokat"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-046",
+    "query": "RNA-targeting small molecules",
+    "domain": "RNA drug discovery",
+    "method": "RNA small molecules",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Amanda E. Hargrove",
+        "institution": "Duke University",
+        "archetype": "RNA chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-046-amanda-e-hargrove"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-047",
+    "query": "Targeted RNA degradation",
+    "domain": "RNA drug discovery",
+    "method": "RNA degraders",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Matthew D. Disney",
+        "institution": "Scripps Research",
+        "archetype": "RNA-targeting drug discovery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-047-matthew-d-disney"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-048",
+    "query": "Induced proximity drug discovery",
+    "domain": "chemical biology",
+    "method": "induced proximity",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Stuart L. Schreiber",
+        "institution": "Broad Institute / Harvard University",
+        "archetype": "chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-048-stuart-l-schreiber"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-049",
+    "query": "Kinase chemical biology and degrader pharmacology",
+    "domain": "oncology drug discovery",
+    "method": "kinase pharmacology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Nathanael S. Gray",
+        "institution": "Stanford University",
+        "archetype": "chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-049-nathanael-s-gray"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-050",
+    "query": "Fragment-based drug discovery for hard targets",
+    "domain": "drug discovery",
+    "method": "fragment screening",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Stephen W. Fesik",
+        "institution": "Vanderbilt University",
+        "archetype": "fragment-based drug discovery researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-050-stephen-w-fesik"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-051",
+    "query": "Single-cell atlas construction",
+    "domain": "single-cell biology",
+    "method": "cell atlas",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Sarah Teichmann",
+        "institution": "Wellcome Sanger Institute / Cambridge",
+        "archetype": "single-cell genomics researcher",
+        "geography": "United Kingdom",
+        "expertId": "bio-rd-051-sarah-teichmann"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-052",
+    "query": "Perturb-seq CRISPR screens",
+    "domain": "functional genomics",
+    "method": "CRISPR screens",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jonathan S. Weissman",
+        "institution": "Whitehead Institute / MIT",
+        "archetype": "functional genomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-052-jonathan-s-weissman"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-053",
+    "query": "Spatial transcriptomics technology",
+    "domain": "spatial biology",
+    "method": "multiplexed imaging",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Xiaowei Zhuang",
+        "institution": "Harvard University",
+        "archetype": "spatial genomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-053-xiaowei-zhuang"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-054",
+    "query": "Spatial proteomics imaging",
+    "domain": "spatial biology",
+    "method": "mass cytometry imaging",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Garry P. Nolan",
+        "institution": "Stanford University",
+        "archetype": "spatial immunology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-054-garry-p-nolan"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-055",
+    "query": "Multiplexed tissue imaging for oncology",
+    "domain": "spatial biology",
+    "method": "imaging mass cytometry",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Michael Angelo",
+        "institution": "Stanford University",
+        "archetype": "spatial pathology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-055-michael-angelo"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-056",
+    "query": "Multiome sequencing and genome technology",
+    "domain": "genomics technology",
+    "method": "multiomics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jay Shendure",
+        "institution": "University of Washington",
+        "archetype": "genome technology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-056-jay-shendure"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-057",
+    "query": "Synthetic genomics and large-scale DNA writing",
+    "domain": "synthetic biology",
+    "method": "genome writing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "George M. Church",
+        "institution": "Harvard University",
+        "archetype": "synthetic genomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-057-george-m-church"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-058",
+    "query": "Long-read clinical genomics",
+    "domain": "clinical genomics",
+    "method": "long-read sequencing",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Euan A. Ashley",
+        "institution": "Stanford University",
+        "archetype": "clinical genomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-058-euan-a-ashley"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-059",
+    "query": "Single-molecule sequencing and proteomic diagnostics",
+    "domain": "genomics technology",
+    "method": "single-molecule measurement",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Stephen Quake",
+        "institution": "Stanford University",
+        "archetype": "bioengineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-059-stephen-quake"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-060",
+    "query": "Multiomic cell-state inference",
+    "domain": "computational biology",
+    "method": "cell-state modeling",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Dana Pe'er",
+        "institution": "Memorial Sloan Kettering Cancer Center",
+        "archetype": "computational biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-060-dana-pe-er"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-061",
+    "query": "Organoid disease modeling",
+    "domain": "organoid biology",
+    "method": "adult stem cell organoids",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Hans Clevers",
+        "institution": "Hubrecht Institute / Roche",
+        "archetype": "organoid researcher",
+        "geography": "Netherlands",
+        "expertId": "bio-rd-061-hans-clevers"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-062",
+    "query": "Brain organoids for neurodevelopmental disease",
+    "domain": "organoid biology",
+    "method": "brain organoids",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Madeline Lancaster",
+        "institution": "MRC Laboratory of Molecular Biology",
+        "archetype": "organoid researcher",
+        "geography": "United Kingdom",
+        "expertId": "bio-rd-062-madeline-lancaster"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-063",
+    "query": "Synthetic embryo models",
+    "domain": "developmental biology",
+    "method": "embryo models",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Magdalena Zernicka-Goetz",
+        "institution": "Caltech / University of Cambridge",
+        "archetype": "developmental biology researcher",
+        "geography": "United States / United Kingdom",
+        "expertId": "bio-rd-063-magdalena-zernicka-goetz"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-064",
+    "query": "iPSC reprogramming platforms",
+    "domain": "stem cell biology",
+    "method": "cell reprogramming",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Shinya Yamanaka",
+        "institution": "Kyoto University / Gladstone Institutes",
+        "archetype": "stem cell researcher",
+        "geography": "Japan / United States",
+        "expertId": "bio-rd-064-shinya-yamanaka"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-065",
+    "query": "Beta cell replacement for diabetes",
+    "domain": "regenerative medicine",
+    "method": "stem-cell-derived beta cells",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Douglas A. Melton",
+        "institution": "Harvard University",
+        "archetype": "stem cell researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-065-douglas-a-melton"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-066",
+    "query": "Liver organoids for disease modeling",
+    "domain": "organoid biology",
+    "method": "liver organoids",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Takanori Takebe",
+        "institution": "Cincinnati Children's / Tokyo Medical and Dental University",
+        "archetype": "organoid researcher",
+        "geography": "United States / Japan",
+        "expertId": "bio-rd-066-takanori-takebe"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-067",
+    "query": "Vascularized tissue models",
+    "domain": "tissue engineering",
+    "method": "vascularized organoids",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Christopher S. Chen",
+        "institution": "Boston University",
+        "archetype": "tissue engineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-067-christopher-s-chen"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-068",
+    "query": "Bioprinting functional tissues",
+    "domain": "tissue engineering",
+    "method": "3D bioprinting",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jennifer A. Lewis",
+        "institution": "Harvard University",
+        "archetype": "bioprinting researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-068-jennifer-a-lewis"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-069",
+    "query": "Regenerative immunology and biomaterials",
+    "domain": "regenerative medicine",
+    "method": "immunomodulatory biomaterials",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jennifer H. Elisseeff",
+        "institution": "Johns Hopkins University",
+        "archetype": "regenerative medicine researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-069-jennifer-h-elisseeff"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-070",
+    "query": "Tissue stem-cell dynamics",
+    "domain": "regenerative biology",
+    "method": "tissue stem cells",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Fiona M. Watt",
+        "institution": "EMBL",
+        "archetype": "stem cell biology researcher",
+        "geography": "Germany",
+        "expertId": "bio-rd-070-fiona-m-watt"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-071",
+    "query": "Cellular senescence therapeutics",
+    "domain": "aging biology",
+    "method": "senolytics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Judith Campisi",
+        "institution": "Buck Institute",
+        "archetype": "aging biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-071-judith-campisi"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-072",
+    "query": "Partial reprogramming for aging biology",
+    "domain": "aging biology",
+    "method": "epigenetic reprogramming",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Juan Carlos Izpisua Belmonte",
+        "institution": "Altos Labs",
+        "archetype": "regenerative biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-072-juan-carlos-izpisua-belmonte"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-073",
+    "query": "Epigenetic aging clocks and biomarkers",
+    "domain": "aging biomarkers",
+    "method": "DNA methylation clocks",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Steve Horvath",
+        "institution": "Altos Labs / UCLA",
+        "archetype": "aging biomarker researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-073-steve-horvath"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-074",
+    "query": "NAD metabolism interventions",
+    "domain": "aging biology",
+    "method": "metabolic longevity",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Leonard P. Guarente",
+        "institution": "MIT",
+        "archetype": "aging biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-074-leonard-p-guarente"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-075",
+    "query": "Proteostasis and longevity pathways",
+    "domain": "aging biology",
+    "method": "proteostasis",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Andrew Dillin",
+        "institution": "UC Berkeley",
+        "archetype": "aging biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-075-andrew-dillin"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-076",
+    "query": "Microbiome live biotherapeutics",
+    "domain": "microbiome therapeutics",
+    "method": "commensal immunology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Sarkis K. Mazmanian",
+        "institution": "Caltech",
+        "archetype": "microbiome researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-076-sarkis-k-mazmanian"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-077",
+    "query": "Engineered microbes for therapeutics",
+    "domain": "synthetic biology",
+    "method": "engineered probiotics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Tal Danino",
+        "institution": "Columbia University",
+        "archetype": "synthetic biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-077-tal-danino"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-078",
+    "query": "Phage therapy engineering",
+    "domain": "microbiome therapeutics",
+    "method": "phage engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Timothy K. Lu",
+        "institution": "MIT",
+        "archetype": "synthetic biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-078-timothy-k-lu"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-079",
+    "query": "Microbiome metabolite drug discovery",
+    "domain": "microbiome therapeutics",
+    "method": "microbial metabolites",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Justin L. Sonnenburg",
+        "institution": "Stanford University",
+        "archetype": "microbiome researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-079-justin-l-sonnenburg"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-080",
+    "query": "Bacterial synthetic circuits for cancer therapy",
+    "domain": "synthetic biology",
+    "method": "bacterial circuits",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jeff Hasty",
+        "institution": "UC San Diego",
+        "archetype": "synthetic biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-080-jeff-hasty"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-081",
+    "query": "Synthetic gene circuits",
+    "domain": "synthetic biology",
+    "method": "gene circuit design",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Michael B. Elowitz",
+        "institution": "Caltech",
+        "archetype": "synthetic biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-081-michael-b-elowitz"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-082",
+    "query": "Mammalian synthetic biology",
+    "domain": "synthetic biology",
+    "method": "mammalian circuit engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Pamela A. Silver",
+        "institution": "Harvard University",
+        "archetype": "synthetic biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-082-pamela-a-silver"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-083",
+    "query": "Metabolic pathway engineering",
+    "domain": "synthetic biology",
+    "method": "metabolic engineering",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jay D. Keasling",
+        "institution": "UC Berkeley / Lawrence Berkeley National Laboratory",
+        "archetype": "metabolic engineering researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-083-jay-d-keasling"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-084",
+    "query": "Industrial enzyme directed evolution",
+    "domain": "protein engineering",
+    "method": "directed evolution",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Frances H. Arnold",
+        "institution": "Caltech",
+        "archetype": "directed evolution researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-084-frances-h-arnold"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-085",
+    "query": "CRISPR diagnostics beyond Cas13",
+    "domain": "diagnostics",
+    "method": "CRISPR diagnostics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Omar O. Abudayyeh",
+        "institution": "MIT / McGovern Institute",
+        "archetype": "CRISPR diagnostics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-085-omar-o-abudayyeh"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-086",
+    "query": "SHERLOCK and nucleic acid diagnostics",
+    "domain": "diagnostics",
+    "method": "nucleic acid diagnostics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jonathan S. Gootenberg",
+        "institution": "MIT / McGovern Institute",
+        "archetype": "CRISPR diagnostics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-086-jonathan-s-gootenberg"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-087",
+    "query": "Liquid biopsy ctDNA MRD",
+    "domain": "oncology diagnostics",
+    "method": "ctDNA MRD",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Maximilian Diehn",
+        "institution": "Stanford University",
+        "archetype": "radiation oncology and liquid biopsy researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-087-maximilian-diehn"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-088",
+    "query": "Multi-cancer early detection",
+    "domain": "oncology diagnostics",
+    "method": "cancer genomics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Bert Vogelstein",
+        "institution": "Johns Hopkins University",
+        "archetype": "cancer genomics researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-088-bert-vogelstein"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-089",
+    "query": "Neoantigen cancer vaccines",
+    "domain": "cancer immunotherapy",
+    "method": "neoantigen vaccines",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Catherine J. Wu",
+        "institution": "Dana-Farber Cancer Institute",
+        "archetype": "cancer vaccine researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-089-catherine-j-wu"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-090",
+    "query": "Cancer immunopeptidomics",
+    "domain": "cancer immunotherapy",
+    "method": "immunopeptidomics",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Michal Bassani-Sternberg",
+        "institution": "University of Lausanne",
+        "archetype": "immunopeptidomics researcher",
+        "geography": "Switzerland",
+        "expertId": "bio-rd-090-michal-bassani-sternberg"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-091",
+    "query": "Antibody-drug conjugate payload biology",
+    "domain": "biologics",
+    "method": "antibody-drug conjugates",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Peter D. Senter",
+        "institution": "Seagen",
+        "archetype": "ADC researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-091-peter-d-senter"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-092",
+    "query": "Bispecific antibody engineering",
+    "domain": "biologics",
+    "method": "bispecific antibodies",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Paul Carter",
+        "institution": "Genentech",
+        "archetype": "antibody engineering scientist",
+        "geography": "United States",
+        "expertId": "bio-rd-092-paul-carter"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-093",
+    "query": "Fc engineering for immune modulation",
+    "domain": "biologics",
+    "method": "Fc biology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jeffrey V. Ravetch",
+        "institution": "Rockefeller University",
+        "archetype": "immunology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-093-jeffrey-v-ravetch"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-094",
+    "query": "Glycoengineering and biorthogonal chemistry",
+    "domain": "chemical biology",
+    "method": "glycobiology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Carolyn R. Bertozzi",
+        "institution": "Stanford University",
+        "archetype": "chemical biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-094-carolyn-r-bertozzi"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-095",
+    "query": "Complement therapeutics",
+    "domain": "immunology therapeutics",
+    "method": "complement biology",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "John P. Atkinson",
+        "institution": "Washington University in St. Louis",
+        "archetype": "complement biology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-095-john-p-atkinson"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-096",
+    "query": "Autoimmune tolerance engineering",
+    "domain": "immunology therapeutics",
+    "method": "immune tolerance",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Jeffrey A. Bluestone",
+        "institution": "Sonoma Biotherapeutics / UCSF",
+        "archetype": "immunology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-096-jeffrey-a-bluestone"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-097",
+    "query": "Regulatory T cell therapy",
+    "domain": "cell therapy",
+    "method": "Treg therapy",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Megan K. Levings",
+        "institution": "University of British Columbia",
+        "archetype": "Treg therapy researcher",
+        "geography": "Canada",
+        "expertId": "bio-rd-097-megan-k-levings"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-098",
+    "query": "Inflammation resolution biology",
+    "domain": "immunology therapeutics",
+    "method": "specialized pro-resolving mediators",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Charles N. Serhan",
+        "institution": "Brigham and Women's Hospital / Harvard Medical School",
+        "archetype": "inflammation resolution researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-098-charles-n-serhan"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-099",
+    "query": "Neuroimmune interfaces for repair",
+    "domain": "neuroimmunology",
+    "method": "neuroimmune repair",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Michal Schwartz",
+        "institution": "Weizmann Institute of Science",
+        "archetype": "neuroimmunology researcher",
+        "geography": "Israel",
+        "expertId": "bio-rd-099-michal-schwartz"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  },
+  {
+    "id": "biotech-rd-query-100",
+    "query": "Blood-brain barrier delivery for genetic medicines",
+    "domain": "neurotechnology delivery",
+    "method": "CNS delivery",
+    "status": "seeded",
+    "people": [
+      {
+        "name": "Viviana Gradinaru",
+        "institution": "Caltech",
+        "archetype": "neurotechnology researcher",
+        "geography": "United States",
+        "expertId": "bio-rd-100-viviana-gradinaru"
+      }
+    ],
+    "max_people_requested": 4,
+    "seeded_people": 1,
+    "updatedAt": "2026-05-17T19:20:29.308Z"
+  }
+]

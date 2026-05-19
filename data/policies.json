@@ -1,0 +1,19 @@
+{
+  "policies": [
+    {
+      "id": "no_sourceless_canon",
+      "label": "No sourceless canon",
+      "enabled": true
+    },
+    {
+      "id": "operator_approval_for_execution",
+      "label": "Operator approval for execution",
+      "enabled": true
+    },
+    {
+      "id": "operator_docs_are_not_external_evidence",
+      "label": "Operator docs are not external evidence",
+      "enabled": true
+    }
+  ]
+}

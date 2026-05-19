@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ingest-mpbts89g-4rye8",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 63,
+    "detail": "35 claims, 0 people, 34 sources",
+    "createdAt": "2026-05-18T23:18:42.388Z"
+  },
+  {
+    "id": "ingest-mpbtc5tn-fahn4",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 23,
+    "detail": "16 claims, 0 people, 15 sources",
+    "createdAt": "2026-05-18T23:06:12.731Z"
+  },
+  {
+    "id": "ingest-mpalgx3p-qnlph",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 24,
+    "detail": "8 claims, 0 people, 8 sources",
+    "createdAt": "2026-05-18T02:38:11.605Z"
+  },
+  {
+    "id": "ingest-mpalfw0e-o8vdj",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 0,
+    "detail": "0 claims, 0 people, 0 sources",
+    "createdAt": "2026-05-18T02:37:23.534Z"
+  },
+  {
+    "id": "ingest-mpakrkpk-kkvff",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 21,
+    "detail": "8 claims, 0 people, 1 sources",
+    "createdAt": "2026-05-18T02:18:29.144Z"
+  },
+  {
+    "id": "ingest-mpakmha9-vujo6",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 8,
+    "detail": "1 claims, 1 people, 1 sources",
+    "createdAt": "2026-05-18T02:14:31.425Z"
+  },
+  {
+    "id": "ingest-mpakkzi3-5d1gw",
+    "type": "domain-knowledge",
+    "label": "Domain knowledge ingest",
+    "status": "completed",
+    "count": 8,
+    "detail": "1 claims, 1 people, 1 sources",
+    "createdAt": "2026-05-18T02:13:21.723Z"
+  },
+  {
+    "id": "ingest-mpakjvzb-y3sz9",
+    "type": "domain-knowledge",
+    "label": "run-smoke-domain-knowledge",
+    "status": "completed",
+    "count": 7,
+    "detail": "1 claims, 1 people, 1 sources",
+    "createdAt": "2026-05-18T02:12:30.503Z"
+  },
+  {
+    "id": "ingest-mpakbml7-t6qnu",
+    "type": "domain-knowledge",
+    "label": "run-smoke",
+    "status": "completed",
+    "count": 5,
+    "detail": "1 claims, 1 people, 1 sources",
+    "createdAt": "2026-05-18T02:06:05.083Z"
+  }
+]

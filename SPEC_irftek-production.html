@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IrfTek Production Specification — Local-First Semantic Runtime</title>
+<style>
+:root{
+  --bg:#0b0f14;
+  --panel:#111821;
+  --panel2:#0f151d;
+  --ink:#e8eef6;
+  --muted:#9fb0c3;
+  --line:#223044;
+  --accent:#7dd3fc;
+  --accent2:#a7f3d0;
+  --warn:#facc15;
+  --danger:#fb7185;
+  --code:#07111d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:linear-gradient(180deg,#07111d 0%,#0b0f14 30%,#0b0f14 100%);
+  color:var(--ink);
+  line-height:1.55;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.layout{
+  display:grid;
+  grid-template-columns:300px minmax(0,1fr);
+  min-height:100vh;
+}
+aside{
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow:auto;
+  padding:24px 18px;
+  border-right:1px solid var(--line);
+  background:rgba(7,17,29,.92);
+  backdrop-filter:blur(12px);
+}
+main{
+  max-width:1180px;
+  padding:36px 44px 90px;
+}
+.logo{
+  font-size:15px;
+  letter-spacing:.18em;
+  color:var(--accent2);
+  font-weight:800;
+  margin-bottom:6px;
+}
+.subtitle{font-size:13px;color:var(--muted);margin-bottom:22px}
+nav a{
+  display:block;
+  padding:7px 9px;
+  border-radius:8px;
+  color:#c7d4e4;
+  font-size:13px;
+}
+nav a:hover{background:#122033;text-decoration:none;color:white}
+h1,h2,h3{line-height:1.15;margin:0 0 14px}
+h1{font-size:42px;letter-spacing:-.04em}
+h2{
+  margin-top:54px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+  font-size:27px;
+  letter-spacing:-.02em;
+}
+h3{margin-top:28px;font-size:19px;color:#d7e4f4}
+p{color:#d5dfeb}
+.lede{
+  font-size:19px;
+  color:#dce8f5;
+  max-width:950px;
+}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 30px}
+.badge{
+  border:1px solid #27405d;
+  background:#0d1b2a;
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:12px;
+  color:#cfe7ff;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.card{
+  background:linear-gradient(180deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 12px 40px rgba(0,0,0,.22);
+}
+.card h3{margin-top:0}
+.small{font-size:13px;color:var(--muted)}
+pre{
+  background:var(--code);
+  border:1px solid #1f334b;
+  border-radius:14px;
+  padding:16px;
+  overflow:auto;
+  color:#dbeafe;
+  font-size:13px;
+  line-height:1.45;
+}
+code{
+  font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+  color:#dbeafe;
+}
+ul{padding-left:22px}
+li{margin:5px 0;color:#d5dfeb}
+.kv{
+  display:grid;
+  grid-template-columns:210px 1fr;
+  gap:8px 16px;
+  font-size:14px;
+}
+.kv div:nth-child(odd){color:var(--accent2);font-weight:700}
+.diagram{
+  background:#08111c;
+  border:1px solid #203047;
+  border-radius:16px;
+  padding:18px;
+  overflow:auto;
+}
+.diagram svg{max-width:100%;height:auto;display:block}
+.table{
+  width:100%;
+  border-collapse:collapse;
+  margin:12px 0 22px;
+  font-size:14px;
+}
+.table th,.table td{
+  border:1px solid var(--line);
+  padding:10px;
+  vertical-align:top;
+}
+.table th{
+  background:#122033;
+  color:#dff5ff;
+  text-align:left;
+}
+.callout{
+  border-left:4px solid var(--accent);
+  background:#0b1a2a;
+  padding:14px 16px;
+  border-radius:10px;
+  color:#dbeafe;
+}
+.warn{border-left-color:var(--warn);background:#1a1607}
+.danger{border-left-color:var(--danger);background:#1b0b12}
+.footer{
+  margin-top:80px;
+  color:var(--muted);
+  font-size:13px;
+  border-top:1px solid var(--line);
+  padding-top:20px;
+}
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr}
+  aside{position:relative;height:auto}
+  main{padding:28px 20px 70px}
+  .grid,.grid3{grid-template-columns:1fr}
+  h1{font-size:32px}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+  <div class="logo">IRFTEK SPEC</div>
+  <div class="subtitle">Production-grade local-first semantic runtime architecture</div>
+  <nav>
+    <a href="#overview">1. Executive Overview</a>
+    <a href="#principles">2. Principles</a>
+    <a href="#kernel">3. Recursive Kernel</a>
+    <a href="#runtime">4. Runtime Architecture</a>
+    <a href="#network">5. Network Architecture</a>
+    <a href="#object-schema">6. Semantic Object Schema</a>
+    <a href="#authority">7. Authority Resolution</a>
+    <a href="#memory">8. Memory Compaction</a>
+    <a href="#ai-readable">9. AI-Readable Runtime</a>
+    <a href="#local-ai">10. Local AI</a>
+    <a href="#identity">11. Identity + Persona</a>
+    <a href="#trust">12. Trust + Governance</a>
+    <a href="#hardware">13. Hardware Designs</a>
+    <a href="#topologies">14. Node Topologies</a>
+    <a href="#deployment">15. Deployment Stack</a>
+    <a href="#infra">16. Infrastructure</a>
+    <a href="#protocol">17. Protocol Stack</a>
+    <a href="#lifecycle">18. Data Lifecycle</a>
+    <a href="#bloat">19. Anti-Bloat</a>
+    <a href="#security">20. Security Model</a>
+    <a href="#hostile">21. Hostile Nodes</a>
+    <a href="#discovery">22. Discovery Flow</a>
+    <a href="#football">23. Football United</a>
+    <a href="#domains">24–26. Domains</a>
+    <a href="#apis">27. Runtime APIs</a>
+    <a href="#examples">28–29. Examples</a>
+    <a href="#crdt">30. CRDT Strategy</a>
+    <a href="#p2p">31. P2P Propagation</a>
+    <a href="#ipfs">32. IPFS Strategy</a>
+    <a href="#browser">33. Browser/PWA</a>
+    <a href="#wasm">34. WASM Runtime</a>
+    <a href="#ai-strategy">35. AI Runtime Strategy</a>
+    <a href="#wearable">36. Embedded/Wearable</a>
+    <a href="#updates">37. Updates</a>
+    <a href="#registry">38. Schema Registry</a>
+    <a href="#build">39. Build Order</a>
+    <a href="#research">40. Research Problems</a>
+    <a href="#risks">41. Governance Risks</a>
+    <a href="#civilization">42. Implications</a>
+    <a href="#stacks">43–44. MVP/Production</a>
+    <a href="#future">45. Future Work</a>
+  </nav>
+</aside>
+
+<main>
+<section id="overview">
+  <h1>IrfTek Production Specification</h1>
+  <p class="lede">
+    IrfTek is a local-first semantic runtime substrate for humans, devices, places, personas,
+    tools, AI agents, and local domains. It is an authority-resolved object runtime: semantic objects
+    hold state, local authorities own truth, peers propagate state, projection surfaces render it,
+    AI reads it, memory compacts it, and only necessary facts anchor permanently.
+  </p>
+  <div class="badges">
+    <span class="badge">local-first</span><span class="badge">cloud-optional</span>
+    <span class="badge">proximity-governed</span><span class="badge">AI-readable</span>
+    <span class="badge">peer-distributed</span><span class="badge">offline-capable</span>
+    <span class="badge">anti-bloat</span><span class="badge">semantic runtime</span>
+  </div>
+  <div class="callout">
+    Absolute reduction: <strong>local truth + peer spread + semantic memory + AI-readable reality</strong>.
+  </div>
+</section>
+
+<section id="principles">
+<h2>2. Core Philosophical Principles</h2>
+<div class="grid">
+  <div class="card"><h3>Local truth over global truth</h3><p>Authority belongs near the object, place, person, device, or domain being coordinated.</p></div>
+  <div class="card"><h3>Semantic state over raw telemetry</h3><p>Raw streams are temporary. Meaning, state change, summaries, lineage, and proofs are retained.</p></div>
+  <div class="card"><h3>Exploration over feeds</h3><p>Objects appear through local discovery, domain interest, permission, and intentional traversal.</p></div>
+  <div class="card"><h3>Personas over universal accounts</h3><p>Humans are contextual. Identity must support multiple local roles and pseudonymous personas.</p></div>
+  <div class="card"><h3>Projection over apps</h3><p>The browser/PWA renders semantic objects. It does not own authority, persistence, or governance.</p></div>
+  <div class="card"><h3>Explicit governance over pure emergence</h3><p>Peer networks propagate well, but trust, abuse control, and conflict resolution need defined semantics.</p></div>
+</div>
+</section>
+
+<section id="kernel">
+<h2>3. Recursive Kernel Definition</h2>
+<p>Every feature must reduce into the same six primitives.</p>
+<pre><code>IrfTek = Object + Authority + Propagation + Projection + Anchor + Expiry</code></pre>
+<pre><code>irftek_kernel:
+  object:
+    required: [id, type, state, authority, visibility]
+    purpose: semantic thing
+
+  authority:
+    purpose: truth ownership
+    rule: closest_valid_authority_wins_locally
+
+  propagation:
+    static: ipfs
+    live: libp2p_webrtc_gossip
+    local: nats_mqtt
+
+  projection:
+    human: html_pwa
+    ai: semantic_schema
+
+  anchor:
+    target: registry_or_ledger
+    only_when: public_permanent_or_governance_relevant
+
+  expiry:
+    discard: [noise, duplicates, expired_proximity, irrelevant_telemetry]
+    compact: [raw_to_event, event_to_state, state_to_summary, summary_to_memory]</code></pre>
+<div class="callout">Admission test: What object is this? Who owns truth? How does it spread? How is it rendered? What does AI read? What expires? What becomes permanent?</div>
+</section>
+
+<section id="runtime">
+<h2>4. Runtime Architecture</h2>
+<div class="diagram">
+<svg viewBox="0 0 1000 560" role="img" aria-label="IrfTek runtime architecture">
+  <defs>
+    <style>
+      .box{fill:#111821;stroke:#3b5a7c;stroke-width:2;rx:12}
+      .txt{fill:#e8eef6;font:16px sans-serif;font-weight:700}
+      .sub{fill:#9fb0c3;font:12px sans-serif}
+      .line{stroke:#7dd3fc;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/>
+    </marker>
+  </defs>
+  <rect class="box" x="60" y="40" width="220" height="70"/><text class="txt" x="85" y="72">Physical</text><text class="sub" x="85" y="93">BLE / NFC / Wi-Fi</text>
+  <rect class="box" x="390" y="40" width="220" height="70"/><text class="txt" x="420" y="72">Gateway</text><text class="sub" x="420" y="93">NGINX / Caddy</text>
+  <rect class="box" x="720" y="40" width="220" height="70"/><text class="txt" x="750" y="72">Projection</text><text class="sub" x="750" y="93">HTML / PWA</text>
+
+  <rect class="box" x="60" y="180" width="220" height="70"/><text class="txt" x="85" y="212">Messaging</text><text class="sub" x="85" y="233">NATS / MQTT</text>
+  <rect class="box" x="390" y="180" width="220" height="70"/><text class="txt" x="420" y="212">Runtime</text><text class="sub" x="420" y="233">Rust + WASM</text>
+  <rect class="box" x="720" y="180" width="220" height="70"/><text class="txt" x="750" y="212">Memory</text><text class="sub" x="750" y="233">SQLite / DuckDB / CRDT</text>
+
+  <rect class="box" x="60" y="320" width="220" height="70"/><text class="txt" x="85" y="352">Peer Layer</text><text class="sub" x="85" y="373">libp2p / WebRTC</text>
+  <rect class="box" x="390" y="320" width="220" height="70"/><text class="txt" x="420" y="352">Static Memory</text><text class="sub" x="420" y="373">IPFS / manifests</text>
+  <rect class="box" x="720" y="320" width="220" height="70"/><text class="txt" x="750" y="352">AI Layer</text><text class="sub" x="750" y="373">local models / rules</text>
+
+  <rect class="box" x="390" y="460" width="220" height="70"/><text class="txt" x="420" y="492">Ops</text><text class="sub" x="420" y="513">systemd / OTel</text>
+
+  <line class="line" x1="280" y1="75" x2="390" y2="75"/>
+  <line class="line" x1="610" y1="75" x2="720" y2="75"/>
+  <line class="line" x1="170" y1="110" x2="170" y2="180"/>
+  <line class="line" x1="280" y1="215" x2="390" y2="215"/>
+  <line class="line" x1="610" y1="215" x2="720" y2="215"/>
+  <line class="line" x1="500" y1="250" x2="500" y2="320"/>
+  <line class="line" x1="610" y1="355" x2="720" y2="355"/>
+  <line class="line" x1="500" y1="390" x2="500" y2="460"/>
+</svg>
+</div>
+<pre><code>L0 Physical        BLE / NFC / Wi-Fi / sensors
+L1 Gateway         NGINX or Caddy
+L2 Messaging       NATS / MQTT
+L3 Runtime         Rust
+L4 Execution       WASM sandbox
+L5 Memory          SQLite / DuckDB / CRDT
+L6 Peer Layer      libp2p / WebRTC / gossip
+L7 Static Memory   IPFS
+L8 AI Layer        local LLM / small models / rule engine
+L9 Projection      HTML / PWA / minimal JS
+L10 Supervision    systemd / OpenTelemetry</code></pre>
+</section>
+
+<section id="network">
+<h2>5. Network Architecture</h2>
+<pre><code>Nearby phones / wearables
+          │
+    BLE / NFC / Wi-Fi
+          │
+ Local Authority Node
+          │
+ ┌────────┼────────┐
+ │        │        │
+SQLite  NATS/MQTT IPFS
+ │        │        │
+Rust API live bus static memory
+ │        │        │
+ └──── NGINX/Caddy ┘
+          │
+      HTML/PWA UI
+          │
+  libp2p/WebRTC peers</code></pre>
+<table class="table">
+<tr><th>Layer</th><th>Use</th><th>Not for</th></tr>
+<tr><td>BLE/NFC</td><td>presence, identity hint, deliberate pairing</td><td>full UI sync or heavy state</td></tr>
+<tr><td>NATS/MQTT</td><td>local event bus and embedded bridge</td><td>global public truth</td></tr>
+<tr><td>libp2p/WebRTC</td><td>live peer propagation and temporary coordination</td><td>authoritative safety locks</td></tr>
+<tr><td>IPFS</td><td>immutable schemas, UI bundles, snapshots, manifests</td><td>fast locks or proximity events</td></tr>
+<tr><td>Registry/Ledger</td><td>public lineage, standards, ownership, governance proofs</td><td>live runtime</td></tr>
+</table>
+</section>
+
+<section id="object-schema">
+<h2>6. Semantic Object Schema</h2>
+<pre><code>object:
+  id: irf:field:enschede:field_01
+  type: place.field
+  domain: football
+  version: 1
+
+  state:
+    availability: open
+    occupancy: 0
+    queue_count: 0
+
+  authority:
+    mode: local
+    owner: irf:node:field_01_authority
+    resolver: closest_valid_authority
+
+  capabilities:
+    - reserve_slot
+    - verify_presence
+    - host_lobby
+    - publish_summary
+
+  permissions:
+    visibility: proximity
+    write_policy: signed_nearby_persona
+    read_policy: explored_or_nearby
+
+  relationships:
+    nearby_nodes: []
+    active_sessions: []
+
+  memory:
+    ttl_raw_seconds: 600
+    compact_after_seconds: 60
+    anchor_policy: final_summary_only
+
+  ai:
+    readable: true
+    schema: irftek.object.v1
+    summary_fields: [state, authority, capabilities, permissions]</code></pre>
+</section>
+
+<section id="authority">
+<h2>7. Authority Resolution Engine</h2>
+<p>Authority resolution decides who owns truth for an object/action in a context.</p>
+<pre><code>fn resolve_authority(
+    object_id: ObjectId,
+    action: Action,
+    actor: Persona,
+    context: Context,
+) -> AuthorityDecision {
+    // inputs:
+    // - signed identity
+    // - proximity proof
+    // - object authority declaration
+    // - local policy
+    // - trust history
+    // - freshness / expiry
+}</code></pre>
+<pre><code>authority_decision:
+  allowed: true
+  winning_authority: irf:node:field_01
+  confidence: 0.93
+  reason:
+    - actor_signed
+    - actor_within_range
+    - field_node_is_local_authority
+    - action_allowed_by_policy
+  conflict_rule: local_authority_first</code></pre>
+</section>
+
+<section id="memory">
+<h2>8. Memory Compaction Engine</h2>
+<pre><code>raw data → event → state → summary → memory → anchor</code></pre>
+<div class="grid">
+<div class="card"><h3>Discard</h3><ul><li>noise</li><li>duplicates</li><li>expired proximity</li><li>irrelevant telemetry</li><li>stale peer state</li></ul></div>
+<div class="card"><h3>Store</h3><ul><li>semantic meaning</li><li>state changes</li><li>summaries</li><li>lineage</li><li>proofs</li></ul></div>
+</div>
+<pre><code>200 BLE pings
+→ presence.event
+→ player_near_field state
+→ attendance summary
+→ match participation memory
+→ optional signed proof</code></pre>
+</section>
+
+<section id="ai-readable">
+<h2>9. AI-Readable Runtime Design</h2>
+<p>AI reads structured runtime artifacts, not opaque apps.</p>
+<div class="grid">
+<div class="card"><h3>AI reads</h3><ul><li>semantic objects</li><li>authority decisions</li><li>event streams</li><li>state tables</li><li>policy files</li><li>memory summaries</li><li>capability manifests</li><li>topology maps</li></ul></div>
+<div class="card"><h3>AI does not scrape</h3><ul><li>DOM chaos</li><li>hidden SPA stores</li><li>binary-only logs</li><li>uncurated telemetry</li><li>opaque app state</li></ul></div>
+</div>
+<pre><code>Readable formats:
+  YAML     semantic configuration
+  JSONL    event stream
+  SQLite   queryable state
+  Markdown rules/context
+  WASM ABI executable capabilities</code></pre>
+</section>
+
+<section id="local-ai">
+<h2>10. Local AI Integration</h2>
+<table class="table">
+<tr><th>Tier</th><th>Role</th><th>Hardware</th></tr>
+<tr><td>IMM-S</td><td>sensor/light node, no heavy AI</td><td>ESP32 / nRF52</td></tr>
+<tr><td>IMM-M</td><td>authority + small inference</td><td>Raspberry Pi / mini PC</td></tr>
+<tr><td>IMM-X</td><td>local compute, GPU optional</td><td>workstation / Jetson / GPU box</td></tr>
+</table>
+<pre><code>ai_context:
+  task: summarize_lobby
+  objects: [lobby_01, field_01]
+  authority_scope: local
+  privacy: local_only
+
+ai_result:
+  type: summary
+  confidence: 0.88
+  suggested_action: wait_for_two_more_players
+  writes_allowed: false</code></pre>
+</section>
+
+<section id="identity">
+<h2>11. Identity + Persona System</h2>
+<p>No mandatory global account. Identity is persona-native and vault-backed.</p>
+<pre><code>persona:
+  id: irf:persona:football:local_hash
+  owner_vault: irf:vault:home_01
+  type: football_player
+  keys:
+    signing: ed25519_public_key
+  visibility: proximity
+  linked_devices:
+    - wristband_01
+    - phone_01
+  roles:
+    - player
+    - organizer
+  reputation:
+    domain: football
+    score_local: 0.84</code></pre>
+</section>
+
+<section id="trust">
+<h2>12. Trust + Governance Model</h2>
+<pre><code>trust = signature + proximity + history + domain_permission + semantic_consistency</code></pre>
+<pre><code>governance:
+  domain: football
+  authority_scope: field_local
+  allowed_actions:
+    - join_queue
+    - verify_presence
+    - reserve_slot
+  trust_inputs:
+    - signature
+    - proximity
+    - prior_events
+    - persona_role
+  conflict_rule: local_authority_first
+  abuse_response:
+    - rate_limit
+    - quarantine
+    - require_nfc_tap</code></pre>
+</section>
+
+<section id="hardware">
+<h2>13. Hardware Reference Designs</h2>
+<div class="grid3">
+<div class="card"><h3>IMM-S</h3><p>Small edge node.</p><ul><li>ESP32-C3 / nRF52</li><li>BLE beacon</li><li>NFC optional</li><li>low power</li></ul></div>
+<div class="card"><h3>IMM-M</h3><p>Local authority node.</p><ul><li>Raspberry Pi 5 / mini PC</li><li>Linux</li><li>Rust runtime</li><li>SQLite + NATS</li><li>IPFS pinning</li></ul></div>
+<div class="card"><h3>IMM-X</h3><p>Local compute node.</p><ul><li>mini PC / workstation</li><li>NVIDIA Jetson optional</li><li>local model inference</li><li>semantic indexing</li></ul></div>
+</div>
+</section>
+
+<section id="topologies">
+<h2>14. Node Topologies</h2>
+<pre><code>Single Field:
+players/wristbands → field beacon → Raspberry Pi authority node → local PWA
+
+School:
+classrooms → school authority node → local education domain
+
+Neighborhood:
+homes/shops/services → local peer swarm → domain-filtered UI
+
+Home Vault:
+personas/wristbands → home node → encrypted backup/export → local restore</code></pre>
+</section>
+
+<section id="deployment">
+<h2>15. Deployment Stack</h2>
+<pre><code>MVP Node:
+  Raspberry Pi 5
+  Debian
+  systemd
+  Caddy
+  Rust runtime
+  SQLite WAL
+  NATS
+  Mosquitto optional
+  HTML/PWA
+  BLE scanner
+  JSONL logs
+  YAML configs</code></pre>
+</section>
+
+<section id="infra">
+<h2>16. Infrastructure Components</h2>
+<table class="table">
+<tr><th>Component</th><th>Choice</th><th>Reason</th></tr>
+<tr><td>Gateway</td><td>NGINX / Caddy</td><td>reverse proxy, static UI, TLS, WebSocket proxy, rate limits</td></tr>
+<tr><td>Runtime</td><td>Rust</td><td>memory safety, low-level control, predictable performance</td></tr>
+<tr><td>Execution</td><td>WASM</td><td>portable plugins, sandboxing, capability-scoped execution</td></tr>
+<tr><td>Memory</td><td>SQLite WAL / DuckDB</td><td>local truth and local analytics</td></tr>
+<tr><td>Messaging</td><td>NATS / MQTT</td><td>local event propagation and embedded bridges</td></tr>
+<tr><td>Peer</td><td>libp2p / WebRTC</td><td>peer spread, exploration, session exchange</td></tr>
+<tr><td>Ops</td><td>systemd / OpenTelemetry</td><td>supervision, metrics, traces, health</td></tr>
+</table>
+</section>
+
+<section id="protocol">
+<h2>17. Protocol Stack</h2>
+<pre><code>Physical:
+  BLE, NFC, Wi-Fi, Ethernet
+
+Local discovery:
+  mDNS, DNS-SD, BLE advertisements, QR
+
+Local messaging:
+  NATS, MQTT
+
+Peer propagation:
+  libp2p, WebRTC, gossip
+
+Static distribution:
+  IPFS, IPNS optional
+
+Runtime API:
+  HTTP, WebSocket, Unix socket
+
+Semantic:
+  YAML, JSONL, SQLite, Markdown
+
+Execution:
+  WASM ABI</code></pre>
+</section>
+
+<section id="lifecycle">
+<h2>18. Data Lifecycle</h2>
+<pre><code>capture
+→ normalize
+→ sign
+→ deduplicate
+→ classify
+→ compact
+→ store state
+→ summarize
+→ expire raw
+→ optionally anchor</code></pre>
+<pre><code>ttl_policy:
+  raw_ble_ping: 30s
+  proximity_event: 10m
+  lobby_state: 6h
+  session_summary: 1y
+  public_proof: permanent_if_anchored</code></pre>
+</section>
+
+<section id="bloat">
+<h2>19. Anti-Bloat Architecture</h2>
+<div class="grid">
+<div class="card"><h3>Rules</h3><ul><li>never replicate everything</li><li>never retain raw by default</li><li>never expose global feeds</li><li>never render domains not explored</li><li>never sync irrelevant state</li></ul></div>
+<div class="card"><h3>Filters</h3><ul><li>domain</li><li>proximity</li><li>trust</li><li>urgency</li><li>permission</li><li>interest</li><li>expiry</li><li>authority scope</li></ul></div>
+</div>
+</section>
+
+<section id="security">
+<h2>20. Security + Threat Model</h2>
+<table class="table">
+<tr><th>Threat</th><th>Mitigation</th></tr>
+<tr><td>Fake node</td><td>signed manifests, trust history, local allowlists</td></tr>
+<tr><td>Replay attack</td><td>signed timestamps, nonces, monotonic event windows</td></tr>
+<tr><td>Proximity spoof</td><td>NFC tap, multiple radio proofs, physical challenge</td></tr>
+<tr><td>Malicious plugin</td><td>WASM sandbox, capability tokens, signed modules</td></tr>
+<tr><td>Stolen wristband</td><td>persona revocation, re-pairing, local quarantine</td></tr>
+<tr><td>Poisoned schema</td><td>schema signatures, registry lineage, hash validation</td></tr>
+<tr><td>Hostile peer flood</td><td>rate limits, peer scoring, quarantine, proof challenge</td></tr>
+</table>
+</section>
+
+<section id="hostile">
+<h2>21. Hostile Node Mitigation</h2>
+<pre><code>hostile_node_policy:
+  detection:
+    - event_rate_anomaly
+    - invalid_signature
+    - impossible_proximity
+    - schema_mismatch
+    - repeated_conflict_creation
+
+  response:
+    - throttle
+    - quarantine
+    - require_reverification
+    - local_blacklist
+    - trust_decay
+    - disconnect_peer
+
+  recovery:
+    - human_operator_review
+    - signed_rejoin
+    - persona_rotation</code></pre>
+</section>
+
+<section id="discovery">
+<h2>22. Local Discovery Flow</h2>
+<pre><code>1. Phone scans BLE/mDNS
+2. Finds semantic node beacon
+3. Fetches node manifest
+4. Verifies signature/hash
+5. Displays domain summary only
+6. User explores
+7. Permission handshake
+8. Live peer/session channel opens
+9. UI subscribes to relevant objects only</code></pre>
+</section>
+
+<section id="football">
+<h2>23. Football United MVP</h2>
+<pre><code>Objects:
+  field
+  player
+  persona
+  queue
+  lobby
+  team
+  session
+  checkin
+  summary
+
+Flow:
+  player discovers field
+  → joins queue
+  → lobby reaches threshold
+  → field authority confirms open
+  → players commit nearby
+  → field locks slot
+  → BLE/NFC check-in
+  → match starts
+  → summary compacted</code></pre>
+</section>
+
+<section id="domains">
+<h2>24–26. Domain Examples</h2>
+<div class="grid3">
+<div class="card"><h3>Education</h3><ul><li>school</li><li>classroom</li><li>teacher persona</li><li>student persona</li><li>lesson</li><li>attendance</li><li>learning proof</li></ul></div>
+<div class="card"><h3>Trade</h3><ul><li>shop</li><li>tool</li><li>inventory</li><li>offer</li><li>service</li><li>worker persona</li><li>proof of work</li></ul></div>
+<div class="card"><h3>Culture</h3><ul><li>language group</li><li>festival</li><li>story archive</li><li>local history node</li><li>ritual calendar</li><li>community memory</li></ul></div>
+</div>
+</section>
+
+<section id="apis">
+<h2>27. Runtime APIs</h2>
+<pre><code>GET  /objects/:id
+POST /events
+GET  /state/:object_id
+POST /authority/resolve
+GET  /memory/:object_id
+POST /compact
+GET  /schemas
+GET  /health
+GET  /peers
+WS   /events/subscribe</code></pre>
+<pre><code>{
+  "type": "player.join_queue",
+  "object": "irf:lobby:field_01:1900",
+  "actor": "irf:persona:p102",
+  "timestamp": "2026-05-17T18:00:00Z",
+  "proof": {
+    "signature": "...",
+    "proximity": "ble_near"
+  }
+}</code></pre>
+</section>
+
+<section id="examples">
+<h2>28–29. Example YAML Objects + Event Streams</h2>
+<pre><code>object:
+  id: irf:lobby:football:field_01:2026-05-17T19
+  type: session.lobby
+  domain: football
+
+  state:
+    status: forming
+    players_ready: 8
+    required_players: 10
+
+  authority:
+    owner: irf:field:field_01
+    mode: place_local
+
+  propagation:
+    live: gossip_nearby
+    static_snapshot: ipfs_after_finish
+
+  projection:
+    ui: football_lobby_card
+    ai: lobby_state_schema_v1
+
+  expiry:
+    raw_events: 6h
+    lobby_state: 24h
+    summary: 1y</code></pre>
+<pre><code>{"t":"2026-05-17T18:00:01Z","type":"player.join_queue","actor":"p102","object":"lobby_01","sig":"..."}
+{"t":"2026-05-17T18:00:14Z","type":"player.ready","actor":"p102","object":"lobby_01","proximity":"near"}
+{"t":"2026-05-17T18:03:22Z","type":"field.reserve_request","actor":"lobby_01","object":"field_01"}
+{"t":"2026-05-17T18:03:23Z","type":"field.reserved","authority":"field_01","object":"slot_1900"}</code></pre>
+</section>
+
+<section id="crdt">
+<h2>30. CRDT Strategy</h2>
+<div class="callout">CRDTs merge structure. Authority resolves meaning.</div>
+<table class="table">
+<tr><th>Use CRDTs for</th><th>Do not use CRDTs alone for</th></tr>
+<tr><td>shared lobby membership, distributed notes, education documents, culture archives, peer availability</td><td>field reservation lock, authority decisions, safety-critical actions, identity revocation</td></tr>
+</table>
+</section>
+
+<section id="p2p">
+<h2>31. P2P Propagation Model</h2>
+<pre><code>metadata first
+summary second
+full object only on exploration
+live subscription only after permission
+static snapshot via IPFS</code></pre>
+<pre><code>gossip_priority:
+  critical: authority changes
+  high: queue/lobby state
+  medium: summaries
+  low: telemetry
+  drop: expired/noisy/irrelevant</code></pre>
+</section>
+
+<section id="ipfs">
+<h2>32. IPFS Strategy</h2>
+<pre><code>Use IPFS for:
+  UI bundles
+  schemas
+  module registries
+  snapshots
+  final summaries
+  immutable datasets
+  signed manifests
+
+Do not use IPFS for:
+  live locks
+  fast lobby state
+  proximity events
+  safety decisions</code></pre>
+<pre><code>ipfs_manifest:
+  cid: bafy...
+  type: schema_bundle
+  domain: football
+  version: 1.2.0
+  signed_by: irf:persona:maintainer</code></pre>
+</section>
+
+<section id="browser">
+<h2>33. Browser/PWA Architecture</h2>
+<div class="grid">
+<div class="card"><h3>Browser does</h3><ul><li>render semantic objects</li><li>cache static bundles</li><li>connect WebSocket/WebRTC</li><li>query local APIs</li><li>display AI-readable state</li></ul></div>
+<div class="card"><h3>Browser does not</h3><ul><li>own authority</li><li>hold permanent truth</li><li>control governance</li><li>run durable orchestration</li><li>store critical data</li></ul></div>
+</div>
+</section>
+
+<section id="wasm">
+<h2>34. WASM Runtime Strategy</h2>
+<pre><code>wasm_module:
+  id: team_balancer_v1
+  permissions:
+    read:
+      - lobby_state
+    write:
+      - suggested_teams
+    denied:
+      - authority_lock
+      - persona_keys</code></pre>
+</section>
+
+<section id="ai-strategy">
+<h2>35. Local AI Runtime Strategy</h2>
+<pre><code>Tier 0: rule engine
+Tier 1: small local classifier/summarizer
+Tier 2: local LLM on IMM-X
+Tier 3: optional external model, never required</code></pre>
+</section>
+
+<section id="wearable">
+<h2>36. Embedded/Wearable Strategy</h2>
+<pre><code>Wearables provide:
+  identity hint
+  presence signal
+  NFC tap
+  proximity proof
+  persona selector
+  low-power event source
+
+Wearables do not provide:
+  durable authority
+  heavy state
+  AI reasoning
+  large storage</code></pre>
+</section>
+
+<section id="updates">
+<h2>37. Update/Provisioning Architecture</h2>
+<pre><code>Provisioning:
+  factory flash
+  generate device key
+  claim via QR/NFC
+  assign domain
+  download signed manifest
+  start systemd services
+  join local registry
+
+Updates:
+  signed release
+  staged rollout
+  A/B partition
+  rollback on failure
+  USB offline update
+  local operator approval</code></pre>
+</section>
+
+<section id="registry">
+<h2>38. Semantic Schema Registry</h2>
+<pre><code>Registry contains:
+  object schemas
+  event schemas
+  policy schemas
+  projection schemas
+  WASM ABI schemas
+  domain vocabularies
+  version lineage
+  compatibility rules</code></pre>
+<pre><code>schema:
+  id: irf:schema:football.lobby.v1
+  version: 1.0.0
+  fields:
+    required:
+      - id
+      - state.players_ready
+      - authority.owner</code></pre>
+</section>
+
+<section id="build">
+<h2>39. Build Order</h2>
+<pre><code>1. Kernel schema
+2. Object store in SQLite
+3. JSONL event log
+4. Rust authority resolver
+5. Basic HTML/PWA projection
+6. NATS/MQTT local bus
+7. BLE/NFC discovery prototype
+8. Field authority node
+9. Football lobby MVP
+10. Memory compaction engine
+11. Signed personas
+12. IPFS schema/UI bundles
+13. libp2p/WebRTC propagation
+14. WASM plugin sandbox
+15. Local AI summarizer
+16. Education/trade/culture clones</code></pre>
+<div class="warn callout">Do not start with token, marketplace, global governance, complex AI, or full hardware ecosystem.</div>
+</section>
+
+<section id="research">
+<h2>40. Missing Research Problems</h2>
+<ul>
+<li>semantic conflict resolution</li>
+<li>decentralized trust propagation</li>
+<li>hostile node economics</li>
+<li>large-scale CRDT governance</li>
+<li>battery-efficient persistent mesh</li>
+<li>mobile OS background restrictions</li>
+<li>local AI interoperability</li>
+<li>schema evolution under autonomy</li>
+<li>proximity spoof resistance</li>
+<li>machine-readable governance law</li>
+</ul>
+</section>
+
+<section id="risks">
+<h2>41. Governance Risks</h2>
+<ul>
+<li>local authority abuse</li>
+<li>persona Sybil attacks</li>
+<li>domain capture</li>
+<li>schema fragmentation</li>
+<li>semantic misinformation</li>
+<li>AI-generated false summaries</li>
+<li>hostile peer swarms</li>
+<li>unreviewed plugin execution</li>
+</ul>
+</section>
+
+<section id="civilization">
+<h2>42. Civilizational Implications</h2>
+<pre><code>accounts      → personas
+apps          → projections
+feeds         → exploration
+cloud truth   → local authority
+raw data      → semantic memory
+central AI    → distributed cognition</code></pre>
+<p>This is post-platform infrastructure: a local semantic substrate for coordination without mandatory centralized mediation.</p>
+</section>
+
+<section id="stacks">
+<h2>43–44. Recommended MVP + Production Stack</h2>
+<div class="grid">
+<div class="card">
+<h3>MVP Stack</h3>
+<pre><code>Hardware: Raspberry Pi 5, ESP32, Android phones
+OS: Debian
+Gateway: Caddy
+Runtime: Rust
+Messaging: NATS
+Storage: SQLite WAL + JSONL
+UI: HTML/PWA minimal JS
+Discovery: BLE, QR, mDNS
+AI: rule engine first
+Ops: systemd</code></pre>
+</div>
+<div class="card">
+<h3>Production Stack</h3>
+<pre><code>Gateway: NGINX/Caddy
+Runtime: Rust services + WASM
+Memory: SQLite WAL, DuckDB, CRDT
+Messaging: NATS JetStream, MQTT bridge
+Static: IPFS + signed manifests
+Peer: libp2p, WebRTC, gossip
+Identity: Ed25519, capability tokens
+Policy: Cedar/OPA-style engine
+AI: Ollama/llama.cpp/tinygrad
+Ops: systemd, OTel, Vector, RAUC/Mender</code></pre>
+</div>
+</div>
+</section>
+
+<section id="future">
+<h2>45. Future Research Directions</h2>
+<ul>
+<li>IrfTek kernel formal specification</li>
+<li>authority-resolution calculus</li>
+<li>semantic CRDT conflict policy</li>
+<li>local AI governance contracts</li>
+<li>persona-native identity protocols</li>
+<li>proximity-proof hardware</li>
+<li>AI-readable operating system ABI</li>
+<li>distributed memory compaction theory</li>
+<li>local civilization simulation environments</li>
+</ul>
+<div class="footer">
+  <strong>Generated spec:</strong> IrfTek Production Specification — local-first semantic runtime substrate.
+  <br/>Canonical reduction: Object + Authority + Propagation + Projection + Anchor + Expiry.
+</div>
+</section>
+
+</main>
+</div>
+</body>
+</html>

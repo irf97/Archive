@@ -1,0 +1,28 @@
+{
+  "missions": [
+    {
+      "title": "Robotics simulation pipeline mission",
+      "useCase": "Set up an AI-run pipeline for robotics simulation and Robodex/Isaac Sim execution packs from approved operational twin knowledge",
+      "objective": "",
+      "policy": {
+        "mode": "manual_step",
+        "allowAutoIngestSources": true,
+        "allowAutoGenerateOutcomes": true,
+        "allowAutoProjectTwin": true,
+        "requireApprovalForCanon": true,
+        "requireApprovalForExecution": true,
+        "sourcePolicy": "public_or_operator_sources",
+        "maxSteps": 12
+      },
+      "tags": [],
+      "id": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "status": "review_waiting",
+      "active": true,
+      "parentMissionId": "",
+      "branchOf": "",
+      "mergedInto": "",
+      "createdAt": "2026-05-19T00:41:25.557Z",
+      "updatedAt": "2026-05-19T00:41:34.133Z"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "runs": [
+    {
+      "id": "arun-mpbwqshe-cufg0",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "execution_pack_compiler",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-twin_delta_candidate-mpbwqsh5-lidy2",
+        "artifact-outcome_task_candidate-mpbwqlx5-fxuc0",
+        "artifact-outcome_task_candidate-mpbwqlx5-y0qfp",
+        "artifact-outcome_task_candidate-mpbwqlx5-yl97i",
+        "artifact-outcome_task_candidate-mpbwqlx5-1vrnn",
+        "artifact-outcome_task_candidate-mpbwqlx5-52t2s",
+        "artifact-outcome_task_candidate-mpbwqlx5-nnsez",
+        "artifact-decision_candidate-mpbwqlwz-i8qxv",
+        "artifact-concept_cluster-mpbwqlwt-kp6z9",
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9",
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx"
+      ],
+      "outputArtifactIds": [
+        "artifact-execution_pack_candidate-mpbwqshf-t0num"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:34.130Z",
+      "completedAt": "2026-05-19T00:41:34.132Z",
+      "createdAt": "2026-05-19T00:41:34.130Z"
+    },
+    {
+      "id": "arun-mpbwqsh4-ksqsh",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "twin_projector",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-outcome_task_candidate-mpbwqlx5-fxuc0",
+        "artifact-outcome_task_candidate-mpbwqlx5-y0qfp",
+        "artifact-outcome_task_candidate-mpbwqlx5-yl97i",
+        "artifact-outcome_task_candidate-mpbwqlx5-1vrnn",
+        "artifact-outcome_task_candidate-mpbwqlx5-52t2s",
+        "artifact-outcome_task_candidate-mpbwqlx5-nnsez",
+        "artifact-decision_candidate-mpbwqlwz-i8qxv",
+        "artifact-concept_cluster-mpbwqlwt-kp6z9",
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9",
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx",
+        "artifact-source_packet-mpbwqlwh-fqtj9"
+      ],
+      "outputArtifactIds": [
+        "artifact-twin_delta_candidate-mpbwqsh5-lidy2"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:34.120Z",
+      "completedAt": "2026-05-19T00:41:34.122Z",
+      "createdAt": "2026-05-19T00:41:34.120Z"
+    },
+    {
+      "id": "arun-mpbwqlx4-w2hhd",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "outcome_compiler",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-decision_candidate-mpbwqlwz-i8qxv",
+        "artifact-concept_cluster-mpbwqlwt-kp6z9",
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9",
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx",
+        "artifact-source_packet-mpbwqlwh-fqtj9",
+        "artifact-source_packet-mpbwqlwh-gy8nu",
+        "artifact-source_packet-mpbwqlwh-fl4ti",
+        "artifact-source_packet-mpbwqlwh-tcv2e",
+        "artifact-source_packet-mpbwqlwh-zhhis",
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw"
+      ],
+      "outputArtifactIds": [
+        "artifact-outcome_task_candidate-mpbwqlx5-fxuc0",
+        "artifact-outcome_task_candidate-mpbwqlx5-y0qfp",
+        "artifact-outcome_task_candidate-mpbwqlx5-yl97i",
+        "artifact-outcome_task_candidate-mpbwqlx5-1vrnn",
+        "artifact-outcome_task_candidate-mpbwqlx5-52t2s",
+        "artifact-outcome_task_candidate-mpbwqlx5-nnsez"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.624Z",
+      "completedAt": "2026-05-19T00:41:25.626Z",
+      "createdAt": "2026-05-19T00:41:25.624Z"
+    },
+    {
+      "id": "arun-mpbwqlwy-hfji8",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "convergence_planner",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-concept_cluster-mpbwqlwt-kp6z9",
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9",
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx",
+        "artifact-source_packet-mpbwqlwh-fqtj9",
+        "artifact-source_packet-mpbwqlwh-gy8nu",
+        "artifact-source_packet-mpbwqlwh-fl4ti",
+        "artifact-source_packet-mpbwqlwh-tcv2e",
+        "artifact-source_packet-mpbwqlwh-zhhis",
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw",
+        "artifact-research_question-mpbwqlwb-d6fj8"
+      ],
+      "outputArtifactIds": [
+        "artifact-decision_candidate-mpbwqlwz-i8qxv"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.618Z",
+      "completedAt": "2026-05-19T00:41:25.619Z",
+      "createdAt": "2026-05-19T00:41:25.618Z"
+    },
+    {
+      "id": "arun-mpbwqlws-9dqby",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "concept_clusterer",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9",
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx",
+        "artifact-source_packet-mpbwqlwh-fqtj9",
+        "artifact-source_packet-mpbwqlwh-gy8nu",
+        "artifact-source_packet-mpbwqlwh-fl4ti",
+        "artifact-source_packet-mpbwqlwh-tcv2e",
+        "artifact-source_packet-mpbwqlwh-zhhis",
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw",
+        "artifact-research_question-mpbwqlwb-d6fj8",
+        "artifact-research_question-mpbwqlwb-pwj22"
+      ],
+      "outputArtifactIds": [
+        "artifact-concept_cluster-mpbwqlwt-kp6z9"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.612Z",
+      "completedAt": "2026-05-19T00:41:25.614Z",
+      "createdAt": "2026-05-19T00:41:25.612Z"
+    },
+    {
+      "id": "arun-mpbwqlwm-bxbl1",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "claim_extractor",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx",
+        "artifact-source_packet-mpbwqlwh-fqtj9",
+        "artifact-source_packet-mpbwqlwh-gy8nu",
+        "artifact-source_packet-mpbwqlwh-fl4ti",
+        "artifact-source_packet-mpbwqlwh-tcv2e",
+        "artifact-source_packet-mpbwqlwh-zhhis",
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw",
+        "artifact-research_question-mpbwqlwb-d6fj8",
+        "artifact-research_question-mpbwqlwb-pwj22",
+        "artifact-research_question-mpbwqlwb-43i70",
+        "artifact-research_question-mpbwqlwb-8sd8y",
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "outputArtifactIds": [
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.606Z",
+      "completedAt": "2026-05-19T00:41:25.608Z",
+      "createdAt": "2026-05-19T00:41:25.606Z"
+    },
+    {
+      "id": "arun-mpbwqlwg-82ue5",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "source_scout_local_files",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw",
+        "artifact-research_question-mpbwqlwb-d6fj8",
+        "artifact-research_question-mpbwqlwb-pwj22",
+        "artifact-research_question-mpbwqlwb-43i70",
+        "artifact-research_question-mpbwqlwb-8sd8y",
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "outputArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-fhiie",
+        "artifact-source_packet-mpbwqlwh-u07mo",
+        "artifact-source_packet-mpbwqlwh-4t7xx",
+        "artifact-source_packet-mpbwqlwh-fqtj9",
+        "artifact-source_packet-mpbwqlwh-gy8nu",
+        "artifact-source_packet-mpbwqlwh-fl4ti",
+        "artifact-source_packet-mpbwqlwh-tcv2e",
+        "artifact-source_packet-mpbwqlwh-zhhis"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.600Z",
+      "completedAt": "2026-05-19T00:41:25.602Z",
+      "createdAt": "2026-05-19T00:41:25.600Z"
+    },
+    {
+      "id": "arun-mpbwqlwa-u0znl",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "question_decomposer",
+      "status": "completed",
+      "inputArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "outputArtifactIds": [
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw",
+        "artifact-research_question-mpbwqlwb-d6fj8",
+        "artifact-research_question-mpbwqlwb-pwj22",
+        "artifact-research_question-mpbwqlwb-43i70",
+        "artifact-research_question-mpbwqlwb-8sd8y"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.594Z",
+      "completedAt": "2026-05-19T00:41:25.596Z",
+      "createdAt": "2026-05-19T00:41:25.594Z"
+    },
+    {
+      "id": "arun-mpbwqlw4-vmn5z",
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentId": "intake_normalizer",
+      "status": "completed",
+      "inputArtifactIds": [],
+      "outputArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "error": "",
+      "startedAt": "2026-05-19T00:41:25.588Z",
+      "completedAt": "2026-05-19T00:41:25.589Z",
+      "createdAt": "2026-05-19T00:41:25.588Z"
+    }
+  ]
+}

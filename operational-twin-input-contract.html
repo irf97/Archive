@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operational Twin Input Contract v1</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18212b;
+      --muted: #5c6875;
+      --line: #d8dee6;
+      --paper: #f8f7f2;
+      --panel: #ffffff;
+      --accent: #25636f;
+      --warn: #9b5c12;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; }
+    main { max-width: 1120px; margin: 0 auto; padding: 44px 22px 70px; }
+    h1 { font-size: clamp(32px, 4vw, 54px); line-height: 1.02; margin: 0 0 12px; letter-spacing: 0; }
+    h2 { margin: 34px 0 12px; font-size: 22px; }
+    h3 { margin: 22px 0 8px; font-size: 16px; color: var(--accent); }
+    p { margin: 0 0 14px; color: var(--muted); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+    pre { overflow: auto; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: #111820; color: #edf5f7; font-size: 12px; line-height: 1.45; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin: 16px 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .card { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fff; }
+    .card b { display: block; margin-bottom: 4px; color: var(--accent); }
+    .note { border-left: 4px solid var(--warn); padding: 10px 14px; background: #fff8ea; color: #51320b; }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Operational Twin Input Contract v1</h1>
+  <p>This contract defines the bridge between ENS research, ARGOS approvals, an operational site reality graph, and Robodex execution inputs.</p>
+
+  <div class="note">
+    ENS does not send unsourced research claims directly to Robodex. ENS supplies evidence-linked candidates. ARGOS approves or rejects them. The Operational Twin turns accepted site reality into explicit Robodex forge inputs.
+  </div>
+
+  <h2>Layer Responsibilities</h2>
+  <div class="grid">
+    <div class="card"><b>ENS Navigator</b>Discovers sources, people, claims, hypotheses, questions, and outcome tasks.</div>
+    <div class="card"><b>ARGOS</b>Owns approval state, canon, operator policy, and promotion gates.</div>
+    <div class="card"><b>Operational Twin</b>Represents the accepted physical, hardware, software, authority, workflow, and runtime state of a site.</div>
+    <div class="card"><b>Robodex</b>Compiles or refuses execution cartridges from validated twin-derived inputs.</div>
+    <div class="card"><b>Convergent Cell</b>Synchronizes events, trust, proof updates, and divergent local projections.</div>
+    <div class="card"><b>Proof Events</b>Feed execution evidence back into ARGOS memory and twin runtime state.</div>
+  </div>
+
+  <h2>Contract Shape</h2>
+  <pre><code>{
+  "id": "twin-site-id",
+  "name": "Human-readable site twin",
+  "siteId": "site_id",
+  "siteType": "football_pitch | warehouse | clinic | restaurant | ...",
+  "status": "draft | review | approved | active | needs_source | disputed | archived",
+  "domains": ["domain name"],
+  "sourceIds": ["src-..."],
+  "claimIds": ["claim-..."],
+  "questionIds": ["q-..."],
+  "outcomeProjectIds": ["out-..."],
+  "provenance": {
+    "origin": "operator_projection | field_observation | imported_site_spec",
+    "note": "Why this twin exists and what still needs validation."
+  },
+  "realities": {
+    "physical": { "zones": [], "routes": [], "fixtures": [] },
+    "hardware": { "robots": [], "devices": [], "fixtures": [] },
+    "software": { "services": [], "apis": [], "queues": [], "permissions": [] },
+    "social": { "roles": [], "authority": [], "policies": [], "workflows": [] },
+    "runtime": { "activeTasks": [], "alerts": [], "telemetry": [] }
+  },
+  "contracts": {
+    "robodex": {
+      "hardwareSpec": { "schema_version": "HardwareSpec.v1" },
+      "worldModel": { "schema_version": "WorldModel.v1" },
+      "forgeRequest": { "schema_version": "CartridgeForgeRequest.v1" }
+    }
+  }
+}</code></pre>
+
+  <h2>Promotion Gates</h2>
+  <div class="panel">
+    <h3>Draft</h3>
+    <p>Operator-created or imported site projection. It may contain assumptions and cannot drive execution.</p>
+    <h3>Review</h3>
+    <p>Linked to approved ENS claims or operator-provided field observations. Still requires ARGOS approval.</p>
+    <h3>Approved</h3>
+    <p>Accepted as a current site projection. Robodex may receive generated forge inputs, but runtime can still refuse unsafe missions.</p>
+    <h3>Active</h3>
+    <p>Connected to live proof events, telemetry, or site updates.</p>
+    <h3>Needs Source / Disputed</h3>
+    <p>Blocked from execution promotion until missing evidence or contradiction is resolved.</p>
+  </div>
+
+  <h2>Robodex Derived Inputs</h2>
+  <pre><code>{
+  "hardwareSpec": {
+    "schema_version": "HardwareSpec.v1",
+    "site_id": "site_id",
+    "robots": [{ "id": "bot_001", "class": "mobile_robot", "capabilities": ["navigate_indoor"] }],
+    "devices": [{ "id": "sensor_001", "class": "camera", "capabilities": ["observe_zone"] }],
+    "fixtures": [{ "id": "dock_A", "class": "dock_station", "zone": "dock_zone_A" }]
+  },
+  "worldModel": {
+    "schema_version": "WorldModel.v1",
+    "site": { "site_id": "site_id", "site_type": "warehouse", "coordinate_frame": "local_m" },
+    "zones": [{ "id": "zone_A", "class": "work_zone", "policy_tags": ["human_yield_required"] }],
+    "routes": [],
+    "base_policies": []
+  },
+  "forgeRequest": {
+    "schema_version": "CartridgeForgeRequest.v1",
+    "site_id": "site_id",
+    "functions": [{ "verb": "NAVIGATE_TO", "archetype": "navigate_to", "params": { "target_zone": "zone_A" } }]
+  }
+}</code></pre>
+
+  <h2>Isaac Sim Simulation Inputs</h2>
+  <p>The twin can also carry an operator-supplied Isaac Sim simulation contract. This is a file-readiness checklist and artifact manifest, not a research claim.</p>
+  <div class="grid">
+    <div class="card"><b>Core scene and control</b><code>.usd</code>, <code>.usda</code>, <code>.usdc</code>, <code>.py</code></div>
+    <div class="card"><b>Robot and kinematics</b><code>.urdf</code>, <code>.mjcf</code>, <code>.yaml</code></div>
+    <div class="card"><b>Meshes and CAD</b><code>.fbx</code>, <code>.obj</code>, <code>.gltf</code>, <code>.glb</code>, <code>.stl</code></div>
+    <div class="card"><b>Visuals and physics surfaces</b><code>.mdl</code>, <code>.png</code>, <code>.jpg</code>, <code>.dds</code>, <code>.vdb</code></div>
+    <div class="card"><b>Launch and system scripts</b><code>.sh</code>, <code>.bat</code></div>
+    <div class="card"><b>Setup questions</b>Robot type, source modeling software, and ROS/ROS 2 connection mode.</div>
+  </div>
+
+  <pre><code>{
+  "isaacSim": {
+    "schema_version": "IsaacSimSimulationContract.v1",
+    "status": "operator_supplied",
+    "provenance": {
+      "origin": "operator_note",
+      "verification": "not_independently_verified"
+    },
+    "fileGroups": [
+      { "id": "core_scene", "required": true, "extensions": [".usd", ".usda", ".usdc", ".py"] },
+      { "id": "robot_kinematics", "required": true, "extensions": [".urdf", ".mjcf", ".yaml"] },
+      { "id": "mesh_cad", "required": false, "extensions": [".fbx", ".obj", ".gltf", ".glb", ".stl"] },
+      { "id": "visual_physics_surfaces", "required": false, "extensions": [".mdl", ".png", ".jpg", ".dds", ".vdb"] },
+      { "id": "launch_system", "required": false, "extensions": [".sh", ".bat"] }
+    ],
+    "setupQuestions": [
+      "What type of robot is being simulated?",
+      "Which tool produced the original robot model?",
+      "Is ROS or ROS 2 connected to the simulation?"
+    ],
+    "artifacts": []
+  }
+}</code></pre>
+</main>
+</body>
+</html>

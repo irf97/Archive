@@ -1,0 +1,26 @@
+{
+  "AI": {
+    "field": "AI",
+    "requested": "top 1 percent",
+    "count": 50,
+    "source": "https://aaai.org/about-aaai/aaai-awards/the-aaai-fellows-program/elected-aaai-fellows/"
+  },
+  "Computer Science": {
+    "field": "Computer Science",
+    "requested": "top 1 percent",
+    "count": 50,
+    "source": "https://amturing.acm.org/byyear.cfm"
+  },
+  "Neuroscience": {
+    "field": "Neuroscience",
+    "requested": "top 1 percent",
+    "count": 50,
+    "source": "https://www.kavliprize.org/category/neuroscience"
+  },
+  "Nanotechnology": {
+    "field": "Nanotechnology",
+    "requested": "top 1 percent",
+    "count": 50,
+    "source": "https://www.kavliprize.org/category/nanoscience"
+  }
+}

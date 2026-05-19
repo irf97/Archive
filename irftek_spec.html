@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IrfTek Recursive Kernel Specification</title>
+  <meta name="description" content="IrfTek local-first semantic runtime infrastructure specification." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #111821;
+      --panel2: #151f2b;
+      --text: #e8eef6;
+      --muted: #9cafc6;
+      --line: #263448;
+      --accent: #79ffe1;
+      --accent2: #8ab4ff;
+      --warn: #ffd166;
+      --bad: #ff7b7b;
+      --good: #9dff9d;
+      --code: #081018;
+      --shadow: rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #182230 0, var(--bg) 38rem);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 32px 20px 80px; }
+    header.hero {
+      padding: 56px 0 36px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(34px, 6vw, 72px); line-height: .96; margin: 12px 0 20px; }
+    h2 { font-size: 28px; margin-top: 42px; padding-top: 22px; border-top: 1px solid var(--line); }
+    h3 { font-size: 19px; color: var(--accent2); margin-top: 28px; }
+    p.lead { font-size: 20px; color: var(--muted); max-width: 850px; }
+    .grid { display: grid; gap: 16px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    @media (max-width: 850px) { .grid.two, .grid.three, .grid.four { grid-template-columns: 1fr; } }
+    .card {
+      background: linear-gradient(180deg, var(--panel), #0e141c);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 18px 40px var(--shadow);
+    }
+    .card h3 { margin-top: 0; }
+    .pillrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      background: rgba(255,255,255,.03);
+      font-size: 13px;
+    }
+    .kernel {
+      font-size: clamp(20px, 3vw, 34px);
+      line-height: 1.25;
+      padding: 24px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(121,255,225,.12), rgba(138,180,255,.09));
+      border: 1px solid rgba(121,255,225,.35);
+      margin: 24px 0;
+      font-weight: 750;
+    }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    pre {
+      white-space: pre-wrap;
+      overflow-x: auto;
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--code);
+      border: 1px solid var(--line);
+      color: #d7f8ff;
+      font-size: 13px;
+    }
+    .toc {
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 22px 0 34px;
+    }
+    .toc ol { columns: 2; padding-left: 22px; }
+    @media (max-width: 700px) { .toc ol { columns: 1; } }
+    .flow {
+      display: flex;
+      gap: 12px;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin: 18px 0;
+    }
+    .node {
+      flex: 1 1 130px;
+      min-width: 130px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px;
+      background: var(--panel2);
+      text-align: center;
+      position: relative;
+    }
+    .node:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--accent);
+      font-weight: 900;
+    }
+    @media (max-width: 700px) { .node:not(:last-child)::after { display: none; } }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 10px; vertical-align: top; }
+    th { background: var(--panel2); color: var(--accent2); text-align: left; }
+    .tag-good { color: var(--good); }
+    .tag-warn { color: var(--warn); }
+    .tag-bad { color: var(--bad); }
+    .small { color: var(--muted); font-size: 14px; }
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: rgba(121,255,225,.06);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 18px 0;
+    }
+    .footer { margin-top: 70px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); }
+    @media print {
+      body { background: white; color: #111; }
+      .card, .toc, pre, .kernel { box-shadow: none; background: white; color: #111; border-color: #ddd; }
+      a { color: #0645ad; }
+      .node { background: white; color: #111; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">IrfTek Specification · Recursive Kernel · v0.1</div>
+      <h1>Authority-Resolved Semantic Object Runtime</h1>
+      <p class="lead">IrfTek is a local-first semantic runtime infrastructure where humans, devices, places, personas, tools, and AI agents expose structured state, coordinate locally, propagate through peers, render through simple UI, and anchor only what must become public or permanent.</p>
+      <div class="pillrow">
+        <span class="pill">local-first</span>
+        <span class="pill">AI-readable</span>
+        <span class="pill">peer-propagated</span>
+        <span class="pill">authority-resolved</span>
+        <span class="pill">post-platform</span>
+      </div>
+    </header>
+
+    <section class="toc" id="toc">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#kernel">Recursive Kernel</a></li>
+        <li><a href="#principles">Invariants</a></li>
+        <li><a href="#architecture">Runtime Architecture</a></li>
+        <li><a href="#objects">Semantic Object Model</a></li>
+        <li><a href="#authority">Authority Resolution</a></li>
+        <li><a href="#memory">Memory + Expiry</a></li>
+        <li><a href="#network">Network + Distribution</a></li>
+        <li><a href="#projection">Projection/UI</a></li>
+        <li><a href="#ai">AI-Readable Runtime</a></li>
+        <li><a href="#identity">Identity + Personas</a></li>
+        <li><a href="#imm">IMM / Machine Module Branch</a></li>
+        <li><a href="#domains">Domain Instantiation</a></li>
+        <li><a href="#security">Security + Governance</a></li>
+        <li><a href="#api">Runtime APIs</a></li>
+        <li><a href="#build">Build Order</a></li>
+        <li><a href="#open">Open Research Problems</a></li>
+      </ol>
+    </section>
+
+    <section id="kernel">
+      <h2>1. Recursive Kernel</h2>
+      <div class="kernel">IrfTek = Object + Authority + Propagation + Projection + Anchor + Expiry</div>
+      <div class="grid three">
+        <div class="card"><h3>Object</h3><p>The semantic thing: person, field, tool, device, session, persona, schema, dataset, AI agent, module.</p></div>
+        <div class="card"><h3>Authority</h3><p>Who owns truth for this object, in this context, for this action.</p></div>
+        <div class="card"><h3>Propagation</h3><p>How state moves: local bus, peer gossip, WebRTC, libp2p, IPFS snapshot.</p></div>
+        <div class="card"><h3>Projection</h3><p>How humans and machines see it: HTML/PWA, API, YAML, JSONL, SQLite, AI context.</p></div>
+        <div class="card"><h3>Anchor</h3><p>What becomes public, permanent, governed, or economically meaningful.</p></div>
+        <div class="card"><h3>Expiry</h3><p>What dies, compacts, summarizes, or becomes long-term memory.</p></div>
+      </div>
+      <h3>Feature admission test</h3>
+      <pre>What object is this?
+Who owns truth?
+How does it spread?
+How is it rendered?
+What does AI read?
+What expires?
+What becomes permanent?</pre>
+      <div class="callout">If a feature cannot reduce into this kernel, it is not IrfTek-structured yet.</div>
+    </section>
+
+    <section id="principles">
+      <h2>2. Invariants</h2>
+      <table>
+        <tr><th>Invariant</th><th>Meaning</th></tr>
+        <tr><td>local truth &gt; global truth</td><td>Real-time life coordination belongs to nearby authority first.</td></tr>
+        <tr><td>semantic state &gt; raw telemetry</td><td>Store meaning, proof, summaries, and lineage, not endless pings.</td></tr>
+        <tr><td>exploration &gt; feeds</td><td>Data appears through intent, proximity, permission, and relevance.</td></tr>
+        <tr><td>personas &gt; universal accounts</td><td>Identity is contextual and role-based.</td></tr>
+        <tr><td>projection &gt; apps</td><td>UI is a view over semantic objects, not the source of truth.</td></tr>
+        <tr><td>authority boundaries &gt; pure emergence</td><td>Peer emergence helps propagation, but governance requires explicit rules.</td></tr>
+      </table>
+    </section>
+
+    <section id="architecture">
+      <h2>3. Runtime Architecture</h2>
+      <div class="flow">
+        <div class="node">Physical<br><span class="small">BLE/NFC/Wi‑Fi/IPv6</span></div>
+        <div class="node">Distribution<br><span class="small">IPFS/libp2p/WebRTC</span></div>
+        <div class="node">Runtime<br><span class="small">Rust/WASM/SQLite/CRDT</span></div>
+        <div class="node">Cognition<br><span class="small">local AI/rules</span></div>
+        <div class="node">Projection<br><span class="small">HTML/PWA/API</span></div>
+        <div class="node">Anchor<br><span class="small">registry/ledger</span></div>
+      </div>
+      <pre>L0 Physical        BLE / NFC / Wi‑Fi / sensors / IPv6
+L1 Gateway         Caddy / NGINX
+L2 Messaging       NATS / MQTT
+L3 Runtime         Rust services
+L4 Execution       WASM sandbox
+L5 Memory          SQLite / DuckDB / CRDT
+L6 Peer Layer      libp2p / WebRTC / gossip
+L7 Static Memory   IPFS / signed manifests
+L8 AI Layer        local LLM / small models / rule engine
+L9 Projection      HTML / PWA / minimal JS
+L10 Supervision    systemd / OpenTelemetry-lite</pre>
+      <div class="callout">Canonical topology: authority nodes persist, peers distribute, browsers render, users compute locally.</div>
+    </section>
+
+    <section id="objects">
+      <h2>4. Universal Semantic Object Model</h2>
+      <pre>object:
+  id: irf:field:enschede:field_01
+  type: place.field
+  domain: football
+  version: 1
+
+  state:
+    availability: open
+    occupancy: 0
+    queue_count: 0
+
+  authority:
+    mode: local
+    owner: irf:node:field_01_authority
+    resolver: closest_valid_authority
+
+  capabilities:
+    - reserve_slot
+    - verify_presence
+    - host_lobby
+    - publish_summary
+
+  permissions:
+    visibility: proximity
+    write_policy: signed_nearby_persona
+    read_policy: explored_or_nearby
+
+  relationships:
+    nearby_nodes: []
+    active_sessions: []
+
+  memory:
+    ttl_raw_seconds: 600
+    compact_after_seconds: 60
+    anchor_policy: final_summary_only
+
+  ai:
+    readable: true
+    schema: irftek.object.v1
+    summary_fields:
+      - state
+      - authority
+      - capabilities
+      - permissions</pre>
+    </section>
+
+    <section id="authority">
+      <h2>5. Authority Resolution</h2>
+      <p>Authority resolution decides who owns truth for an object/action pair.</p>
+      <pre>fn resolve_authority(
+    object_id: ObjectId,
+    action: Action,
+    actor: Persona,
+    context: Context,
+) -> AuthorityDecision {
+    // Inputs:
+    // - signed identity
+    // - proximity proof
+    // - object authority declaration
+    // - local policy
+    // - trust history
+    // - freshness / expiry
+}</pre>
+      <pre>authority_decision:
+  allowed: true
+  winning_authority: irf:node:field_01
+  confidence: 0.93
+  reason:
+    - actor_signed
+    - actor_within_range
+    - field_node_is_local_authority
+    - action_allowed_by_policy
+  conflict_rule: local_authority_first</pre>
+      <table>
+        <tr><th>Object class</th><th>Authority source</th></tr>
+        <tr><td>Self/persona</td><td>Persona vault authority</td></tr>
+        <tr><td>Place</td><td>Local place node authority</td></tr>
+        <tr><td>Machine</td><td>IMM / node authority</td></tr>
+        <tr><td>Domain</td><td>Domain constitution</td></tr>
+        <tr><td>Public proof</td><td>Registry / ledger anchor</td></tr>
+      </table>
+    </section>
+
+    <section id="memory">
+      <h2>6. Memory, Compaction, Expiry</h2>
+      <div class="kernel" style="font-size:24px">raw data → event → state → summary → memory → anchor</div>
+      <table>
+        <tr><th>Stage</th><th>Storage</th><th>Purpose</th></tr>
+        <tr><td>Raw</td><td>short TTL</td><td>Temporary signal, usually discarded.</td></tr>
+        <tr><td>Event</td><td>JSONL append log</td><td>Signed action/change record.</td></tr>
+        <tr><td>State</td><td>SQLite current truth</td><td>Fast local coordination.</td></tr>
+        <tr><td>Summary</td><td>semantic memory</td><td>Compressed meaning for humans/AI.</td></tr>
+        <tr><td>Anchor</td><td>IPFS/registry/ledger</td><td>Permanent public proof only when needed.</td></tr>
+      </table>
+      <pre>ttl_policy:
+  raw_ble_ping: 30s
+  proximity_event: 10m
+  lobby_state: 6h
+  session_summary: 1y
+  public_proof: permanent_if_anchored</pre>
+    </section>
+
+    <section id="network">
+      <h2>7. Network + Distribution</h2>
+      <table>
+        <tr><th>Technology</th><th>Role</th><th>Not for</th></tr>
+        <tr><td>IPFS</td><td>Static memory: UI bundles, schemas, manifests, snapshots, datasets.</td><td>Live locks, safety-critical decisions, high-frequency state.</td></tr>
+        <tr><td>libp2p/WebRTC</td><td>Peer discovery, live peer cognition, gossip, local session sync.</td><td>Permanent authority by itself.</td></tr>
+        <tr><td>BLE/NFC</td><td>Physical proximity, identity hints, deliberate pairing/tap.</td><td>Heavy UI or database sync.</td></tr>
+        <tr><td>IPv6</td><td>Direct reachability for nodes.</td><td>Security or identity by itself.</td></tr>
+        <tr><td>NATS/MQTT</td><td>Local bus and embedded/event bridge.</td><td>Global public permanence.</td></tr>
+      </table>
+      <pre>static things → IPFS
+live things → WebRTC/libp2p
+local truth → authority nodes
+public truth → registry/ledger
+human view → browser
+AI view → semantic schema</pre>
+    </section>
+
+    <section id="projection">
+      <h2>8. Projection / UI</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Browser does</h3>
+          <ul>
+            <li>render semantic objects</li>
+            <li>cache static bundles/fragments</li>
+            <li>connect WebSocket/WebRTC</li>
+            <li>query local APIs</li>
+            <li>display AI-readable state</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Browser does not</h3>
+          <ul>
+            <li>own authority</li>
+            <li>hold permanent truth</li>
+            <li>govern domains</li>
+            <li>perform critical orchestration</li>
+            <li>store critical secrets by default</li>
+          </ul>
+        </div>
+      </div>
+      <pre>projection:
+  human:
+    - browser_ui
+    - mobile_pwa
+    - terminal_dashboard
+    - field_kiosk
+    - machine_screen
+    - ar_overlay
+  ai:
+    - yaml_state
+    - jsonl_events
+    - sqlite_tables
+    - markdown_rules</pre>
+    </section>
+
+    <section id="ai">
+      <h2>9. AI-Readable Runtime</h2>
+      <p>AI reads structured semantic objects, authority decisions, event streams, policies, memory summaries, and capability manifests. AI does not scrape opaque app state.</p>
+      <pre>ai_context:
+  task: summarize_lobby
+  objects:
+    - lobby_01
+    - field_01
+  authority_scope: local
+  privacy: local_only
+
+ai_result:
+  type: summary
+  confidence: 0.88
+  suggested_action: wait_for_two_more_players
+  writes_allowed: false</pre>
+      <table>
+        <tr><th>Tier</th><th>Runtime</th><th>Use</th></tr>
+        <tr><td>0</td><td>Rule engine</td><td>Deterministic local policy.</td></tr>
+        <tr><td>1</td><td>Small classifier/summarizer</td><td>Event compaction, anomaly detection.</td></tr>
+        <tr><td>2</td><td>Local LLM on IMM-X</td><td>Planning, explanation, query over semantic graph.</td></tr>
+        <tr><td>3</td><td>Optional external model</td><td>Never required for core function.</td></tr>
+      </table>
+    </section>
+
+    <section id="identity">
+      <h2>10. Identity + Personas</h2>
+      <p>No mandatory universal account. Humans operate through multiple contextual personas.</p>
+      <pre>persona:
+  id: irf:persona:football:local_hash
+  owner_vault: irf:vault:home_01
+  type: football_player
+  keys:
+    signing: ed25519_public_key
+  visibility: proximity
+  linked_devices:
+    - wristband_01
+    - phone_01
+  roles:
+    - player
+    - organizer
+  reputation:
+    domain: football
+    score_local: 0.84</pre>
+      <div class="pillrow">
+        <span class="pill">football persona</span>
+        <span class="pill">education persona</span>
+        <span class="pill">trade persona</span>
+        <span class="pill">culture persona</span>
+        <span class="pill">anonymous explorer</span>
+        <span class="pill">operator persona</span>
+      </div>
+    </section>
+
+    <section id="imm">
+      <h2>11. IMM / Machine Module Branch</h2>
+      <p>IMM is the machine-authority branch under the IrfTek kernel, not the whole system.</p>
+      <div class="grid three">
+        <div class="card"><h3>IMM-S</h3><p>Small edge node: ESP32-C3 / nRF52, BLE beacon, NFC optional, low-power identity and proximity events.</p></div>
+        <div class="card"><h3>IMM-M</h3><p>Local authority/runtime node: Raspberry Pi 5 / mini PC, Linux, Rust, SQLite, NATS/MQTT, Caddy, optional local AI.</p></div>
+        <div class="card"><h3>IMM-X</h3><p>Compute/cognition node: GPU box, Jetson, workstation, local model inference, semantic indexing, simulation.</p></div>
+      </div>
+      <pre>IrfTek Runtime Kernel
+  ↓
+Authority Nodes
+  ↓
+IMM as machine authority
+  ↓
+Tool Twin / Machine Twin
+  ↓
+ISL actions</pre>
+    </section>
+
+    <section id="domains">
+      <h2>12. Domain Instantiation</h2>
+      <div class="grid four">
+        <div class="card"><h3>Football United</h3><p>field → players → queue → session → proof → reputation</p></div>
+        <div class="card"><h3>Education</h3><p>classroom → students → lesson → attendance → proof → progress</p></div>
+        <div class="card"><h3>Trade</h3><p>shop → workers → tools → tasks → proof → reputation</p></div>
+        <div class="card"><h3>Culture</h3><p>community → archive → event → memory → lineage → public story</p></div>
+      </div>
+      <h3>Football MVP flow</h3>
+      <pre>player discovers field
+→ joins queue
+→ lobby reaches threshold
+→ field authority confirms open
+→ players commit nearby
+→ field locks slot
+→ BLE/NFC check-in
+→ match starts
+→ summary compacted</pre>
+    </section>
+
+    <section id="security">
+      <h2>13. Security + Governance</h2>
+      <pre>trust = signature + proximity + history + domain_permission + semantic_consistency</pre>
+      <div class="grid two">
+        <div class="card">
+          <h3>Threats</h3>
+          <ul>
+            <li>fake node</li><li>replay attack</li><li>proximity spoof</li><li>malicious plugin</li><li>stolen wristband</li><li>poisoned schema</li><li>hostile peer flood</li><li>malicious authority</li><li>AI-generated false summary</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Controls</h3>
+          <ul>
+            <li>Ed25519 signed events</li><li>NFC deliberate pairing</li><li>capability tokens</li><li>rate limiting</li><li>schema signatures</li><li>WASM sandbox</li><li>local revocation lists</li><li>content hashes</li><li>signed releases</li>
+          </ul>
+        </div>
+      </div>
+      <pre>governance:
+  domain: football
+  authority_scope: field_local
+  allowed_actions:
+    - join_queue
+    - verify_presence
+    - reserve_slot
+  trust_inputs:
+    - signature
+    - proximity
+    - prior_events
+    - persona_role
+  conflict_rule: local_authority_first
+  abuse_response:
+    - rate_limit
+    - quarantine
+    - require_nfc_tap</pre>
+    </section>
+
+    <section id="api">
+      <h2>14. Runtime APIs</h2>
+      <pre>GET  /objects/:id
+POST /events
+GET  /state/:object_id
+POST /authority/resolve
+GET  /memory/:object_id
+POST /compact
+GET  /schemas
+GET  /health
+GET  /peers
+WS   /events/subscribe</pre>
+      <h3>Event example</h3>
+      <pre>{
+  "type": "player.join_queue",
+  "object": "irf:lobby:field_01:1900",
+  "actor": "irf:persona:p102",
+  "timestamp": "2026-05-17T18:00:00Z",
+  "proof": {
+    "signature": "...",
+    "proximity": "ble_near"
+  }
+}</pre>
+    </section>
+
+    <section id="build">
+      <h2>15. Build Order</h2>
+      <ol>
+        <li>Kernel schema</li>
+        <li>Object store in SQLite</li>
+        <li>JSONL event log</li>
+        <li>Rust authority resolver</li>
+        <li>Basic HTML/PWA projection</li>
+        <li>NATS/MQTT local bus</li>
+        <li>BLE/NFC discovery prototype</li>
+        <li>Field authority node</li>
+        <li>Football lobby MVP</li>
+        <li>Memory compaction engine</li>
+        <li>Signed personas</li>
+        <li>IPFS schema/UI bundles</li>
+        <li>libp2p/WebRTC propagation</li>
+        <li>WASM plugin sandbox</li>
+        <li>Local AI summarizer</li>
+        <li>Education/trade/culture clones</li>
+      </ol>
+      <div class="callout"><strong>Do not start with:</strong> token, marketplace, complex AI, global governance, or full hardware ecosystem.</div>
+    </section>
+
+    <section id="open">
+      <h2>16. Open Research Problems</h2>
+      <table>
+        <tr><th>Priority</th><th>Problem</th><th>Why it blocks</th></tr>
+        <tr><td>1</td><td>Trust/auth semantics</td><td>Required for signed participation, reputation, and peer validation.</td></tr>
+        <tr><td>2</td><td>Semantic schema standardization</td><td>Required for AI-readable interoperability.</td></tr>
+        <tr><td>3</td><td>Peer bootstrap persistence</td><td>Required for network continuity without original node online.</td></tr>
+        <tr><td>4</td><td>CID/version lineage</td><td>Required for evolving IPFS objects and schema updates.</td></tr>
+        <tr><td>5</td><td>Hostile peer economics</td><td>Required for open swarm resilience.</td></tr>
+        <tr><td>6</td><td>Semantic conflict resolution</td><td>Required where CRDT structure conflicts with authority meaning.</td></tr>
+        <tr><td>7</td><td>Local AI interoperability</td><td>Required for Ollama, llama.cpp, WebNN, Transformers.js, and local models.</td></tr>
+        <tr><td>8</td><td>Proximity-proof hardware</td><td>Required to resist spoofing in high-trust use cases.</td></tr>
+      </table>
+    </section>
+
+    <footer class="footer">
+      <p><strong>Absolute reduction:</strong> local truth · peer spread · semantic memory · AI-readable reality.</p>
+      <p>Generated as a standalone HTML specification for IrfTek recursive structure and reduction.</p>
+    </footer>
+  </div>
+</body>
+</html>

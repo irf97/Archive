@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Operational Twin Substrate — IrfTek / ARGOS / Robodex</title>
+<style>
+:root{
+  --bg:#eef0ee; --paper:#f8f6ef; --ink:#161616; --soft:#3e4442; --muted:#7a817d;
+  --line:#c9d0ca; --accent:#2d4a5e; --accent2:#7b4b2d; --green:#3a6b4a; --red:#8a3a2a;
+  --panel:#ffffffaa; --code:#172025; --codeink:#e7f0ea;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 10% 5%,#dce6ee,transparent 35%),radial-gradient(circle at 90% 95%,#e8dccf,transparent 38%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+.layout{display:grid;grid-template-columns:280px 1fr;min-height:100vh}.side{position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--line);background:#eef0eee8;backdrop-filter:blur(12px);padding:24px}.brand{font-weight:800;font-size:20px;letter-spacing:-.02em;margin-bottom:4px}.sub{color:var(--muted);font-size:12px;margin-bottom:24px}.nav a{display:block;color:var(--soft);text-decoration:none;padding:8px 10px;border-left:2px solid transparent;font-size:14px}.nav a:hover{color:var(--accent);border-left-color:var(--accent);background:#fff7}.main{max-width:1120px;padding:44px 56px 96px}.hero{border-bottom:2px solid var(--ink);padding-bottom:34px;margin-bottom:42px}.kicker{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.22em;color:var(--accent);font-size:12px;font-weight:700}.hero h1{font-size:clamp(38px,6vw,68px);line-height:.96;margin:12px 0 18px;letter-spacing:-.04em}.hero p{font-size:19px;color:var(--soft);max-width:850px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{border:1px solid var(--line);background:#fff9;padding:7px 10px;border-radius:999px;font-size:12px;color:var(--soft)}
+section{margin:54px 0;padding-top:8px}.head{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:20px}.num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent);font-size:12px;font-weight:700}.head h2{margin:0;font-size:28px;letter-spacing:-.02em}.lead{color:var(--soft);font-size:16px;max-width:780px}.grid{display:grid;gap:16px}.cols2{grid-template-columns:repeat(2,minmax(0,1fr))}.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 12px 30px #00000010}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--soft)}.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:22px 0}.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px;font-size:13px;font-weight:650}.arrow{color:var(--accent);font-weight:900}.call{border-left:4px solid var(--green);background:#eef7ef;padding:16px;border-radius:12px;color:#193b24;margin:18px 0}.warn{border-left-color:var(--red);background:#f8e9e5;color:#4b1e16}pre{background:var(--code);color:var(--codeink);padding:18px;border-radius:16px;overflow:auto;font-size:13px;line-height:1.5}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}table{width:100%;border-collapse:collapse;background:#fff8;border:1px solid var(--line);border-radius:14px;overflow:hidden}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e8e4;color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.08em}td{color:var(--soft)}tr:last-child td{border-bottom:0}.diagram{background:#10191e;color:#e9f3ef;border-radius:20px;padding:22px;margin:20px 0;overflow:auto}.node{display:inline-block;border:1px solid #45616c;background:#1b2a31;border-radius:14px;padding:10px 12px;margin:6px}.node.a{border-color:#78b7d2}.node.b{border-color:#9ccf99}.node.c{border-color:#d8a06b}.footer{margin-top:60px;color:var(--muted);font-size:13px;text-align:center}@media(max-width:900px){.layout{grid-template-columns:1fr}.side{position:relative;height:auto}.main{padding:26px 20px}.cols2,.cols3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="side">
+  <div class="brand">Operational Twin</div>
+  <div class="sub">IrfTek / ARGOS / Robodex substrate spec</div>
+  <nav class="nav">
+    <a href="#thesis">Thesis</a><a href="#stack">Stack Relation</a><a href="#twin">Twin Layers</a><a href="#schema">Canonical Shape</a><a href="#flows">System Flows</a><a href="#ens">ENS Inputs</a><a href="#argos">ARGOS Role</a><a href="#robodex">Robodex Role</a><a href="#events">Event Loop</a><a href="#build">Build Order</a><a href="#guardrails">Guardrails</a>
+  </nav>
+</aside>
+<main class="main">
+  <div class="hero" id="thesis">
+    <div class="kicker">Digital twin substrate</div>
+    <h1>Robodex acts against a governed operational twin, not raw intention.</h1>
+    <p>The missing layer between research/governance and physical execution is a living site model: physical reality, hardware reality, software reality, workflow reality, and authority reality represented as convergent, auditable state.</p>
+    <div class="chips"><span class="chip">local-first</span><span class="chip">event-sourced</span><span class="chip">proof-fed</span><span class="chip">governed</span><span class="chip">robotics-ready</span><span class="chip">ENS → ARGOS → Twin → Robodex</span></div>
+  </div>
+
+  <section id="stack">
+    <div class="head"><span class="num">01</span><h2>Clean system relation</h2></div>
+    <div class="flow"><span class="step">ENS discovers knowledge</span><span class="arrow">→</span><span class="step">ARGOS approves truth</span><span class="arrow">→</span><span class="step">Twin represents reality</span><span class="arrow">→</span><span class="step">Robodex executes safely</span><span class="arrow">→</span><span class="step">ProofEvents update memory</span></div>
+    <table><tr><th>System</th><th>Primary job</th><th>Does not own</th></tr><tr><td>ENS Navigator</td><td>Research, expert discovery, sourced claims, operational templates.</td><td>Runtime authority or robot execution.</td></tr><tr><td>ARGOS</td><td>Memory, approvals, canons, operator state, governance, proposals.</td><td>Motor control or site geometry truth by itself.</td></tr><tr><td>Operational Twin</td><td>Current accepted model of site, hardware, software, workflows, authority.</td><td>Research sourcing or direct actuator control.</td></tr><tr><td>Robodex</td><td>Forge cartridges and execute/refuse missions against the twin.</td><td>Global memory, research governance, or social truth.</td></tr><tr><td>Convergent Cell</td><td>Event semantics, trust, projection, divergence, sync.</td><td>Domain-specific business logic.</td></tr></table>
+  </section>
+
+  <section id="twin">
+    <div class="head"><span class="num">02</span><h2>The five realities inside the twin</h2></div>
+    <div class="grid cols3">
+      <div class="card"><h3>Physical</h3><p>Zones, routes, dimensions, obstacles, fixtures, docks, geometry, affordances.</p></div>
+      <div class="card"><h3>Hardware</h3><p>Robots, sensors, devices, capabilities, limits, batteries, camera rigs, safety state.</p></div>
+      <div class="card"><h3>Software</h3><p>Services, APIs, queues, databases, credentials, permissions, integration endpoints.</p></div>
+      <div class="card"><h3>Workflow</h3><p>Tasks, handoffs, procedures, service flows, dependencies, evidence gates.</p></div>
+      <div class="card"><h3>Authority</h3><p>Roles, approvals, ownership, policy, escalation paths, autonomy boundaries.</p></div>
+      <div class="card"><h3>Runtime</h3><p>Telemetry, active missions, alerts, proofs, refusals, divergences, current projections.</p></div>
+    </div>
+  </section>
+
+  <section id="schema">
+    <div class="head"><span class="num">03</span><h2>Canonical twin document shape</h2></div>
+    <p class="lead">This is not the final schema; it is the bridge format that becomes validated WorldModel, HardwareSpec, deployment policy, service map, and forge request.</p>
+<pre><code>{
+  "schema_version": "irftek.operational_twin.v0",
+  "site": {
+    "site_id": "warehouse_a",
+    "site_type": "warehouse",
+    "coordinate_frame": "local_m",
+    "geometry": { "width_m": 40, "depth_m": 70 },
+    "zones": [],
+    "routes": [],
+    "fixtures": []
+  },
+  "hardware": {
+    "robots": [],
+    "devices": [],
+    "sensors": [],
+    "docks": [],
+    "capability_index": {}
+  },
+  "software": {
+    "services": [],
+    "apis": [],
+    "queues": [],
+    "permissions": [],
+    "integration_contracts": []
+  },
+  "operations": {
+    "workflows": [],
+    "roles": [],
+    "authority_graph": [],
+    "policies": [],
+    "autonomy_policy": {}
+  },
+  "runtime_state": {
+    "telemetry_refs": [],
+    "active_tasks": [],
+    "alerts": [],
+    "proof_event_refs": [],
+    "divergence_refs": []
+  },
+  "provenance": {
+    "ens_claim_refs": [],
+    "argos_approval_refs": [],
+    "factset_hash": "sha256:..."
+  }
+}</code></pre>
+  </section>
+
+  <section id="flows">
+    <div class="head"><span class="num">04</span><h2>End-to-end operating loop</h2></div>
+    <div class="diagram"><span class="node a">Research / chats / experts</span><span class="node">ENS claims + questions</span><span class="node b">ARGOS approval queue</span><span class="node">Approved site assumptions</span><span class="node c">Operational Twin projection</span><span class="node">Robodex forge</span><span class="node">WorldCartridge</span><span class="node">Guardian/runtime</span><span class="node">Adapters</span><span class="node b">Proof/refusal events</span><span class="node a">ARGOS memory + ENS outcomes</span></div>
+    <div class="call">Key principle: the twin is not static CAD. It is an evidence-backed, policy-governed projection that changes as facts, approvals, telemetry, and proofs arrive.</div>
+  </section>
+
+  <section id="ens">
+    <div class="head"><span class="num">05</span><h2>What ENS must provide</h2></div>
+    <table><tr><th>Data</th><th>Used by twin for</th></tr><tr><td>Experts</td><td>Credibility and domain-specific review paths.</td></tr><tr><td>Sources</td><td>Evidence for constraints, safety rules, standards, workflows.</td></tr><tr><td>Claims</td><td>Atomic facts that can become policies or assumptions after approval.</td></tr><tr><td>Questions</td><td>Unknowns that block deployment confidence.</td></tr><tr><td>Hypotheses</td><td>Candidate operating models to test in simulation or field trials.</td></tr><tr><td>Domain templates</td><td>Warehouse, clinic, restaurant, football pitch, factory baseline twins.</td></tr><tr><td>Outcomes</td><td>Evidence that a workflow or policy actually worked.</td></tr></table>
+  </section>
+
+  <section id="argos">
+    <div class="head"><span class="num">06</span><h2>What ARGOS must govern</h2></div>
+    <div class="grid cols2"><div class="card"><h3>Approval boundary</h3><p>No sourced claim, workflow, or autonomy rule becomes accepted twin truth without ARGOS policy.</p></div><div class="card"><h3>Memory lineage</h3><p>Every twin projection points back to events, sources, operator approvals, and factset hashes.</p></div><div class="card"><h3>Operator state</h3><p>Risky approvals can depend on fatigue, mode, or current operating context.</p></div><div class="card"><h3>Autonomy policy</h3><p>Low-risk updates may auto-apply; high-risk changes wait in queue.</p></div></div>
+  </section>
+
+  <section id="robodex">
+    <div class="head"><span class="num">07</span><h2>What Robodex consumes and emits</h2></div>
+    <div class="grid cols2"><div class="card"><h3>Consumes</h3><p>WorldModel, HardwareSpec, ForgeRequest, policies, telemetry, capability index, current twin state.</p></div><div class="card"><h3>Emits</h3><p>WorldCartridges, ProofEvents, RefusalEvents, telemetry-derived facts, transition observations, divergence signals.</p></div></div>
+<pre><code>twin_projection
+  → world_model.v1
+  → hardware_spec.v1
+  → cartridge_forge_request.v1
+  → forge
+  → world_cartridge.v1
+  → guardian/runtime
+  → proof/refusal/telemetry events
+  → twin_projection</code></pre>
+  </section>
+
+  <section id="events">
+    <div class="head"><span class="num">08</span><h2>Event-first twin updates</h2></div>
+    <p class="lead">The twin should be replayable. Current state is a projection over approved assumptions, observed facts, telemetry, and runtime proofs.</p>
+<pre><code>Event types:
+  ens.claim.approved
+  argos.policy.approved
+  twin.zone.created
+  twin.device.registered
+  twin.workflow.approved
+  robodex.cartridge.forged
+  robodex.mission.refused
+  robodex.task.completed
+  telemetry.device.observed
+  twin.divergence.detected
+
+Projection:
+  project(events, view="operational_twin")
+    → { state, factset_hash, evidence_refs, warnings }</code></pre>
+  </section>
+
+  <section id="build">
+    <div class="head"><span class="num">09</span><h2>Build order</h2></div>
+    <ol>
+      <li>Define <code>operational_twin.v0</code> bridge schema.</li>
+      <li>Map it deterministically to <code>WorldModel.v1</code>, <code>HardwareSpec.v1</code>, and <code>CartridgeForgeRequest.v1</code>.</li>
+      <li>Add ENS domain-template ingestion into ARGOS approval queue.</li>
+      <li>Implement twin projection from approved events.</li>
+      <li>Generate Robodex forge inputs from twin projection.</li>
+      <li>Feed Robodex proof/refusal events back into ARGOS and the twin.</li>
+      <li>Add Mission Control view: twin health, stale facts, unresolved divergences.</li>
+    </ol>
+  </section>
+
+  <section id="guardrails">
+    <div class="head"><span class="num">10</span><h2>Hard guardrails</h2></div>
+    <div class="call warn"><strong>No direct chat-to-robot path.</strong> Human or aen intent becomes a proposed event, not actuator authority.</div>
+    <table><tr><th>Guardrail</th><th>Reason</th></tr><tr><td>ENS cannot approve itself</td><td>Research evidence is not accepted truth until ARGOS policy allows it.</td></tr><tr><td>ARGOS cannot fake physical reality</td><td>Approved assumptions must still be checked against telemetry and Robodex refusals.</td></tr><tr><td>Twin cannot execute</td><td>It represents reality; Robodex executes/refuses.</td></tr><tr><td>Robodex cannot rewrite canon</td><td>It emits proof/refusal evidence; ARGOS governs memory promotion.</td></tr><tr><td>aen cannot bypass converge</td><td>Structured language is proposer input, not hidden authority.</td></tr></table>
+  </section>
+
+  <div class="footer">Operational Twin Substrate · single-file HTML spec · generated for IrfTek/ARGOS/Robodex planning</div>
+</main>
+</div>
+</body>
+</html>

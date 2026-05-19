@@ -1,0 +1,284 @@
+{
+  "projects": [
+    {
+      "id": "out-football-united",
+      "name": "Football United: Research-to-Implementation Outcomes",
+      "domains": [
+        "football united local-first social mesh"
+      ],
+      "goalType": "task graph",
+      "status": "active",
+      "tags": [
+        "local-first",
+        "p2p",
+        "mesh",
+        "edge devices",
+        "research-grounded"
+      ],
+      "tasks": [
+        {
+          "id": "task-fu-evidence-triage",
+          "title": "Stabilize evidence base and resolve rejected CRDT/gossip claims before using them in specs",
+          "detail": "Review rejected CRDT and epidemic-gossip claims against their cited primary sources, then either restore them with better source notes or keep them rejected and avoid depending on them.",
+          "domain": "football united local-first social mesh",
+          "status": "in_progress",
+          "priority": 5,
+          "sourceIds": [
+            "src-almeida-delta-crdt-2014",
+            "src-preguica-crdt-2018",
+            "src-demers-epidemic-1987"
+          ],
+          "claimIds": [
+            "claim-delta-crdt-small-messages",
+            "claim-crdt-convergence-properties",
+            "claim-rumor-needs-anti-entropy"
+          ],
+          "questionIds": [],
+          "dependsOn": [],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-selective-replication-spec",
+          "title": "Define selective replication and friend/acquaintance retention policy",
+          "detail": "Turn the approved SSB selective-replication claim into a concrete retention policy: friend data, acquaintance data, domain-node data, and eviction rules.",
+          "domain": "football united local-first social mesh",
+          "status": "backlog",
+          "priority": 5,
+          "sourceIds": [
+            "src-ssb-icn-2019"
+          ],
+          "claimIds": [
+            "claim-ssb-selective-replication-scales"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch"
+          ],
+          "dependsOn": [],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-ipv6-cga-identity-spec",
+          "title": "Specify IPv6 link-local identity and CGA verification boundary",
+          "detail": "Define which peer identity checks rely on CGA/RFC3972, what remains app-layer signed state, and what cannot be inferred from link-local addressing alone.",
+          "domain": "football united local-first social mesh",
+          "status": "backlog",
+          "priority": 5,
+          "sourceIds": [
+            "src-rfc3972-2005"
+          ],
+          "claimIds": [
+            "claim-cga-binds-key-to-ipv6"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch"
+          ],
+          "dependsOn": [],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-mobility-assumption-sheet",
+          "title": "Create pitch mobility and inter-contact assumption sheet",
+          "detail": "Document what the opportunistic network assumes about repeated co-presence, inter-contact time, and field-session duration, using the pocket-switched-network evidence as the starting constraint.",
+          "domain": "football united local-first social mesh",
+          "status": "in_progress",
+          "priority": 4,
+          "sourceIds": [
+            "src-pocket-switched-2005"
+          ],
+          "claimIds": [
+            "claim-intercontact-powerlaw"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch"
+          ],
+          "dependsOn": [],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T20:03:47.138Z"
+        },
+        {
+          "id": "task-fu-dtn-store-forward-design",
+          "title": "Design store-and-forward slice exchange for disconnected pitch sessions",
+          "detail": "Convert the DTN/store-and-forward claim into task-level mechanics: slice IDs, custody rules, expiry, resumability, and duplicate suppression.",
+          "domain": "football united local-first social mesh",
+          "status": "blocked",
+          "priority": 5,
+          "sourceIds": [
+            "src-opportunistic-dtn-2011"
+          ],
+          "claimIds": [
+            "claim-opportunistic-store-forward"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch"
+          ],
+          "dependsOn": [
+            "task-fu-mobility-assumption-sheet"
+          ],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-packet-header-spec",
+          "title": "Draft IPv6 UDP multicast slice-query packet header",
+          "detail": "Define exact header fields for asking nearby peers for missing slice IDs, including version, domain node scope, subject ID hash, slice ranges, nonce, and signature reference.",
+          "domain": "football united local-first social mesh",
+          "status": "blocked",
+          "priority": 5,
+          "sourceIds": [
+            "src-rfc3972-2005",
+            "src-opportunistic-dtn-2011"
+          ],
+          "claimIds": [
+            "claim-cga-binds-key-to-ipv6",
+            "claim-opportunistic-store-forward"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch"
+          ],
+          "dependsOn": [
+            "task-fu-ipv6-cga-identity-spec",
+            "task-fu-dtn-store-forward-design"
+          ],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-domain-node-compaction-state-machine",
+          "title": "Define Domain Node compaction state machine for rolling field history",
+          "detail": "Specify intake, witness aggregation, snapshot signing, pruning, and rejected-slice handling for static field anchors.",
+          "domain": "football united local-first social mesh",
+          "status": "blocked",
+          "priority": 5,
+          "sourceIds": [
+            "src-ssb-icn-2019",
+            "src-opportunistic-dtn-2011"
+          ],
+          "claimIds": [
+            "claim-ssb-selective-replication-scales",
+            "claim-opportunistic-store-forward"
+          ],
+          "questionIds": [
+            "q-bounded-crdt-pruning"
+          ],
+          "dependsOn": [
+            "task-fu-selective-replication-spec",
+            "task-fu-dtn-store-forward-design",
+            "task-fu-evidence-triage"
+          ],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-bounded-crdt-research",
+          "title": "Research bounded/compacting CRDT options for Last-K match state",
+          "detail": "Answer the open bounded-CRDT question with journal/source evidence before committing to a pruning strategy. This remains blocked on evidence triage because existing CRDT claims were rejected.",
+          "domain": "football united local-first social mesh",
+          "status": "blocked",
+          "priority": 5,
+          "sourceIds": [
+            "src-almeida-delta-crdt-2014",
+            "src-preguica-crdt-2018"
+          ],
+          "claimIds": [],
+          "questionIds": [
+            "q-bounded-crdt-pruning"
+          ],
+          "dependsOn": [
+            "task-fu-evidence-triage"
+          ],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-sybil-small-clique-risk",
+          "title": "Pressure-test social trust and small-clique sybil/collusion assumptions",
+          "detail": "Map which assumptions from social-graph sybil defenses still hold for small pitch-local friend groups, ghosts, and domain nodes.",
+          "domain": "football united local-first social mesh",
+          "status": "backlog",
+          "priority": 4,
+          "sourceIds": [
+            "src-sybilguard-2006"
+          ],
+          "claimIds": [
+            "claim-sybilguard-social-trust"
+          ],
+          "questionIds": [
+            "q-social-trust-sybil"
+          ],
+          "dependsOn": [],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-witness-coverage-simulation-plan",
+          "title": "Build witness-coverage simulation plan for selective replication plus DTN forwarding",
+          "detail": "Turn the hypothesis into falsifiable metrics: witness coverage, storage per node, delivery latency, friendless bootstrap rate, and adversarial clique failure modes.",
+          "domain": "football united local-first social mesh",
+          "status": "blocked",
+          "priority": 5,
+          "sourceIds": [
+            "src-ssb-icn-2019",
+            "src-pocket-switched-2005",
+            "src-opportunistic-dtn-2011"
+          ],
+          "claimIds": [
+            "claim-ssb-selective-replication-scales",
+            "claim-intercontact-powerlaw",
+            "claim-opportunistic-store-forward"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch",
+            "q-social-trust-sybil"
+          ],
+          "dependsOn": [
+            "task-fu-selective-replication-spec",
+            "task-fu-mobility-assumption-sheet",
+            "task-fu-dtn-store-forward-design",
+            "task-fu-sybil-small-clique-risk"
+          ],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        },
+        {
+          "id": "task-fu-expert-review-pack",
+          "title": "Assemble expert review pack from evidence-backed claims and open questions",
+          "detail": "Prepare a non-confidential review packet for distributed-systems/security/networking experts using only source-backed claims and current open questions.",
+          "domain": "football united local-first social mesh",
+          "status": "blocked",
+          "priority": 3,
+          "sourceIds": [
+            "src-ssb-icn-2019",
+            "src-rfc3972-2005",
+            "src-pocket-switched-2005",
+            "src-opportunistic-dtn-2011",
+            "src-sybilguard-2006"
+          ],
+          "claimIds": [
+            "claim-ssb-selective-replication-scales",
+            "claim-cga-binds-key-to-ipv6",
+            "claim-intercontact-powerlaw",
+            "claim-opportunistic-store-forward",
+            "claim-sybilguard-social-trust"
+          ],
+          "questionIds": [
+            "hyp-football-united-arch",
+            "q-bounded-crdt-pruning",
+            "q-social-trust-sybil"
+          ],
+          "dependsOn": [
+            "task-fu-packet-header-spec",
+            "task-fu-domain-node-compaction-state-machine",
+            "task-fu-witness-coverage-simulation-plan"
+          ],
+          "createdAt": "2026-05-18T19:25:26.2611731Z",
+          "updatedAt": "2026-05-18T19:25:26.2611731Z"
+        }
+      ],
+      "createdAt": "2026-05-18T14:00:14.165Z",
+      "updatedAt": "2026-05-18T20:03:47.138Z"
+    }
+  ]
+}

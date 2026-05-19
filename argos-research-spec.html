@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Argos Automated Research Spec</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #141a22;
+      --panel-2: #10161d;
+      --ink: #eef3f8;
+      --muted: #9ba9b7;
+      --line: #263241;
+      --accent: #d9b66f;
+      --ok: #55c796;
+      --warn: #e5a44f;
+      --bad: #e66c6c;
+      --blue: #78a9ff;
+      --shadow: 0 18px 55px rgba(0,0,0,.28);
+      --radius: 10px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(217,182,111,.08), transparent 260px),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    a { color: var(--blue); }
+    .wrap {
+      width: min(1180px, calc(100vw - 36px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: end;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 68px);
+      letter-spacing: 0;
+      line-height: .96;
+    }
+    .subtitle {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 16px 0 0;
+      font-size: 17px;
+    }
+    .meta {
+      display: grid;
+      gap: 8px;
+      min-width: 250px;
+      color: var(--muted);
+      font-size: 13px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+    .meta b { color: var(--ink); }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 18px 0 10px;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(12px);
+    }
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    section {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel) 88%, transparent);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 15px;
+      color: var(--accent);
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    p { margin: 8px 0; color: var(--muted); }
+    ul, ol { color: var(--muted); padding-left: 21px; }
+    li { margin: 6px 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      color: var(--ink);
+      background: #0a0f14;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 1px 5px;
+    }
+    pre {
+      overflow: auto;
+      background: #0a0f14;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: #dce6f1;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      padding: 14px;
+      min-width: 0;
+    }
+    .card strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .tagrow { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 8px;
+      color: var(--muted);
+      background: #0a0f14;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .ok { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); }
+    .warn { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 55%, var(--line)); }
+    .bad { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(120px, 1fr));
+      gap: 9px;
+      margin-top: 12px;
+    }
+    .step {
+      min-height: 116px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0b1118;
+      padding: 12px;
+    }
+    .step span {
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #17120a;
+      font-weight: 900;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .step b { display: block; margin-bottom: 5px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 8px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { color: var(--ink); }
+    .callout {
+      border-left: 4px solid var(--accent);
+      padding: 10px 12px;
+      background: rgba(217,182,111,.08);
+      color: var(--ink);
+      border-radius: 0 8px 8px 0;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 12px;
+      padding-top: 22px;
+    }
+    @media (max-width: 900px) {
+      header, .grid, .two, .flow { grid-template-columns: 1fr; }
+      nav { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Argos Automated Research Spec</h1>
+        <p class="subtitle">A local-first workflow for turning chats into durable research memory: source-backed domain knowledge, reviewable claims, executable outcomes, and agent jobs that never promote unsupported text into knowledge.</p>
+      </div>
+      <aside class="meta">
+        <div><b>System:</b> ENS Navigator / Argos</div>
+        <div><b>Storage:</b> local JSON via <code>server.mjs</code></div>
+        <div><b>Primary rule:</b> no unsourced claims in memory</div>
+        <div><b>Status:</b> implementation spec</div>
+      </aside>
+    </header>
+
+    <nav>
+      <a href="#goal">Goal</a>
+      <a href="#principles">Principles</a>
+      <a href="#flow">Research Flow</a>
+      <a href="#objects">Objects</a>
+      <a href="#apis">APIs</a>
+      <a href="#agents">Agent Contract</a>
+      <a href="#gates">Gates</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+
+    <section id="goal">
+      <h2>Goal</h2>
+      <p>Argos should use Codex as an automated research operator that improves memory from chats without confusing raw chat content, model output, and researched knowledge.</p>
+      <div class="callout">Stable memory is not a summary. Stable memory is a set of claims, sources, questions, decisions, and outcomes with explicit provenance and review status.</div>
+      <div class="tagrow">
+        <span class="tag ok">research backed</span>
+        <span class="tag ok">local first</span>
+        <span class="tag warn">human reviewable</span>
+        <span class="tag bad">no orphan claims</span>
+      </div>
+    </section>
+
+    <section id="principles">
+      <h2>Operating Principles</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Separate raw chat from memory</strong>
+          <p>Chats enter as intake records. They can propose hypotheses, constraints, or questions, but they do not become approved knowledge directly.</p>
+        </div>
+        <div class="card">
+          <strong>Research before promotion</strong>
+          <p>Claims need sources. Sources should prefer primary literature, standards, official docs, datasets, or public institutional records.</p>
+        </div>
+        <div class="card">
+          <strong>Outcomes are executable</strong>
+          <p>Domain Knowledge should produce tasks, dependency graphs, decision logs, and validation plans, not just long notes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <h2>Research Flow</h2>
+      <div class="flow">
+        <div class="step"><span>1</span><b>Chat Intake</b><p>Capture raw chat, project, timestamp, user intent, and candidate domain labels.</p></div>
+        <div class="step"><span>2</span><b>Extraction</b><p>Split chat into hypotheses, claims, questions, constraints, and decisions.</p></div>
+        <div class="step"><span>3</span><b>Research Job</b><p>Search sources for each candidate item. Unsupported items stay as hypotheses or needs-source tasks.</p></div>
+        <div class="step"><span>4</span><b>Ingest</b><p>Write structured sources, claims, questions, links, and people into Domain Knowledge.</p></div>
+        <div class="step"><span>5</span><b>Review</b><p>Move items through Inbox, Needs Source, Approved, Disputed, Rejected.</p></div>
+        <div class="step"><span>6</span><b>Outcomes</b><p>Create task graphs with evidence gates and dependencies.</p></div>
+      </div>
+    </section>
+
+    <section id="objects">
+      <h2>Core Objects</h2>
+      <table>
+        <thead>
+          <tr><th>Object</th><th>Purpose</th><th>Required fields</th><th>Promotion rule</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>chatIntake</code></td><td>Raw user conversation memory candidate.</td><td><code>id</code>, <code>project</code>, <code>text</code>, <code>createdAt</code></td><td>Never approved directly.</td></tr>
+          <tr><td><code>hypothesis</code></td><td>Unproven idea worth researching.</td><td><code>question</code>, <code>domain</code>, <code>tags</code></td><td>Becomes claim only after sources support it.</td></tr>
+          <tr><td><code>source</code></td><td>Primary evidence artifact.</td><td><code>title</code>, <code>url</code>, <code>type</code>, <code>domain</code></td><td>Can support multiple claims.</td></tr>
+          <tr><td><code>claim</code></td><td>Source-backed assertion.</td><td><code>claim</code>, <code>sourceIds</code>, <code>status</code></td><td>Exportable only when approved or explicitly marked unresolved.</td></tr>
+          <tr><td><code>question</code></td><td>Open research gap.</td><td><code>question</code>, <code>priority</code>, <code>domain</code></td><td>Can spawn research jobs or outcome tasks.</td></tr>
+          <tr><td><code>outcomeTask</code></td><td>Executable work item.</td><td><code>title</code>, <code>status</code>, <code>sourceIds</code>/<code>claimIds</code>, <code>dependsOn</code></td><td>Cannot move to Done without evidence.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="apis">
+      <h2>Local API Contract</h2>
+      <div class="grid two">
+        <div class="card">
+          <strong>Existing endpoints</strong>
+          <ul>
+            <li><code>GET /api/domain-knowledge</code></li>
+            <li><code>POST /api/domain-knowledge</code></li>
+            <li><code>POST /api/domain-knowledge/ingest</code></li>
+            <li><code>GET /api/outcomes</code></li>
+            <li><code>POST /api/outcomes</code></li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Recommended next endpoints</strong>
+          <ul>
+            <li><code>POST /api/research-jobs</code></li>
+            <li><code>GET /api/research-jobs/:id</code></li>
+            <li><code>POST /api/chat-intake</code></li>
+            <li><code>POST /api/memory/promote</code></li>
+            <li><code>POST /api/outcomes/from-review</code></li>
+          </ul>
+        </div>
+      </div>
+      <h3>Research Packet Shape</h3>
+      <pre><code>{
+  "origin": "research",
+  "aiGenerated": false,
+  "domains": [{ "id": "dom-...", "name": "..." }],
+  "sources": [{ "id": "src-...", "title": "...", "url": "...", "type": "paper|rfc|official|dataset" }],
+  "claims": [{ "id": "claim-...", "claim": "...", "sourceIds": ["src-..."], "status": "needs_review" }],
+  "questions": [{ "id": "q-...", "question": "...", "priority": 1 }],
+  "links": [{ "fromType": "claim", "fromId": "claim-...", "relation": "supported_by", "toType": "source", "toId": "src-..." }]
+}</code></pre>
+    </section>
+
+    <section id="agents">
+      <h2>Codex Agent Contract</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Extractor</strong>
+          <p>Turns chats into candidate objects. Must label unsupported ideas as hypotheses or questions.</p>
+        </div>
+        <div class="card">
+          <strong>Researcher</strong>
+          <p>Finds primary sources, records URLs, extracts minimal evidence notes, and returns structured packets.</p>
+        </div>
+        <div class="card">
+          <strong>Pressure Tester</strong>
+          <p>Searches for contradictions, weak assumptions, missing controls, and boundary conditions.</p>
+        </div>
+        <div class="card">
+          <strong>Outcome Builder</strong>
+          <p>Creates task graphs from approved claims, open questions, disputed items, and needs-source items.</p>
+        </div>
+        <div class="card">
+          <strong>Memory Promoter</strong>
+          <p>Promotes only reviewed, sourced, stable items into long-term Argos memory.</p>
+        </div>
+        <div class="card">
+          <strong>Auditor</strong>
+          <p>Reports orphan claims, stale sources, broken links, uncited outcome tasks, and inconsistent statuses.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gates">
+      <h2>Quality Gates</h2>
+      <table>
+        <thead>
+          <tr><th>Gate</th><th>Pass condition</th><th>Fail action</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Source gate</td><td>Claim has at least one source ID and source URL.</td><td>Move to <code>needs_source</code>.</td></tr>
+          <tr><td>Primary-source gate</td><td>Source type is paper, RFC, official doc, dataset, or institutional page.</td><td>Keep as hypothesis or low-confidence claim.</td></tr>
+          <tr><td>Contradiction gate</td><td>No approved contradictory claim without a dispute link.</td><td>Create disputed review task.</td></tr>
+          <tr><td>Outcome gate</td><td>Task has evidence and completed dependencies.</td><td>Block movement to Done.</td></tr>
+          <tr><td>Memory gate</td><td>Approved status, evidence, provenance, and no unresolved contradiction.</td><td>Do not promote to stable memory.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="roadmap">
+      <h2>Implementation Roadmap</h2>
+      <ol>
+        <li>Add <code>chat-intake.json</code> and <code>research-jobs.json</code> stores beside current data files.</li>
+        <li>Add server endpoints for intake, job creation, job status, and promotion audit.</li>
+        <li>Add an Argos Memory page or subtab showing raw chat candidates, extracted hypotheses, and promotion status.</li>
+        <li>Add a deterministic audit runner: orphan claims, missing sources, stale source URLs, uncited outcomes, unresolved disputes.</li>
+        <li>Wire Codex job execution with strict output schema and provenance labels.</li>
+        <li>Make Outcomes able to spawn research jobs from blocked tasks and write results back into Domain Knowledge.</li>
+      </ol>
+    </section>
+
+    <footer>
+      Local file: <code>argos-research-spec.html</code>. This is an implementation spec for the local Argos/ENS Navigator workspace.
+    </footer>
+  </div>
+</body>
+</html>

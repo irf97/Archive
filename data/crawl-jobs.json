@@ -1,0 +1,299 @@
+[
+  {
+    "id": "crawl-mp91kib7-pwvlf",
+    "status": "requested",
+    "seek": {
+      "use_case": "Find experts on PARP resistance in ovarian cancer",
+      "domain": "ovarian cancer / PARP resistance",
+      "geography": "US and Europe",
+      "expert_depth": "researcher | medical oncologist",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T00:33:20.563Z",
+    "updatedAt": "2026-05-17T00:33:20.563Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp91kib7-pwvlf.\n\nKnowledge need:\n{\n  \"use_case\": \"Find experts on PARP resistance in ovarian cancer\",\n  \"domain\": \"ovarian cancer / PARP resistance\",\n  \"geography\": \"US and Europe\",\n  \"expert_depth\": \"researcher | medical oncologist\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp91kib7-pwvlf\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n"
+  },
+  {
+    "id": "crawl-mp91lvxj-z5f9e",
+    "status": "requested",
+    "seek": {
+      "use_case": "Find experts on KRAS G12C resistance mechanisms in non-small cell lung cancer",
+      "domain": "NSCLC / KRAS G12C / targeted therapy resistance",
+      "geography": "US, Europe, and Asia",
+      "expert_depth": "translational researcher | thoracic oncologist",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info",
+        "unpublished trial data"
+      ],
+      "output": "catalog",
+      "max_experts": 15
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T00:34:24.871Z",
+    "updatedAt": "2026-05-17T00:34:24.871Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp91lvxj-z5f9e.\n\nKnowledge need:\n{\n  \"use_case\": \"Find experts on KRAS G12C resistance mechanisms in non-small cell lung cancer\",\n  \"domain\": \"NSCLC / KRAS G12C / targeted therapy resistance\",\n  \"geography\": \"US, Europe, and Asia\",\n  \"expert_depth\": \"translational researcher | thoracic oncologist\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\",\n    \"unpublished trial data\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 15\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp91lvxj-z5f9e\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n"
+  },
+  {
+    "id": "crawl-mp91xblh-lifqn",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: football transfer market laws",
+      "domain": "football transfer market laws",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T00:43:18.389Z",
+    "updatedAt": "2026-05-17T00:43:18.392Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp91xblh-lifqn.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: football transfer market laws\",\n  \"domain\": \"football transfer market laws\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp91xblh-lifqn\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp91xblm-zr835",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: football transfer market laws",
+      "domain": "football transfer market laws",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T00:43:18.394Z",
+    "updatedAt": "2026-05-17T00:43:18.396Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp91xblm-zr835.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: football transfer market laws\",\n  \"domain\": \"football transfer market laws\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp91xblm-zr835\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp91xfu6-7eno1",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: football transfer market laws",
+      "domain": "football transfer market laws",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T00:43:23.886Z",
+    "updatedAt": "2026-05-17T00:43:23.888Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp91xfu6-7eno1.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: football transfer market laws\",\n  \"domain\": \"football transfer market laws\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp91xfu6-7eno1\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp91xfua-xoboi",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: football transfer market laws",
+      "domain": "football transfer market laws",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T00:43:23.890Z",
+    "updatedAt": "2026-05-17T00:43:23.893Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp91xfua-xoboi.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: football transfer market laws\",\n  \"domain\": \"football transfer market laws\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp91xfua-xoboi\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp9tb6pt-txvlr",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: Nanotechnology drone shield",
+      "domain": "Nanotechnology drone shield",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T13:29:54.881Z",
+    "updatedAt": "2026-05-17T13:29:54.884Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp9tb6pt-txvlr.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: Nanotechnology drone shield\",\n  \"domain\": \"Nanotechnology drone shield\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp9tb6pt-txvlr\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp9tb6py-6mw2e",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: Nanotechnology drone shield",
+      "domain": "Nanotechnology drone shield",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T13:29:54.886Z",
+    "updatedAt": "2026-05-17T13:29:54.888Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp9tb6py-6mw2e.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: Nanotechnology drone shield\",\n  \"domain\": \"Nanotechnology drone shield\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp9tb6py-6mw2e\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp9teul0-8do84",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find experts on nanotechnology applied to life expectancy and healthspan",
+      "domain": "nanotechnology / life expectancy / healthspan",
+      "geography": "global",
+      "expert_depth": "researcher | founder | clinician | regulator | investor",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 3
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T13:32:45.780Z",
+    "updatedAt": "2026-05-17T13:32:45.782Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp9teul0-8do84.\n\nKnowledge need:\n{\n  \"use_case\": \"Find experts on nanotechnology applied to life expectancy and healthspan\",\n  \"domain\": \"nanotechnology / life expectancy / healthspan\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | founder | clinician | regulator | investor\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 3\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp9teul0-8do84\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "OPENAI_API_KEY is not set on the server."
+  },
+  {
+    "id": "crawl-mp9uaukh-806r0",
+    "status": "completed",
+    "seek": {
+      "use_case": "Find experts on p2p beacon data transfer",
+      "domain": "p2p beacon data transfer",
+      "geography": "global",
+      "expert_depth": "researcher | engineer | protocol designer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "output": "catalog",
+      "max_experts": 3
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T13:57:38.753Z",
+    "updatedAt": "2026-05-17T14:03:20.529Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mp9uaukh-806r0.\n\nKnowledge need:\n{\n  \"use_case\": \"Find experts on p2p beacon data transfer\",\n  \"domain\": \"p2p beacon data transfer\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | engineer | protocol designer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"output\": \"catalog\",\n  \"max_experts\": 3\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mp9uaukh-806r0\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "ingested": 3
+  },
+  {
+    "id": "crawl-mpa2oh4s-3n3tm",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: NIche uir searcihing nfor",
+      "domain": "NIche uir searcihing nfor",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "tags": [
+        "niche uir searcihing nfor",
+        "niche",
+        "uir",
+        "searcihing",
+        "nfor"
+      ],
+      "tag_groups": {
+        "topic": [],
+        "method": [],
+        "domain": [],
+        "geo": [],
+        "institution": [],
+        "archetype": [],
+        "compliance": [],
+        "source": []
+      },
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T17:52:11.452Z",
+    "updatedAt": "2026-05-17T17:52:11.806Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mpa2oh4s-3n3tm.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: NIche uir searcihing nfor\",\n  \"domain\": \"NIche uir searcihing nfor\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"tags\": [\n    \"niche uir searcihing nfor\",\n    \"niche\",\n    \"uir\",\n    \"searcihing\",\n    \"nfor\"\n  ],\n  \"tag_groups\": {\n    \"topic\": [],\n    \"method\": [],\n    \"domain\": [],\n    \"geo\": [],\n    \"institution\": [],\n    \"archetype\": [],\n    \"compliance\": [],\n    \"source\": []\n  },\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mpa2oh4s-3n3tm\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"tag_groups\": {\n        \"topic\": [\"logical tags derived from the niche\"],\n        \"method\": [\"approach or method tags\"],\n        \"domain\": [\"field or specialty tags\"],\n        \"geo\": [\"location tags\"],\n        \"institution\": [\"organization tags\"],\n        \"archetype\": [\"role tags\"],\n        \"compliance\": [\"boundary tags\"],\n        \"source\": [\"paper | profile | guideline | podcast | conference | github | patent | web\"]\n      },\n      \"tags\": [\"flat union of the tag_groups values\"],\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "C:\\Users\\irfan\\AppData\\Roaming\\npm\\codex.ps1 : Cannot process argument because the value of argument \"name\" is not \r\nvalid. Change the value of the \"name\" argument and run the operation again.\r\n    + CategoryInfo          : InvalidArgument: (:) [codex.ps1], PSArgumentException\r\n    + FullyQualifiedErrorId : Argument,codex.ps1"
+  },
+  {
+    "id": "crawl-mpa2ohep-mdgw8",
+    "status": "failed",
+    "seek": {
+      "use_case": "Find compliant expert-call candidates for: NIche uir searcihing nfor",
+      "domain": "NIche uir searcihing nfor",
+      "geography": "global",
+      "expert_depth": "researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer",
+      "exclusion": [
+        "current employees",
+        "MNPI / confidential info"
+      ],
+      "tags": [
+        "niche uir searcihing nfor",
+        "niche",
+        "uir",
+        "searcihing",
+        "nfor"
+      ],
+      "tag_groups": {
+        "topic": [],
+        "method": [],
+        "domain": [],
+        "geo": [],
+        "institution": [],
+        "archetype": [],
+        "compliance": [],
+        "source": []
+      },
+      "output": "catalog",
+      "max_experts": 12
+    },
+    "ingestUrl": "http://127.0.0.1:8787/api/experts",
+    "queryUrl": "http://127.0.0.1:8787/api/experts",
+    "createdAt": "2026-05-17T17:52:11.809Z",
+    "updatedAt": "2026-05-17T17:52:12.004Z",
+    "prompt": "You are running Argos Expert Radar crawl job crawl-mpa2ohep-mdgw8.\n\nKnowledge need:\n{\n  \"use_case\": \"Find compliant expert-call candidates for: NIche uir searcihing nfor\",\n  \"domain\": \"NIche uir searcihing nfor\",\n  \"geography\": \"global\",\n  \"expert_depth\": \"researcher | medical oncologist | urologic oncologist | surgeon | regulator | buyer\",\n  \"exclusion\": [\n    \"current employees\",\n    \"MNPI / confidential info\"\n  ],\n  \"tags\": [\n    \"niche uir searcihing nfor\",\n    \"niche\",\n    \"uir\",\n    \"searcihing\",\n    \"nfor\"\n  ],\n  \"tag_groups\": {\n    \"topic\": [],\n    \"method\": [],\n    \"domain\": [],\n    \"geo\": [],\n    \"institution\": [],\n    \"archetype\": [],\n    \"compliance\": [],\n    \"source\": []\n  },\n  \"output\": \"catalog\",\n  \"max_experts\": 12\n}\n\nCrawl public sources only:\n- academic profiles and hospital profiles\n- guidelines and clinical trial pages\n- conference talks and abstracts\n- PubMed / papers\n- podcasts and interviews\n- public expert-network snippets\n- regulatory or court filings only when relevant\n\nExclude:\n- current employees when the target company is material to the decision\n- MNPI, confidential patient details, private trial data, or non-public commercial data\n\nReturn only JSON in this shape, then POST it to http://127.0.0.1:8787/api/experts:\n\n{\n  \"crawl_job_id\": \"crawl-mpa2ohep-mdgw8\",\n  \"experts\": [\n    {\n      \"name\": \"Expert Name, MD\",\n      \"cancer_type\": \"Specific cancer / niche\",\n      \"domain\": \"clinical / surgical / translational / market / policy domain\",\n      \"geography\": \"where expertise matters\",\n      \"institution\": \"current public affiliation if relevant\",\n      \"archetype\": \"medical oncologist | surgeon | researcher | regulator | buyer | ...\",\n      \"tag_groups\": {\n        \"topic\": [\"logical tags derived from the niche\"],\n        \"method\": [\"approach or method tags\"],\n        \"domain\": [\"field or specialty tags\"],\n        \"geo\": [\"location tags\"],\n        \"institution\": [\"organization tags\"],\n        \"archetype\": [\"role tags\"],\n        \"compliance\": [\"boundary tags\"],\n        \"source\": [\"paper | profile | guideline | podcast | conference | github | patent | web\"]\n      },\n      \"tags\": [\"flat union of the tag_groups values\"],\n      \"evidence_links\": [\"https://source.example\"],\n      \"likely_network\": \"Direct | GLG | AlphaSights | Guidepoint | Third Bridge | Dialectica | Tegus | Atheneum | Techspert | Other\",\n      \"contact_route\": \"best compliant route\",\n      \"thesis_fit\": \"decision this expert can de-risk\",\n      \"niche\": \"one-line niche\",\n      \"approach\": \"how this expert approaches the niche differently\",\n      \"query_terms\": [\"terms that should find this expert later\"],\n      \"questions_to_ask\": [\"high-value compliant question\"],\n      \"compliance_flags\": \"explicit boundaries\",\n      \"call_value_estimate\": 700,\n      \"scores\": {\n        \"relevance\": 0,\n        \"recency\": 0,\n        \"decision_proximity\": 0,\n        \"independence\": 0,\n        \"accessibility\": 0,\n        \"risk\": 0\n      }\n    }\n  ]\n}\n",
+    "error": "C:\\Users\\irfan\\AppData\\Roaming\\npm\\codex.ps1 : Cannot process argument because the value of argument \"name\" is not \r\nvalid. Change the value of the \"name\" argument and run the operation again.\r\n    + CategoryInfo          : InvalidArgument: (:) [codex.ps1], PSArgumentException\r\n    + FullyQualifiedErrorId : Argument,codex.ps1"
+  }
+]

@@ -1,0 +1,280 @@
+{
+  "twins": [
+    {
+      "id": "twin-football-pitch-local-mesh",
+      "name": "Football United: Operational Twin",
+      "siteId": "football_pitch_local_mesh",
+      "siteType": "football_pitch",
+      "status": "review",
+      "domains": [
+        "football united local-first social mesh"
+      ],
+      "tags": [
+        "operational twin",
+        "robodex bridge",
+        "argos governed",
+        "local-first"
+      ],
+      "sourceIds": [
+        "src-ssb-icn-2019",
+        "src-rfc3972-2005",
+        "src-pocket-switched-2005",
+        "src-opportunistic-dtn-2011",
+        "src-sybilguard-2006"
+      ],
+      "claimIds": [
+        "claim-ssb-selective-replication-scales",
+        "claim-cga-binds-key-to-ipv6",
+        "claim-intercontact-powerlaw",
+        "claim-opportunistic-store-forward",
+        "claim-sybilguard-social-trust"
+      ],
+      "questionIds": [
+        "hyp-football-united-arch"
+      ],
+      "outcomeProjectIds": [
+        "out-football-united"
+      ],
+      "provenance": {
+        "origin": "operator_projection",
+        "note": "This is an operational projection from approved ENS Domain Knowledge and local architecture specs. Geometry, hardware inventory, and policy parameters still require site validation before runtime use."
+      },
+      "realities": {
+        "physical": {
+          "zones": [
+            {
+              "id": "field_zone",
+              "class": "football_pitch",
+              "center_m": [
+                0,
+                0
+              ],
+              "policy_tags": [
+                "human_dense",
+                "public_play_area"
+              ]
+            },
+            {
+              "id": "domain_node_anchor",
+              "class": "field_beacon_zone",
+              "center_m": [
+                0,
+                -4
+              ],
+              "policy_tags": [
+                "trusted_anchor",
+                "one_way_trust"
+              ]
+            },
+            {
+              "id": "sideline_sync_zone",
+              "class": "edge_sync_zone",
+              "center_m": [
+                0,
+                -10
+              ],
+              "policy_tags": [
+                "opportunistic_sync"
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "id": "local_presence_route",
+              "from": "field_zone",
+              "to": "domain_node_anchor",
+              "class": "peer_discovery_route"
+            }
+          ],
+          "fixtures": [
+            {
+              "id": "domain_node_001",
+              "class": "static_domain_node",
+              "zone": "domain_node_anchor"
+            }
+          ]
+        },
+        "hardware": {
+          "robots": [],
+          "devices": [
+            {
+              "id": "mobile_peer_device",
+              "class": "smartphone",
+              "capabilities": [
+                "nfc_handshake",
+                "ble_transfer",
+                "wifi_aware_transfer"
+              ]
+            },
+            {
+              "id": "domain_node_001",
+              "class": "field_anchor",
+              "capabilities": [
+                "local_witness_storage",
+                "opportunistic_relay"
+              ]
+            }
+          ],
+          "fixtures": []
+        },
+        "software": {
+          "services": [
+            {
+              "id": "ens_argos_bridge",
+              "class": "local_governance_bridge",
+              "role": "approved_twin_projection"
+            }
+          ],
+          "apis": [
+            {
+              "id": "robodex_forge_input",
+              "class": "json_contract",
+              "schemas": [
+                "HardwareSpec.v1",
+                "WorldModel.v1",
+                "CartridgeForgeRequest.v1"
+              ]
+            }
+          ],
+          "queues": [
+            {
+              "id": "proof_event_queue",
+              "class": "local_first_event_queue"
+            }
+          ],
+          "permissions": [
+            {
+              "id": "operator_approval_required",
+              "class": "approval_gate",
+              "authority": "ARGOS"
+            }
+          ]
+        },
+        "social": {
+          "roles": [
+            {
+              "id": "operator",
+              "class": "human_operator"
+            },
+            {
+              "id": "player_peer",
+              "class": "participant"
+            }
+          ],
+          "authority": [
+            {
+              "id": "argos_canon",
+              "class": "approval_authority",
+              "scope": "claims, policies, twin promotion"
+            }
+          ],
+          "policies": [
+            {
+              "id": "public_sources_only",
+              "class": "research_policy",
+              "rule": "Only source-backed knowledge may promote twin assumptions."
+            },
+            {
+              "id": "field_validation_required",
+              "class": "site_policy",
+              "rule": "Operational geometry and hardware facts require site validation before active execution."
+            }
+          ],
+          "workflows": [
+            {
+              "id": "survey_peer_presence",
+              "verb": "NAVIGATE_TO",
+              "archetype": "navigate_to",
+              "targetZone": "field_zone",
+              "operatorRole": "operator"
+            }
+          ]
+        },
+        "runtime": {
+          "activeTasks": [],
+          "alerts": [],
+          "telemetry": []
+        }
+      },
+      "contracts": {
+        "isaacSim": {
+          "schema_version": "IsaacSimSimulationContract.v1",
+          "status": "operator_supplied",
+          "provenance": {
+            "origin": "operator_note",
+            "verification": "not_independently_verified"
+          },
+          "fileGroups": [
+            {
+              "id": "core_scene",
+              "label": "Core scene and control",
+              "required": true,
+              "extensions": [
+                ".usd",
+                ".usda",
+                ".usdc",
+                ".py"
+              ],
+              "purpose": "Scene, robot, asset description, control scripts, reinforcement learning logic, and automation."
+            },
+            {
+              "id": "robot_kinematics",
+              "label": "Robot and kinematic descriptions",
+              "required": true,
+              "extensions": [
+                ".urdf",
+                ".mjcf",
+                ".yaml"
+              ],
+              "purpose": "Robot model import, articulation/biomechanics models, ROS bridge, sensor, and camera configuration."
+            },
+            {
+              "id": "mesh_cad",
+              "label": "3D meshes and CAD imports",
+              "required": false,
+              "extensions": [
+                ".fbx",
+                ".obj",
+                ".gltf",
+                ".glb",
+                ".stl"
+              ],
+              "purpose": "Animated assets, static props, efficient scene assets, and CAD/collision geometry."
+            },
+            {
+              "id": "visual_physics_surfaces",
+              "label": "Visuals and physics surfaces",
+              "required": false,
+              "extensions": [
+                ".mdl",
+                ".png",
+                ".jpg",
+                ".dds",
+                ".vdb"
+              ],
+              "purpose": "Materials, surface/friction definitions, textures, GPU texture assets, and volumetric effects."
+            },
+            {
+              "id": "launch_system",
+              "label": "Launch and system scripts",
+              "required": false,
+              "extensions": [
+                ".sh",
+                ".bat"
+              ],
+              "purpose": "Linux/headless launches, Windows startup scripts, and environment setup."
+            }
+          ],
+          "setupQuestions": [
+            "What type of robot is being simulated?",
+            "Which tool produced the original robot model?",
+            "Is ROS or ROS 2 connected to the simulation?"
+          ],
+          "artifacts": []
+        }
+      },
+      "createdAt": "2026-05-19T00:00:00.000Z",
+      "updatedAt": "2026-05-19T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "view-ai-top",
+    "name": "AI Top 1%",
+    "search": "",
+    "filters": {
+      "field": [
+        "artificial intelligence"
+      ],
+      "subfield": [],
+      "topic": [],
+      "method": [],
+      "domain": [],
+      "geo": [],
+      "institution": [],
+      "archetype": [],
+      "rank_signal": [
+        "top 1 percent"
+      ],
+      "contactability": [],
+      "compliance": [],
+      "source": []
+    },
+    "limit": "50",
+    "createdAt": "2026-05-18T01:56:13.027Z",
+    "updatedAt": "2026-05-18T01:56:13.027Z"
+  },
+  {
+    "id": "view-biotech-rd",
+    "name": "Biotech R&D",
+    "search": "",
+    "filters": {
+      "field": [
+        "biotech r&d"
+      ],
+      "subfield": [],
+      "topic": [],
+      "method": [],
+      "domain": [],
+      "geo": [],
+      "institution": [],
+      "archetype": [],
+      "rank_signal": [],
+      "contactability": [],
+      "compliance": [],
+      "source": []
+    },
+    "limit": "50",
+    "createdAt": "2026-05-17T21:58:49.923Z",
+    "updatedAt": "2026-05-17T21:58:49.923Z"
+  },
+  {
+    "id": "view-cs-top",
+    "name": "Computer Science Top 1%",
+    "search": "",
+    "filters": {
+      "field": [
+        "computer science"
+      ],
+      "subfield": [],
+      "topic": [],
+      "method": [],
+      "domain": [],
+      "geo": [],
+      "institution": [],
+      "archetype": [],
+      "rank_signal": [
+        "top 1 percent"
+      ],
+      "contactability": [],
+      "compliance": [],
+      "source": []
+    },
+    "limit": "50",
+    "createdAt": "2026-05-18T01:54:26.771Z",
+    "updatedAt": "2026-05-18T01:54:26.771Z"
+  },
+  {
+    "id": "view-contactable",
+    "name": "Contactable",
+    "search": "",
+    "filters": {
+      "field": [],
+      "subfield": [],
+      "topic": [],
+      "method": [],
+      "domain": [],
+      "geo": [],
+      "institution": [],
+      "archetype": [],
+      "rank_signal": [],
+      "contactability": [
+        "direct"
+      ],
+      "compliance": [],
+      "source": []
+    },
+    "limit": "50",
+    "createdAt": "2026-05-17T21:58:49.923Z",
+    "updatedAt": "2026-05-17T21:58:49.923Z"
+  },
+  {
+    "id": "view-nano-top",
+    "name": "Nanotechnology Top 1%",
+    "search": "",
+    "filters": {
+      "field": [
+        "nanotechnology"
+      ],
+      "subfield": [],
+      "topic": [],
+      "method": [],
+      "domain": [],
+      "geo": [],
+      "institution": [],
+      "archetype": [],
+      "rank_signal": [
+        "top 1 percent"
+      ],
+      "contactability": [],
+      "compliance": [],
+      "source": []
+    },
+    "limit": "50",
+    "createdAt": "2026-05-17T21:58:49.923Z",
+    "updatedAt": "2026-05-17T21:58:49.923Z"
+  },
+  {
+    "id": "view-neuro-top",
+    "name": "Neuroscience Top 1%",
+    "search": "",
+    "filters": {
+      "field": [
+        "neuroscience"
+      ],
+      "subfield": [],
+      "topic": [],
+      "method": [],
+      "domain": [],
+      "geo": [],
+      "institution": [],
+      "archetype": [],
+      "rank_signal": [
+        "top 1 percent"
+      ],
+      "contactability": [],
+      "compliance": [],
+      "source": []
+    },
+    "limit": "50",
+    "createdAt": "2026-05-17T21:58:49.923Z",
+    "updatedAt": "2026-05-17T21:58:49.923Z"
+  }
+]

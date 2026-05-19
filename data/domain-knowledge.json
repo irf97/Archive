@@ -1,0 +1,4092 @@
+{
+  "domains": [
+    {
+      "summary": "Research-backed notes and hypotheses for a decentralized, local-first social mesh for football pitches.",
+      "status": "approved",
+      "tags": [
+        "local-first",
+        "p2p",
+        "mesh",
+        "edge devices",
+        "sports",
+        "football united local-first social mesh"
+      ],
+      "name": "Football United: local-first social mesh",
+      "id": "dom-football-united-mesh",
+      "title": "Football United: local-first social mesh",
+      "text": "Research-backed notes and hypotheses for a decentralized, local-first social mesh for football pitches.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "",
+      "provenance": {
+        "origin": "research"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "id": "dom-isaac-sim-simulation-workflow",
+      "name": "Isaac Sim simulation workflow",
+      "tags": [
+        "isaac sim",
+        "omniverse",
+        "simulation",
+        "robotics",
+        "digital twin",
+        "file formats",
+        "isaac sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people"
+      },
+      "summary": "Source-backed file, conversion, robot import, and launch requirements for NVIDIA Isaac Sim simulation workflows.",
+      "status": "approved",
+      "title": "Isaac Sim simulation workflow",
+      "text": "Source-backed file, conversion, robot import, and launch requirements for NVIDIA Isaac Sim simulation workflows.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "dom-local-argos-research-and-memory-workflow",
+      "name": "ARGOS research and memory workflow",
+      "summary": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "status": "needs_review",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory",
+        "argos research and memory workflow"
+      ],
+      "title": "ARGOS research and memory workflow",
+      "text": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "dom-local-ens-navigator-local-architecture",
+      "name": "ENS Navigator local architecture",
+      "summary": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "status": "needs_review",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory",
+        "ens navigator local architecture"
+      ],
+      "title": "ENS Navigator local architecture",
+      "text": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "dom-local-operational-twin-substrate",
+      "name": "Operational Twin substrate",
+      "summary": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "status": "needs_review",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory",
+        "operational twin substrate"
+      ],
+      "title": "Operational Twin substrate",
+      "text": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "dom-local-robodex-irftek-embodied-execution",
+      "name": "Robodex / IrfTek embodied execution",
+      "summary": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "status": "needs_review",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory",
+        "robodex",
+        "irftek embodied execution"
+      ],
+      "title": "Robodex / IrfTek embodied execution",
+      "text": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "dom-local-expert-radar-crawl-tooling",
+      "name": "Expert Radar crawl tooling",
+      "summary": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "status": "needs_review",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory",
+        "expert radar crawl tooling"
+      ],
+      "title": "Expert Radar crawl tooling",
+      "text": "Local project files crawled from the ENS Navigator workspace. Treat these as operator-provided source artifacts, not external research.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    }
+  ],
+  "claims": [
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-delta-crdt-small-messages",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "Delta-State CRDTs: \"small messages with an incremental nature\" (Almeida et al., 2014)."
+      ],
+      "confidence": 0.8,
+      "topic": "Replication: delta-CRDT",
+      "claim": "Delta-state CRDTs can disseminate small incremental deltas over unreliable channels while retaining state-based convergence properties.",
+      "status": "rejected",
+      "title": "Delta-state CRDTs reduce sync bandwidth vs full-state anti-entropy",
+      "sourceIds": [
+        "src-almeida-delta-crdt-2014"
+      ],
+      "name": "Delta-state CRDTs reduce sync bandwidth vs full-state anti-entropy",
+      "text": "Delta-state CRDTs can disseminate small incremental deltas over unreliable channels while retaining state-based convergence properties.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-almeida-delta-crdt-2014"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T12:10:55.132Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "replication delta-crdt"
+      ],
+      "reviewedAt": "2026-05-18T12:10:55.132Z"
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-crdt-convergence-properties",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "CRDTs: \"any replica can be modified without coordinating\"; replicas with same updates \"reach the same state\" (Preguica et al., 2018)."
+      ],
+      "confidence": 0.85,
+      "topic": "Replication: CRDT definition",
+      "claim": "CRDTs are designed so replicas can be modified without coordination and converge deterministically once they have the same set of updates.",
+      "status": "rejected",
+      "title": "CRDTs allow coordination-free local updates with deterministic convergence",
+      "sourceIds": [
+        "src-preguica-crdt-2018"
+      ],
+      "name": "CRDTs allow coordination-free local updates with deterministic convergence",
+      "text": "CRDTs are designed so replicas can be modified without coordination and converge deterministically once they have the same set of updates.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-preguica-crdt-2018"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T12:10:58.730Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "replication crdt definition"
+      ],
+      "reviewedAt": "2026-05-18T12:10:58.730Z"
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-rumor-needs-anti-entropy",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "Demers et al.: \"back up rumor mongering with anti-entropy\" to \"guarantee complete coverage\"."
+      ],
+      "confidence": 0.75,
+      "topic": "Routing: gossip + delivery intent",
+      "claim": "Gossip-style rumor mongering may fail to deliver updates to some nodes; backing it with anti-entropy can guarantee complete coverage.",
+      "status": "rejected",
+      "title": "Rumor mongering alone can miss nodes; anti-entropy backup is used for coverage",
+      "sourceIds": [
+        "src-demers-epidemic-1987"
+      ],
+      "name": "Rumor mongering alone can miss nodes; anti-entropy backup is used for coverage",
+      "text": "Gossip-style rumor mongering may fail to deliver updates to some nodes; backing it with anti-entropy can guarantee complete coverage.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-demers-epidemic-1987"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T12:11:17.406Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "routing gossip + delivery intent"
+      ],
+      "reviewedAt": "2026-05-18T12:11:17.406Z"
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-ssb-selective-replication-scales",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "SSB selective replication: as system scales, per-peer data to handle \"stays roughly the same\" (Tarr et al., 2019)."
+      ],
+      "confidence": 0.7,
+      "topic": "Selective replication via social graph",
+      "claim": "Selective replication driven by a social graph can keep per-peer data volume roughly stable as the overall network scales.",
+      "status": "approved",
+      "title": "Selective replication based on social graph can bound per-peer interest set",
+      "sourceIds": [
+        "src-ssb-icn-2019"
+      ],
+      "name": "Selective replication based on social graph can bound per-peer interest set",
+      "text": "Selective replication driven by a social graph can keep per-peer data volume roughly stable as the overall network scales.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-ssb-icn-2019"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T13:15:28.047Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "selective replication via social graph"
+      ],
+      "reviewedAt": "2026-05-18T13:15:28.047Z"
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-cga-binds-key-to-ipv6",
+      "evidenceStrength": "rfc",
+      "evidence": [
+        "RFC 3972: interface identifier generated by hashing \"a public key and auxiliary parameters\"; works without PKI."
+      ],
+      "confidence": 0.85,
+      "topic": "Transport: IPv6 identity binding",
+      "claim": "CGA (RFC 3972) describes generating an IPv6 interface identifier by hashing a public key and parameters, enabling verification without certificate authorities.",
+      "status": "approved",
+      "title": "CGA binds a public key to an IPv6 address without PKI",
+      "sourceIds": [
+        "src-rfc3972-2005"
+      ],
+      "name": "CGA binds a public key to an IPv6 address without PKI",
+      "text": "CGA (RFC 3972) describes generating an IPv6 interface identifier by hashing a public key and parameters, enabling verification without certificate authorities.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-rfc3972-2005"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "transport ipv6 identity binding"
+      ]
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-intercontact-powerlaw",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "Pocket Switched Networks: inter-contact time \"follows an approximate power law\" (Chaintreau et al., 2005)."
+      ],
+      "confidence": 0.7,
+      "topic": "Mobility: contact patterns",
+      "claim": "Empirical mobility traces can show inter-contact time distributions closer to power laws than exponentials, impacting opportunistic forwarding assumptions.",
+      "status": "approved",
+      "title": "Inter-contact times can follow a power law, affecting forwarding strategy",
+      "sourceIds": [
+        "src-pocket-switched-2005"
+      ],
+      "name": "Inter-contact times can follow a power law, affecting forwarding strategy",
+      "text": "Empirical mobility traces can show inter-contact time distributions closer to power laws than exponentials, impacting opportunistic forwarding assumptions.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-pocket-switched-2005"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "mobility contact patterns"
+      ]
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-opportunistic-store-forward",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "Opportunistic/DTN: \"store and forward service\" in a \"mostly disconnected network\" (Palazzo et al., 2011)."
+      ],
+      "confidence": 0.7,
+      "topic": "DTN: store-and-forward",
+      "claim": "Opportunistic networks often cannot assume a continuously connected path and instead provide store-and-forward with infrequent contact times.",
+      "status": "approved",
+      "title": "Opportunistic/DTN networks commonly provide store-and-forward in disconnected graphs",
+      "sourceIds": [
+        "src-opportunistic-dtn-2011"
+      ],
+      "name": "Opportunistic/DTN networks commonly provide store-and-forward in disconnected graphs",
+      "text": "Opportunistic networks often cannot assume a continuously connected path and instead provide store-and-forward with infrequent contact times.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-opportunistic-dtn-2011"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "dtn store-and-forward"
+      ]
+    },
+    {
+      "domain": "Football United: local-first social mesh",
+      "id": "claim-sybilguard-social-trust",
+      "evidenceStrength": "paper",
+      "evidence": [
+        "SybilGuard uses \"human-established trust relations\" and defines \"attack edges\" between honest and sybil regions (Yu et al.)."
+      ],
+      "confidence": 0.65,
+      "topic": "Security: social trust vs sybils",
+      "claim": "Sybil defenses can model identities as nodes connected by human-established trust relations and reason about a limited number of attack edges between honest and sybil regions.",
+      "status": "approved",
+      "title": "SybilGuard models trust relations and attack edges between honest and sybil regions",
+      "sourceIds": [
+        "src-sybilguard-2006"
+      ],
+      "name": "SybilGuard models trust relations and attack edges between honest and sybil regions",
+      "text": "Sybil defenses can model identities as nodes connected by human-established trust relations and reason about a limited number of attack edges between honest and sybil regions.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "sourceIds": [
+          "src-sybilguard-2006"
+        ],
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": "",
+      "tags": [
+        "football united local-first social mesh",
+        "security social trust vs sybils"
+      ]
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-isaac-urdf-imports-to-usd",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.95,
+      "tags": [
+        "urdf",
+        "usd",
+        "robot import",
+        "physics",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "robot description import"
+      ],
+      "topic": "Robot description import",
+      "claim": "Isaac Sim provides a URDF importer that converts URDF robot descriptions into USD representations suitable for physics simulation, including links, joints, materials, and physics properties.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-urdf-importer-api-2025"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-isaac-urdf-importer-api-2025"
+      ],
+      "text": "Isaac Sim provides a URDF importer that converts URDF robot descriptions into USD representations suitable for physics simulation, including links, joints, materials, and physics properties.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "Isaac Sim provides a URDF importer that converts URDF robot descriptions into USD representations suitable for physics simulation, including links, joints, materials, and physics properties.",
+      "summary": "",
+      "name": "Isaac Sim provides a URDF importer that converts URDF robot descriptions into USD representations suitable for physics simulation, including links, joints, materials, and physics properties."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-isaac-urdf-requires-asset-root",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.94,
+      "tags": [
+        "urdf",
+        "meshes",
+        "textures",
+        "asset root",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "robot asset dependencies"
+      ],
+      "topic": "Robot asset dependencies",
+      "claim": "URDF import in Isaac Sim requires a valid URDF file and an asset root directory containing referenced mesh and texture files.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-urdf-importer-api-2025"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-isaac-urdf-importer-api-2025"
+      ],
+      "text": "URDF import in Isaac Sim requires a valid URDF file and an asset root directory containing referenced mesh and texture files.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "URDF import in Isaac Sim requires a valid URDF file and an asset root directory containing referenced mesh and texture files.",
+      "summary": "",
+      "name": "URDF import in Isaac Sim requires a valid URDF file and an asset root directory containing referenced mesh and texture files."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-isaac-mjcf-imports-to-usd",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.95,
+      "tags": [
+        "mjcf",
+        "mujoco",
+        "usd",
+        "robot import",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "mjcf import"
+      ],
+      "topic": "MJCF import",
+      "claim": "Isaac Sim documents an MJCF import workflow that imports MJCF models and converts them to USD for use in Isaac Sim pipelines.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-mjcf-import-2026"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-isaac-mjcf-import-2026"
+      ],
+      "text": "Isaac Sim documents an MJCF import workflow that imports MJCF models and converts them to USD for use in Isaac Sim pipelines.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "Isaac Sim documents an MJCF import workflow that imports MJCF models and converts them to USD for use in Isaac Sim pipelines.",
+      "summary": "",
+      "name": "Isaac Sim documents an MJCF import workflow that imports MJCF models and converts them to USD for use in Isaac Sim pipelines."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-omniverse-asset-converter-supported-formats",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.92,
+      "tags": [
+        "fbx",
+        "obj",
+        "gltf",
+        "glb",
+        "stl",
+        "usd",
+        "asset converter",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "3d asset conversion"
+      ],
+      "topic": "3D asset conversion",
+      "claim": "The Omniverse Asset Converter Service supports conversion to USD from FBX, OBJ, GLTF/GLB, LXO, MD5, STL, and BVH file formats.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-omniverse-asset-converter-service-2025"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-omniverse-asset-converter-service-2025"
+      ],
+      "text": "The Omniverse Asset Converter Service supports conversion to USD from FBX, OBJ, GLTF/GLB, LXO, MD5, STL, and BVH file formats.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "The Omniverse Asset Converter Service supports conversion to USD from FBX, OBJ, GLTF/GLB, LXO, MD5, STL, and BVH file formats.",
+      "summary": "",
+      "name": "The Omniverse Asset Converter Service supports conversion to USD from FBX, OBJ, GLTF/GLB, LXO, MD5, STL, and BVH file formats."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-omniverse-asset-converter-main-tested-formats",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.9,
+      "tags": [
+        "fbx",
+        "obj",
+        "gltf",
+        "asset converter",
+        "limitations",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "3d asset conversion limits"
+      ],
+      "topic": "3D asset conversion limits",
+      "claim": "NVIDIA documents OBJ, FBX, and glTF as the Asset Converter formats that are mainly supported and tested, while fallback through Assimp may cover additional formats.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-omniverse-asset-converter-extension-2026"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-omniverse-asset-converter-extension-2026"
+      ],
+      "text": "NVIDIA documents OBJ, FBX, and glTF as the Asset Converter formats that are mainly supported and tested, while fallback through Assimp may cover additional formats.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "NVIDIA documents OBJ, FBX, and glTF as the Asset Converter formats that are mainly supported and tested, while fallback through Assimp may cover additional formats.",
+      "summary": "",
+      "name": "NVIDIA documents OBJ, FBX, and glTF as the Asset Converter formats that are mainly supported and tested, while fallback through Assimp may cover additional formats."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-openusd-portable-file-types",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.9,
+      "tags": [
+        "usd",
+        "usda",
+        "usdc",
+        "usdz",
+        "png",
+        "jpg",
+        "jpeg",
+        "exr",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "portable asset file types"
+      ],
+      "topic": "Portable asset file types",
+      "claim": "Omniverse OpenUSD asset requirements list USD file extensions usda, usdc, usd, and usdz, and image file extensions png, jpeg/jpg, and exr as supported portable file types.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-openusd-supported-file-types-2025"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-openusd-supported-file-types-2025"
+      ],
+      "text": "Omniverse OpenUSD asset requirements list USD file extensions usda, usdc, usd, and usdz, and image file extensions png, jpeg/jpg, and exr as supported portable file types.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "Omniverse OpenUSD asset requirements list USD file extensions usda, usdc, usd, and usdz, and image file extensions png, jpeg/jpg, and exr as supported portable file types.",
+      "summary": "",
+      "name": "Omniverse OpenUSD asset requirements list USD file extensions usda, usdc, usd, and usdz, and image file extensions png, jpeg/jpg, and exr as supported portable file types."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-isaac-ros2-standalone-python",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.88,
+      "tags": [
+        "ros2",
+        "python",
+        "standalone scripts",
+        "publishers",
+        "subscribers",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "ros 2 standalone scripting"
+      ],
+      "topic": "ROS 2 standalone scripting",
+      "claim": "Isaac Sim documents standalone ROS 2 Python workflows where Python scripts manually step ROS 2 components and control publish/subscribe timing.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-ros2-standalone-2026"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-isaac-ros2-standalone-2026"
+      ],
+      "text": "Isaac Sim documents standalone ROS 2 Python workflows where Python scripts manually step ROS 2 components and control publish/subscribe timing.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "Isaac Sim documents standalone ROS 2 Python workflows where Python scripts manually step ROS 2 components and control publish/subscribe timing.",
+      "summary": "",
+      "name": "Isaac Sim documents standalone ROS 2 Python workflows where Python scripts manually step ROS 2 components and control publish/subscribe timing."
+    },
+    {
+      "domain": "Isaac Sim simulation workflow",
+      "id": "claim-isaac-ros2-bridge-launch",
+      "evidenceStrength": "official documentation",
+      "confidence": 0.92,
+      "tags": [
+        "ros2",
+        "bridge",
+        "launch",
+        "sh",
+        "bat",
+        "kit",
+        "python",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow",
+        "ros 2 bridge launch configuration"
+      ],
+      "topic": "ROS 2 Bridge launch configuration",
+      "claim": "Isaac Sim ROS 2 Bridge can be enabled through command-line startup arguments, extension or kit configuration, the Extension Manager UI, or Python settings.",
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-ros2-bridge-extension-2025"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "status": "approved",
+      "sourceIds": [
+        "src-nvidia-isaac-ros2-bridge-extension-2025"
+      ],
+      "text": "Isaac Sim ROS 2 Bridge can be enabled through command-line startup arguments, extension or kit configuration, the Extension Manager UI, or Python settings.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z",
+      "title": "Isaac Sim ROS 2 Bridge can be enabled through command-line startup arguments, extension or kit configuration, the Extension Manager UI, or Python settings.",
+      "summary": "",
+      "name": "Isaac Sim ROS 2 Bridge can be enabled through command-line startup arguments, extension or kit configuration, the Extension Manager UI, or Python settings."
+    },
+    {
+      "id": "claim-local-argos-research-spec-html",
+      "domain": "ARGOS research and memory workflow",
+      "topic": "Local project file inventory",
+      "claim": "The local project file argos-research-spec.html is part of ARGOS research and memory workflow and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: Argos Automated Research Spec; Goal; Operating Principles; Research Flow; Core Objects; Local API Contract; Research Packet Shape; Codex Agent Contract; Quality Gates; Implementation Roadmap",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-argos-research-spec-html"
+      ],
+      "tags": [
+        "argos research and memory workflow",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "argos-research-spec.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-argos-research-spec-html"
+        ],
+        "domainIds": [
+          "ARGOS research and memory workflow"
+        ]
+      },
+      "text": "The local project file argos-research-spec.html is part of ARGOS research and memory workflow and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ARGOS research and memory workflow"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file argos-research-spec.html is part of ARGOS research and memory workflow and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file argos-research-spec.html is part of ARGOS research and memory workflow and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-ens-navigator-spec-html",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file ens-navigator-spec.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: ENS Navigator Product Spec; Mission; Application Pages; Data Model; Core Entity Rules; Local API Surface; Outcome Project Shape; Primary Workflows; Quality Gates; Roadmap",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "approved",
+      "sourceIds": [
+        "src-local-ens-navigator-spec-html"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "ens-navigator-spec.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-ens-navigator-spec-html"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file ens-navigator-spec.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:46:19.916Z",
+      "title": "The local project file ens-navigator-spec.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file ens-navigator-spec.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "reviewedAt": "2026-05-18T23:46:19.916Z"
+    },
+    {
+      "id": "claim-local-operational-twin-input-contract-html",
+      "domain": "Operational Twin substrate",
+      "topic": "Local project file inventory",
+      "claim": "The local project file operational-twin-input-contract.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: Operational Twin Input Contract v1; Layer Responsibilities; Contract Shape; Promotion Gates; Draft; Review; Approved; Active; Needs Source / Disputed; Robodex Derived Inputs; Isaac Sim Simulation Inputs",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "approved",
+      "sourceIds": [
+        "src-local-operational-twin-input-contract-html"
+      ],
+      "tags": [
+        "operational twin substrate",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "operational-twin-input-contract.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-operational-twin-input-contract-html"
+        ],
+        "domainIds": [
+          "Operational Twin substrate"
+        ]
+      },
+      "text": "The local project file operational-twin-input-contract.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Operational Twin substrate"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:46:18.314Z",
+      "title": "The local project file operational-twin-input-contract.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact.",
+      "reviewedAt": "2026-05-18T23:46:18.314Z",
+      "name": "The local project file operational-twin-input-contract.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-operational-twin-substrate-spec-html",
+      "domain": "Operational Twin substrate",
+      "topic": "Local project file inventory",
+      "claim": "The local project file operational_twin_substrate_spec.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: Robodex acts against a governed operational twin, not raw intention.; Clean system relation; The five realities inside the twin; Physical; Hardware; Software; Workflow; Authority; Runtime; Canonical twin document shape; End-to-end operating loop; What ENS must provide; What ARGOS must govern; Approval boundary; Memory lineage; Operator state; Autonomy policy; What Robodex consumes and emits",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "approved",
+      "sourceIds": [
+        "src-local-operational-twin-substrate-spec-html"
+      ],
+      "tags": [
+        "operational twin substrate",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "operational_twin_substrate_spec.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-operational-twin-substrate-spec-html"
+        ],
+        "domainIds": [
+          "Operational Twin substrate"
+        ]
+      },
+      "text": "The local project file operational_twin_substrate_spec.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Operational Twin substrate"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:39:53.930Z",
+      "title": "The local project file operational_twin_substrate_spec.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact.",
+      "reviewedAt": "2026-05-18T23:39:53.930Z",
+      "name": "The local project file operational_twin_substrate_spec.html is part of Operational Twin substrate and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-irftek-complete-substrate-architecture-html",
+      "domain": "Robodex / IrfTek embodied execution",
+      "topic": "Local project file inventory",
+      "claim": "The local project file irftek_complete_substrate_architecture.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: IrfTek Complete Substrate Architecture; The Four Specs You've Written; 1. ARGOS Operational Specification; 2. Argos Automated Research Spec; 3. Convergent Cell Program Specification (DRAFT); 4. ENS Navigator Product Spec; The Seven Systems (The Full Stack); System Descriptions; How They Actually Work Together; Flow 1: Knowledge Creation (Chat → Memory → Execution); Flow 2: Skill Evolution (Invocation → Ranking → Use); Flow 3: Research Validation (Unsourced → Sourced → Outcome); The Key Architectural Decisions; 1. Local-First, Not Remote; 2. Approve-Everything Default (with autonomy escape hatch); 3. Sourcing Before Memory Promotion; 4. Explicit Outcome Dependencies; 5. Signal Over Autonomy",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-irftek-complete-substrate-architecture-html"
+      ],
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "irftek_complete_substrate_architecture.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-irftek-complete-substrate-architecture-html"
+        ],
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "text": "The local project file irftek_complete_substrate_architecture.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file irftek_complete_substrate_architecture.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file irftek_complete_substrate_architecture.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-spec-irftek-production-html",
+      "domain": "Robodex / IrfTek embodied execution",
+      "topic": "Local project file inventory",
+      "claim": "The local project file SPEC_irftek-production.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: IrfTek Production Specification; 2. Core Philosophical Principles; Local truth over global truth; Semantic state over raw telemetry; Exploration over feeds; Personas over universal accounts; Projection over apps; Explicit governance over pure emergence; 3. Recursive Kernel Definition; 4. Runtime Architecture; 5. Network Architecture; 6. Semantic Object Schema; 7. Authority Resolution Engine; 8. Memory Compaction Engine; Discard; Store; 9. AI-Readable Runtime Design; AI reads",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-spec-irftek-production-html"
+      ],
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "SPEC_irftek-production.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-spec-irftek-production-html"
+        ],
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "text": "The local project file SPEC_irftek-production.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file SPEC_irftek-production.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file SPEC_irftek-production.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-irftek-spec-html",
+      "domain": "Robodex / IrfTek embodied execution",
+      "topic": "Local project file inventory",
+      "claim": "The local project file irftek_spec.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: Authority-Resolved Semantic Object Runtime; 1. Recursive Kernel; Object; Authority; Propagation; Projection; Anchor; Expiry; Feature admission test; 2. Invariants; 3. Runtime Architecture; 4. Universal Semantic Object Model; 5. Authority Resolution; 6. Memory, Compaction, Expiry; 7. Network + Distribution; 8. Projection / UI; Browser does; Browser does not",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-irftek-spec-html"
+      ],
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "irftek_spec.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-irftek-spec-html"
+        ],
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "text": "The local project file irftek_spec.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file irftek_spec.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file irftek_spec.html is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-irftek-operator-protocol-skill",
+      "domain": "Robodex / IrfTek embodied execution",
+      "topic": "Local project file inventory",
+      "claim": "The local project file irftek-operator-protocol.skill is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "summary": "",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-irftek-operator-protocol-skill"
+      ],
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local file inventory",
+        "local skill spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "irftek-operator-protocol.skill",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-irftek-operator-protocol-skill"
+        ],
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "text": "The local project file irftek-operator-protocol.skill is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file irftek-operator-protocol.skill is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file irftek-operator-protocol.skill is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "domain": "Robodex / IrfTek embodied execution",
+      "topic": "Local project file inventory",
+      "claim": "The local project file _skill_extracted/irftek-operator-protocol/SKILL.md is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: IrfTek Operator Protocol; Why this exists; IrfTek software design principles; 1. Local-first before cloud; 2. Proximity before broadcast; 3. Consent before communication; 4. Semantics before raw data; 5. AI-readable by default; 6. Minimal primitives before complexity; 7. Exploration before global visibility; 8. Modular authority; 9. Edge cognition over edge compute; 10. Human agency over engagement; 11. Simple UI over heavy UI; 12. Runtime transparency; 13. Graceful degradation; 14. Security as immune system; 15. Cynefin-aware development",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-skill-extracted-irftek-operator-protocol-skill-md"
+      ],
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local file inventory",
+        "local markdown spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "_skill_extracted/irftek-operator-protocol/SKILL.md",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-skill-extracted-irftek-operator-protocol-skill-md"
+        ],
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "text": "The local project file _skill_extracted/irftek-operator-protocol/SKILL.md is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file _skill_extracted/irftek-operator-protocol/SKILL.md is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file _skill_extracted/irftek-operator-protocol/SKILL.md is part of Robodex / IrfTek embodied execution and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-local-api-md",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file LOCAL_API.md is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: ENS Navigator Local API",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-local-api-md"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local markdown spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "LOCAL_API.md",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-local-api-md"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file LOCAL_API.md is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file LOCAL_API.md is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file LOCAL_API.md is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-index-html",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file index.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: ENS Navigator; Log an Engagement; Expert Radar; Ingest Queue; Add Expert Candidate; Pipeline; Domain Knowledge; AI Knowledge Inbox; Researched Findings; Hypotheses Inbox; Agent Runs; Review Board; Reviewed Claim Bank; Open Research Questions; People From Knowledge; Source Library; Graph Links; Outcomes",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-index-html"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local html spec",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "index.html",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-index-html"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file index.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file index.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file index.html is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-server-mjs",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: function send; function slug; function arrayOf; function splitTagValues; function tagOf; function tagsOf; function addTag; function emptyTagGroups; function sourceTagValues; function normalizeTagGroups; function flattenTagGroups; function matchTagValue; function deriveTags; function num; function normalizeScores; function normalizeExpert; function mergeExperts; function readStoredExperts",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-server-mjs"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local javascript module",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "server.mjs",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-server-mjs"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-mcp-server-mjs",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file mcp-server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: function requestJson; function registerToolAliases; constant BASE_URL",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-mcp-server-mjs"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local javascript module",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "mcp-server.mjs",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-mcp-server-mjs"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file mcp-server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file mcp-server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file mcp-server.mjs is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-package-json",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file package.json is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: json key name; json key private; json key type; json key scripts; json key dependencies",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-package-json"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local json manifest",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "package.json",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-package-json"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file package.json is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file package.json is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file package.json is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-ens-navigator-launcher-ps1",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file ENS-Navigator-Launcher.ps1 is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: function Test-PortListening; function Start-EnsServer; function Invoke-EnsJson; function ens-health; function ens-experts; function ens-crawl; function ens-crawl-ingest; function ens-jobs; function ens-sync; function ens-open-ui",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-ens-navigator-launcher-ps1"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local powershell script",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "ENS-Navigator-Launcher.ps1",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-ens-navigator-launcher-ps1"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file ENS-Navigator-Launcher.ps1 is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file ENS-Navigator-Launcher.ps1 is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file ENS-Navigator-Launcher.ps1 is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-ens-biotech-rd-seed-ps1",
+      "domain": "Expert Radar crawl tooling",
+      "topic": "Local project file inventory",
+      "claim": "The local project file ENS-Biotech-RD-Seed.ps1 is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: function Wait-Health; function Start-BackendIfNeeded; function Get-CodexScriptPath; function Invoke-Json; function Invoke-CodexStructured; function New-NichePrompt; function New-ItemSchema; function Get-BiotechNiches; function Get-RandomNiche",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-ens-biotech-rd-seed-ps1"
+      ],
+      "tags": [
+        "expert radar crawl tooling",
+        "local file inventory",
+        "local powershell script",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "ENS-Biotech-RD-Seed.ps1",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-ens-biotech-rd-seed-ps1"
+        ],
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "text": "The local project file ENS-Biotech-RD-Seed.ps1 is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file ENS-Biotech-RD-Seed.ps1 is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file ENS-Biotech-RD-Seed.ps1 is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-scripts-seed-biotech-rd-mjs",
+      "domain": "Expert Radar crawl tooling",
+      "topic": "Local project file inventory",
+      "claim": "The local project file scripts/seed-biotech-rd.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: function slug; function tag; function uniq; function sourceUrls; function topicBucket; function buildExpert; function readJson; function writeJson; function main; constant ROOT; constant DATA_DIR; constant DATA_FILE; constant QUERY_FILE; constant TAG_CATEGORIES; constant SELECTION_TAG_CATEGORIES; constant QUERIES",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-scripts-seed-biotech-rd-mjs"
+      ],
+      "tags": [
+        "expert radar crawl tooling",
+        "local file inventory",
+        "local javascript module",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "scripts/seed-biotech-rd.mjs",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-scripts-seed-biotech-rd-mjs"
+        ],
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "text": "The local project file scripts/seed-biotech-rd.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file scripts/seed-biotech-rd.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file scripts/seed-biotech-rd.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-scripts-seed-top-scientists-mjs",
+      "domain": "Expert Radar crawl tooling",
+      "topic": "Local project file inventory",
+      "claim": "The local project file scripts/seed-top-scientists.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "summary": "Headings/symbols extracted from the file: function slug; function tag; function uniq; function evidenceLinks; function record; function readJson; function writeJson; function main; constant ROOT; constant DATA_FILE; constant QUERY_FILE; constant FIELD_SOURCES; constant SELECTION_TAG_CATEGORIES; constant FIELDS",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-scripts-seed-top-scientists-mjs"
+      ],
+      "tags": [
+        "expert radar crawl tooling",
+        "local file inventory",
+        "local javascript module",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "scripts/seed-top-scientists.mjs",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-scripts-seed-top-scientists-mjs"
+        ],
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "text": "The local project file scripts/seed-top-scientists.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file scripts/seed-top-scientists.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file scripts/seed-top-scientists.mjs is part of Expert Radar crawl tooling and should be reviewable as an operator-provided source artifact."
+    },
+    {
+      "id": "claim-local-favicon-svg",
+      "domain": "ENS Navigator local architecture",
+      "topic": "Local project file inventory",
+      "claim": "The local project file favicon.svg is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "summary": "",
+      "confidence": 1,
+      "evidenceStrength": "local file metadata",
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-favicon-svg"
+      ],
+      "tags": [
+        "ens navigator local architecture",
+        "local file inventory",
+        "local visual asset",
+        "local files",
+        "operator document",
+        "project inventory",
+        "local project file inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "favicon.svg",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-favicon-svg"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "text": "The local project file favicon.svg is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z",
+      "title": "The local project file favicon.svg is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact.",
+      "name": "The local project file favicon.svg is part of ENS Navigator local architecture and should be reviewable as an operator-provided source artifact."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-almeida-delta-crdt-2014",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "crdt",
+        "delta-crdt",
+        "anti-entropy",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "Efficient State-based CRDTs by Delta-Mutation",
+      "url": "https://arxiv.org/abs/1410.2803",
+      "name": "Efficient State-based CRDTs by Delta-Mutation",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-preguica-crdt-2018",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "crdt",
+        "eventual consistency",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "Conflict-free Replicated Data Types (CRDTs)",
+      "url": "https://arxiv.org/abs/1805.06358",
+      "name": "Conflict-free Replicated Data Types (CRDTs)",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-demers-epidemic-1987",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "gossip",
+        "rumor mongering",
+        "anti-entropy",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "Epidemic Algorithms for Replicated Database Maintenance",
+      "url": "https://www.cs.cornell.edu/courses/cs6452/2012sp/papers/demers-epidemic.pdf",
+      "name": "Epidemic Algorithms for Replicated Database Maintenance",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-ssb-icn-2019",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "ssb",
+        "selective replication",
+        "social graph routing",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "Secure Scuttlebutt: An Identity-Centric Protocol for Subjective and Decentralized Applications (ICN 2019)",
+      "url": "https://conferences.sigcomm.org/acm-icn/2019/proceedings/icn19-19.pdf",
+      "name": "Secure Scuttlebutt: An Identity-Centric Protocol for Subjective and Decentralized Applications (ICN 2019)",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-rfc3972-2005",
+      "domain": "Football United: local-first social mesh",
+      "type": "rfc",
+      "tags": [
+        "ipv6",
+        "cga",
+        "send",
+        "rfc",
+        "football united local-first social mesh"
+      ],
+      "title": "RFC 3972: Cryptographically Generated Addresses (CGA)",
+      "url": "https://www.rfc-editor.org/rfc/rfc3972",
+      "name": "RFC 3972: Cryptographically Generated Addresses (CGA)",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-pocket-switched-2005",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "opportunistic",
+        "mobility",
+        "inter-contact time",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "Pocket Switched Networks: Real-world mobility and its consequences for opportunistic forwarding (UCAM-CL-TR-617)",
+      "url": "https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-617.html",
+      "name": "Pocket Switched Networks: Real-world mobility and its consequences for opportunistic forwarding (UCAM-CL-TR-617)",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-opportunistic-dtn-2011",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "dtn",
+        "store-and-forward",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "Opportunistic and Delay-Tolerant Networks (EURASIP JWCN editorial)",
+      "url": "https://link.springer.com/article/10.1155/2011/164370",
+      "name": "Opportunistic and Delay-Tolerant Networks (EURASIP JWCN editorial)",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-sybilguard-2006",
+      "domain": "Football United: local-first social mesh",
+      "type": "paper",
+      "tags": [
+        "sybil",
+        "social graph security",
+        "paper",
+        "football united local-first social mesh"
+      ],
+      "title": "SybilGuard: Defending Against Sybil Attacks via Social Networks",
+      "url": "https://www.cs.columbia.edu/~danr/6772/papers/sybil.pdf",
+      "name": "SybilGuard: Defending Against Sybil Attacks via Social Networks",
+      "confidence": null,
+      "status": "inbox",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z",
+      "summary": ""
+    },
+    {
+      "id": "src-nvidia-isaac-urdf-importer-api-2025",
+      "title": "NVIDIA Isaac Sim URDF Importer API",
+      "tags": [
+        "urdf",
+        "usd",
+        "robot import",
+        "kinematics",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/5.0.0/py/api/classisaacsim_1_1asset_1_1importer_1_1urdf_1_1_urdf_importer.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents Isaac Sim URDF importer conversion of robot descriptions into USD and required asset root inputs.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "NVIDIA Isaac Sim URDF Importer API",
+      "text": "Documents Isaac Sim URDF importer conversion of robot descriptions into USD and required asset root inputs.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-nvidia-isaac-mjcf-import-2026",
+      "title": "NVIDIA Isaac Sim Tutorial: Import MJCF",
+      "tags": [
+        "mjcf",
+        "usd",
+        "mujoco",
+        "robot import",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/importer_exporter/import_mjcf.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents importing MJCF models and converting them to USD in Isaac Sim.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "NVIDIA Isaac Sim Tutorial: Import MJCF",
+      "text": "Documents importing MJCF models and converting them to USD in Isaac Sim.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-nvidia-omniverse-asset-converter-service-2025",
+      "title": "Omniverse Asset Converter Service Overview",
+      "tags": [
+        "asset converter",
+        "usd",
+        "fbx",
+        "obj",
+        "gltf",
+        "stl",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/omni.services.convert.asset/508.1.0/Overview.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents batch conversion of 3D file formats to USD and supported formats.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "Omniverse Asset Converter Service Overview",
+      "text": "Documents batch conversion of 3D file formats to USD and supported formats.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-nvidia-omniverse-asset-converter-extension-2026",
+      "title": "Omniverse Asset Converter Extension",
+      "tags": [
+        "asset converter",
+        "obj",
+        "fbx",
+        "gltf",
+        "glb",
+        "mdl",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.omniverse.nvidia.com/extensions/latest/ext_asset-converter.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents Asset Converter support and limitations for OBJ/FBX/glTF, glb, cameras, lights, animations, and MDL material conversion paths.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "Omniverse Asset Converter Extension",
+      "text": "Documents Asset Converter support and limitations for OBJ/FBX/glTF, glb, cameras, lights, animations, and MDL material conversion paths.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-nvidia-openusd-supported-file-types-2025",
+      "title": "Omniverse Asset Requirements: supported file types",
+      "tags": [
+        "openusd",
+        "usd",
+        "usda",
+        "usdc",
+        "usdz",
+        "png",
+        "jpeg",
+        "exr",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.omniverse.nvidia.com/kit/docs/asset-requirements/1.1.6/capabilities/core/atomic_asset/requirements/supported-file-types.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents portable supported file types for OpenUSD atomic assets.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "Omniverse Asset Requirements: supported file types",
+      "text": "Documents portable supported file types for OpenUSD atomic assets.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-nvidia-isaac-ros2-standalone-2026",
+      "title": "NVIDIA Isaac Sim ROS 2 Bridge in Standalone Workflow",
+      "tags": [
+        "ros2",
+        "python",
+        "standalone scripts",
+        "bridge",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/6.0.0/ros2_tutorials/tutorial_ros2_python.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents standalone ROS 2 Python examples and manually stepped ROS 2 components in Isaac Sim.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "NVIDIA Isaac Sim ROS 2 Bridge in Standalone Workflow",
+      "text": "Documents standalone ROS 2 Python examples and manually stepped ROS 2 components in Isaac Sim.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-nvidia-isaac-ros2-bridge-extension-2025",
+      "title": "NVIDIA Isaac Sim ROS 2 Bridge Extension",
+      "tags": [
+        "ros2",
+        "bridge",
+        "sh",
+        "bat",
+        "kit",
+        "extension",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "official documentation",
+        "isaac sim simulation workflow"
+      ],
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/4.5.0/py/source/extensions/isaacsim.ros2.bridge/docs/index.html",
+      "type": "official documentation",
+      "status": "approved",
+      "summary": "Documents ROS 2 Bridge extension enablement from command line, kit configuration, extension UI, and Python settings.",
+      "domain": "Isaac Sim simulation workflow",
+      "name": "NVIDIA Isaac Sim ROS 2 Bridge Extension",
+      "text": "Documents ROS 2 Bridge extension enablement from command line, kit configuration, extension UI, and Python settings.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "src-local-argos-research-spec-html",
+      "title": "Argos Automated Research Spec",
+      "type": "local html spec",
+      "domain": "ARGOS research and memory workflow",
+      "url": "local://argos-research-spec.html",
+      "summary": "Local local html spec in ARGOS research and memory workflow. Extracted headings/symbols: Argos Automated Research Spec; Goal; Operating Principles; Research Flow; Core Objects; Local API Contract; Research Packet Shape; Codex Agent Contract; Quality Gates; Implementation Roadmap. Size: 15579 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "argos research and memory workflow",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "argos-research-spec.html",
+        "sizeBytes": 15579,
+        "lastModified": "2026-05-18T21:10:51.317Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ARGOS research and memory workflow"
+        ]
+      },
+      "name": "Argos Automated Research Spec",
+      "text": "Local local html spec in ARGOS research and memory workflow. Extracted headings/symbols: Argos Automated Research Spec; Goal; Operating Principles; Research Flow; Core Objects; Local API Contract; Research Packet Shape; Codex Agent Contract; Quality Gates; Implementation Roadmap. Size: 15579 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ARGOS research and memory workflow"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-ens-navigator-spec-html",
+      "title": "ENS Navigator Product Spec",
+      "type": "local html spec",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://ens-navigator-spec.html",
+      "summary": "Local local html spec in ENS Navigator local architecture. Extracted headings/symbols: ENS Navigator Product Spec; Mission; Application Pages; Data Model; Core Entity Rules; Local API Surface; Outcome Project Shape; Primary Workflows; Quality Gates; Roadmap. Size: 14749 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "ens-navigator-spec.html",
+        "sizeBytes": 14749,
+        "lastModified": "2026-05-18T21:16:03.106Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "ENS Navigator Product Spec",
+      "text": "Local local html spec in ENS Navigator local architecture. Extracted headings/symbols: ENS Navigator Product Spec; Mission; Application Pages; Data Model; Core Entity Rules; Local API Surface; Outcome Project Shape; Primary Workflows; Quality Gates; Roadmap. Size: 14749 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-operational-twin-input-contract-html",
+      "title": "Operational Twin Input Contract v1",
+      "type": "local html spec",
+      "domain": "Operational Twin substrate",
+      "url": "local://operational-twin-input-contract.html",
+      "summary": "Local local html spec in Operational Twin substrate. Extracted headings/symbols: Operational Twin Input Contract v1; Layer Responsibilities; Contract Shape; Promotion Gates; Draft; Review; Approved; Active; Needs Source / Disputed; Robodex Derived Inputs; Isaac Sim Simulation Inputs. Size: 8005 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "operational twin substrate",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "operational-twin-input-contract.html",
+        "sizeBytes": 8005,
+        "lastModified": "2026-05-18T22:55:20.928Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Operational Twin substrate"
+        ]
+      },
+      "name": "Operational Twin Input Contract v1",
+      "text": "Local local html spec in Operational Twin substrate. Extracted headings/symbols: Operational Twin Input Contract v1; Layer Responsibilities; Contract Shape; Promotion Gates; Draft; Review; Approved; Active; Needs Source / Disputed; Robodex Derived Inputs; Isaac Sim Simulation Inputs. Size: 8005 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Operational Twin substrate"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-operational-twin-substrate-spec-html",
+      "title": "Operational Twin Substrate — IrfTek / ARGOS / Robodex",
+      "type": "local html spec",
+      "domain": "Operational Twin substrate",
+      "url": "local://operational_twin_substrate_spec.html",
+      "summary": "Local local html spec in Operational Twin substrate. Extracted headings/symbols: Robodex acts against a governed operational twin, not raw intention.; Clean system relation; The five realities inside the twin; Physical; Hardware; Software; Workflow; Authority; Runtime; Canonical twin document shape; End-to-end operating loop; What ENS must provide; What ARGOS must govern; Approval boundary; Memory lineage; Operator state; Autonomy policy; What Robodex consumes and emits. Size: 14715 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "operational twin substrate",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "operational_twin_substrate_spec.html",
+        "sizeBytes": 14715,
+        "lastModified": "2026-05-18T22:28:47.464Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Operational Twin substrate"
+        ]
+      },
+      "name": "Operational Twin Substrate — IrfTek / ARGOS / Robodex",
+      "text": "Local local html spec in Operational Twin substrate. Extracted headings/symbols: Robodex acts against a governed operational twin, not raw intention.; Clean system relation; The five realities inside the twin; Physical; Hardware; Software; Workflow; Authority; Runtime; Canonical twin document shape; End-to-end operating loop; What ENS must provide; What ARGOS must govern; Approval boundary; Memory lineage; Operator state; Autonomy policy; What Robodex consumes and emits. Size: 14715 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Operational Twin substrate"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-irftek-complete-substrate-architecture-html",
+      "title": "IrfTek Complete Substrate Architecture",
+      "type": "local html spec",
+      "domain": "Robodex / IrfTek embodied execution",
+      "url": "local://irftek_complete_substrate_architecture.html",
+      "summary": "Local local html spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: IrfTek Complete Substrate Architecture; The Four Specs You've Written; 1. ARGOS Operational Specification; 2. Argos Automated Research Spec; 3. Convergent Cell Program Specification (DRAFT); 4. ENS Navigator Product Spec; The Seven Systems (The Full Stack); System Descriptions; How They Actually Work Together; Flow 1: Knowledge Creation (Chat → Memory → Execution); Flow 2: Skill Evolution (Invocation → Ranking → Use); Flow 3: Research Validation (Unsourced → Sourced → Outcome); The Key Architectural Decisions; 1. Local-First, Not Remote; 2. Approve-Everything Default (with autonomy escape hatch); 3. Sourcing Before Memory Promotion; 4. Explicit Outcome Dependencies; 5. Signal Over Autonomy. Size: 37315 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "irftek_complete_substrate_architecture.html",
+        "sizeBytes": 37315,
+        "lastModified": "2026-05-18T22:15:05.331Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "name": "IrfTek Complete Substrate Architecture",
+      "text": "Local local html spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: IrfTek Complete Substrate Architecture; The Four Specs You've Written; 1. ARGOS Operational Specification; 2. Argos Automated Research Spec; 3. Convergent Cell Program Specification (DRAFT); 4. ENS Navigator Product Spec; The Seven Systems (The Full Stack); System Descriptions; How They Actually Work Together; Flow 1: Knowledge Creation (Chat → Memory → Execution); Flow 2: Skill Evolution (Invocation → Ranking → Use); Flow 3: Research Validation (Unsourced → Sourced → Outcome); The Key Architectural Decisions; 1. Local-First, Not Remote; 2. Approve-Everything Default (with autonomy escape hatch); 3. Sourcing Before Memory Promotion; 4. Explicit Outcome Dependencies; 5. Signal Over Autonomy. Size: 37315 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-spec-irftek-production-html",
+      "title": "IrfTek Production Specification — Local-First Semantic Runtime",
+      "type": "local html spec",
+      "domain": "Robodex / IrfTek embodied execution",
+      "url": "local://SPEC_irftek-production.html",
+      "summary": "Local local html spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: IrfTek Production Specification; 2. Core Philosophical Principles; Local truth over global truth; Semantic state over raw telemetry; Exploration over feeds; Personas over universal accounts; Projection over apps; Explicit governance over pure emergence; 3. Recursive Kernel Definition; 4. Runtime Architecture; 5. Network Architecture; 6. Semantic Object Schema; 7. Authority Resolution Engine; 8. Memory Compaction Engine; Discard; Store; 9. AI-Readable Runtime Design; AI reads. Size: 32885 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "SPEC_irftek-production.html",
+        "sizeBytes": 32885,
+        "lastModified": "2026-05-18T22:33:51.357Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "name": "IrfTek Production Specification — Local-First Semantic Runtime",
+      "text": "Local local html spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: IrfTek Production Specification; 2. Core Philosophical Principles; Local truth over global truth; Semantic state over raw telemetry; Exploration over feeds; Personas over universal accounts; Projection over apps; Explicit governance over pure emergence; 3. Recursive Kernel Definition; 4. Runtime Architecture; 5. Network Architecture; 6. Semantic Object Schema; 7. Authority Resolution Engine; 8. Memory Compaction Engine; Discard; Store; 9. AI-Readable Runtime Design; AI reads. Size: 32885 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-irftek-spec-html",
+      "title": "IrfTek Recursive Kernel Specification",
+      "type": "local html spec",
+      "domain": "Robodex / IrfTek embodied execution",
+      "url": "local://irftek_spec.html",
+      "summary": "Local local html spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: Authority-Resolved Semantic Object Runtime; 1. Recursive Kernel; Object; Authority; Propagation; Projection; Anchor; Expiry; Feature admission test; 2. Invariants; 3. Runtime Architecture; 4. Universal Semantic Object Model; 5. Authority Resolution; 6. Memory, Compaction, Expiry; 7. Network + Distribution; 8. Projection / UI; Browser does; Browser does not. Size: 23405 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "irftek_spec.html",
+        "sizeBytes": 23405,
+        "lastModified": "2026-05-18T22:34:01.332Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "name": "IrfTek Recursive Kernel Specification",
+      "text": "Local local html spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: Authority-Resolved Semantic Object Runtime; 1. Recursive Kernel; Object; Authority; Propagation; Projection; Anchor; Expiry; Feature admission test; 2. Invariants; 3. Runtime Architecture; 4. Universal Semantic Object Model; 5. Authority Resolution; 6. Memory, Compaction, Expiry; 7. Network + Distribution; 8. Projection / UI; Browser does; Browser does not. Size: 23405 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-irftek-operator-protocol-skill",
+      "title": "irftek-operator-protocol.skill",
+      "type": "local skill spec",
+      "domain": "Robodex / IrfTek embodied execution",
+      "url": "local://irftek-operator-protocol.skill",
+      "summary": "Local local skill spec in Robodex / IrfTek embodied execution. Size: 12522 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local skill spec",
+        "skill",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "irftek-operator-protocol.skill",
+        "sizeBytes": 12522,
+        "lastModified": "2026-05-16T22:47:20.902Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "name": "irftek-operator-protocol.skill",
+      "text": "Local local skill spec in Robodex / IrfTek embodied execution. Size: 12522 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "title": "IrfTek Operator Protocol",
+      "type": "local markdown spec",
+      "domain": "Robodex / IrfTek embodied execution",
+      "url": "local://_skill_extracted/irftek-operator-protocol/SKILL.md",
+      "summary": "Local local markdown spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: IrfTek Operator Protocol; Why this exists; IrfTek software design principles; 1. Local-first before cloud; 2. Proximity before broadcast; 3. Consent before communication; 4. Semantics before raw data; 5. AI-readable by default; 6. Minimal primitives before complexity; 7. Exploration before global visibility; 8. Modular authority; 9. Edge cognition over edge compute; 10. Human agency over engagement; 11. Simple UI over heavy UI; 12. Runtime transparency; 13. Graceful degradation; 14. Security as immune system; 15. Cynefin-aware development. Size: 30588 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "robodex",
+        "irftek embodied execution",
+        "local markdown spec",
+        "md",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "_skill_extracted/irftek-operator-protocol/SKILL.md",
+        "sizeBytes": 30588,
+        "lastModified": "2026-05-16T20:44:30.000Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "name": "IrfTek Operator Protocol",
+      "text": "Local local markdown spec in Robodex / IrfTek embodied execution. Extracted headings/symbols: IrfTek Operator Protocol; Why this exists; IrfTek software design principles; 1. Local-first before cloud; 2. Proximity before broadcast; 3. Consent before communication; 4. Semantics before raw data; 5. AI-readable by default; 6. Minimal primitives before complexity; 7. Exploration before global visibility; 8. Modular authority; 9. Edge cognition over edge compute; 10. Human agency over engagement; 11. Simple UI over heavy UI; 12. Runtime transparency; 13. Graceful degradation; 14. Security as immune system; 15. Cynefin-aware development. Size: 30588 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-local-api-md",
+      "title": "ENS Navigator Local API",
+      "type": "local markdown spec",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://LOCAL_API.md",
+      "summary": "Local local markdown spec in ENS Navigator local architecture. Extracted headings/symbols: ENS Navigator Local API. Size: 6321 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local markdown spec",
+        "md",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "LOCAL_API.md",
+        "sizeBytes": 6321,
+        "lastModified": "2026-05-18T02:05:12.691Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "ENS Navigator Local API",
+      "text": "Local local markdown spec in ENS Navigator local architecture. Extracted headings/symbols: ENS Navigator Local API. Size: 6321 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-index-html",
+      "title": "ENS Navigator — Expert Network Tracker",
+      "type": "local html spec",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://index.html",
+      "summary": "Local local html spec in ENS Navigator local architecture. Extracted headings/symbols: ENS Navigator; Log an Engagement; Expert Radar; Ingest Queue; Add Expert Candidate; Pipeline; Domain Knowledge; AI Knowledge Inbox; Researched Findings; Hypotheses Inbox; Agent Runs; Review Board; Reviewed Claim Bank; Open Research Questions; People From Knowledge; Source Library; Graph Links; Outcomes. Size: 254756 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local html spec",
+        "html",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "index.html",
+        "sizeBytes": 254756,
+        "lastModified": "2026-05-18T22:54:45.832Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "ENS Navigator — Expert Network Tracker",
+      "text": "Local local html spec in ENS Navigator local architecture. Extracted headings/symbols: ENS Navigator; Log an Engagement; Expert Radar; Ingest Queue; Add Expert Candidate; Pipeline; Domain Knowledge; AI Knowledge Inbox; Researched Findings; Hypotheses Inbox; Agent Runs; Review Board; Reviewed Claim Bank; Open Research Questions; People From Knowledge; Source Library; Graph Links; Outcomes. Size: 254756 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-server-mjs",
+      "title": "server.mjs",
+      "type": "local javascript module",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://server.mjs",
+      "summary": "Local local javascript module in ENS Navigator local architecture. Extracted headings/symbols: function send; function slug; function arrayOf; function splitTagValues; function tagOf; function tagsOf; function addTag; function emptyTagGroups; function sourceTagValues; function normalizeTagGroups; function flattenTagGroups; function matchTagValue; function deriveTags; function num; function normalizeScores; function normalizeExpert; function mergeExperts; function readStoredExperts. Size: 63381 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local javascript module",
+        "mjs",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "server.mjs",
+        "sizeBytes": 63381,
+        "lastModified": "2026-05-18T22:54:15.863Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "server.mjs",
+      "text": "Local local javascript module in ENS Navigator local architecture. Extracted headings/symbols: function send; function slug; function arrayOf; function splitTagValues; function tagOf; function tagsOf; function addTag; function emptyTagGroups; function sourceTagValues; function normalizeTagGroups; function flattenTagGroups; function matchTagValue; function deriveTags; function num; function normalizeScores; function normalizeExpert; function mergeExperts; function readStoredExperts. Size: 63381 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-mcp-server-mjs",
+      "title": "mcp-server.mjs",
+      "type": "local javascript module",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://mcp-server.mjs",
+      "summary": "Local local javascript module in ENS Navigator local architecture. Extracted headings/symbols: function requestJson; function registerToolAliases; constant BASE_URL. Size: 8886 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local javascript module",
+        "mjs",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "mcp-server.mjs",
+        "sizeBytes": 8886,
+        "lastModified": "2026-05-18T02:04:57.324Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "mcp-server.mjs",
+      "text": "Local local javascript module in ENS Navigator local architecture. Extracted headings/symbols: function requestJson; function registerToolAliases; constant BASE_URL. Size: 8886 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-package-json",
+      "title": "json key name",
+      "type": "local json manifest",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://package.json",
+      "summary": "Local local json manifest in ENS Navigator local architecture. Extracted headings/symbols: json key name; json key private; json key type; json key scripts; json key dependencies. Size: 368 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local json manifest",
+        "json",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "package.json",
+        "sizeBytes": 368,
+        "lastModified": "2026-05-17T20:12:37.682Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "json key name",
+      "text": "Local local json manifest in ENS Navigator local architecture. Extracted headings/symbols: json key name; json key private; json key type; json key scripts; json key dependencies. Size: 368 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-ens-navigator-launcher-ps1",
+      "title": "ENS-Navigator-Launcher.ps1",
+      "type": "local powershell script",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://ENS-Navigator-Launcher.ps1",
+      "summary": "Local local powershell script in ENS Navigator local architecture. Extracted headings/symbols: function Test-PortListening; function Start-EnsServer; function Invoke-EnsJson; function ens-health; function ens-experts; function ens-crawl; function ens-crawl-ingest; function ens-jobs; function ens-sync; function ens-open-ui. Size: 3651 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local powershell script",
+        "ps1",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "ENS-Navigator-Launcher.ps1",
+        "sizeBytes": 3651,
+        "lastModified": "2026-05-17T13:56:37.214Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "ENS-Navigator-Launcher.ps1",
+      "text": "Local local powershell script in ENS Navigator local architecture. Extracted headings/symbols: function Test-PortListening; function Start-EnsServer; function Invoke-EnsJson; function ens-health; function ens-experts; function ens-crawl; function ens-crawl-ingest; function ens-jobs; function ens-sync; function ens-open-ui. Size: 3651 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-ens-biotech-rd-seed-ps1",
+      "title": "ENS-Biotech-RD-Seed.ps1",
+      "type": "local powershell script",
+      "domain": "Expert Radar crawl tooling",
+      "url": "local://ENS-Biotech-RD-Seed.ps1",
+      "summary": "Local local powershell script in Expert Radar crawl tooling. Extracted headings/symbols: function Wait-Health; function Start-BackendIfNeeded; function Get-CodexScriptPath; function Invoke-Json; function Invoke-CodexStructured; function New-NichePrompt; function New-ItemSchema; function Get-BiotechNiches; function Get-RandomNiche. Size: 14795 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "expert radar crawl tooling",
+        "local powershell script",
+        "ps1",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "ENS-Biotech-RD-Seed.ps1",
+        "sizeBytes": 14795,
+        "lastModified": "2026-05-17T15:04:54.672Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "name": "ENS-Biotech-RD-Seed.ps1",
+      "text": "Local local powershell script in Expert Radar crawl tooling. Extracted headings/symbols: function Wait-Health; function Start-BackendIfNeeded; function Get-CodexScriptPath; function Invoke-Json; function Invoke-CodexStructured; function New-NichePrompt; function New-ItemSchema; function Get-BiotechNiches; function Get-RandomNiche. Size: 14795 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-scripts-seed-biotech-rd-mjs",
+      "title": "scripts/seed-biotech-rd.mjs",
+      "type": "local javascript module",
+      "domain": "Expert Radar crawl tooling",
+      "url": "local://scripts/seed-biotech-rd.mjs",
+      "summary": "Local local javascript module in Expert Radar crawl tooling. Extracted headings/symbols: function slug; function tag; function uniq; function sourceUrls; function topicBucket; function buildExpert; function readJson; function writeJson; function main; constant ROOT; constant DATA_DIR; constant DATA_FILE; constant QUERY_FILE; constant TAG_CATEGORIES; constant SELECTION_TAG_CATEGORIES; constant QUERIES. Size: 23811 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "expert radar crawl tooling",
+        "local javascript module",
+        "mjs",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "scripts/seed-biotech-rd.mjs",
+        "sizeBytes": 23811,
+        "lastModified": "2026-05-17T19:20:20.634Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "name": "scripts/seed-biotech-rd.mjs",
+      "text": "Local local javascript module in Expert Radar crawl tooling. Extracted headings/symbols: function slug; function tag; function uniq; function sourceUrls; function topicBucket; function buildExpert; function readJson; function writeJson; function main; constant ROOT; constant DATA_DIR; constant DATA_FILE; constant QUERY_FILE; constant TAG_CATEGORIES; constant SELECTION_TAG_CATEGORIES; constant QUERIES. Size: 23811 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-scripts-seed-top-scientists-mjs",
+      "title": "scripts/seed-top-scientists.mjs",
+      "type": "local javascript module",
+      "domain": "Expert Radar crawl tooling",
+      "url": "local://scripts/seed-top-scientists.mjs",
+      "summary": "Local local javascript module in Expert Radar crawl tooling. Extracted headings/symbols: function slug; function tag; function uniq; function evidenceLinks; function record; function readJson; function writeJson; function main; constant ROOT; constant DATA_FILE; constant QUERY_FILE; constant FIELD_SOURCES; constant SELECTION_TAG_CATEGORIES; constant FIELDS. Size: 28850 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "expert radar crawl tooling",
+        "local javascript module",
+        "mjs",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "scripts/seed-top-scientists.mjs",
+        "sizeBytes": 28850,
+        "lastModified": "2026-05-17T20:12:37.681Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "name": "scripts/seed-top-scientists.mjs",
+      "text": "Local local javascript module in Expert Radar crawl tooling. Extracted headings/symbols: function slug; function tag; function uniq; function evidenceLinks; function record; function readJson; function writeJson; function main; constant ROOT; constant DATA_FILE; constant QUERY_FILE; constant FIELD_SOURCES; constant SELECTION_TAG_CATEGORIES; constant FIELDS. Size: 28850 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "src-local-favicon-svg",
+      "title": "favicon.svg",
+      "type": "local visual asset",
+      "domain": "ENS Navigator local architecture",
+      "url": "local://favicon.svg",
+      "summary": "Local local visual asset in ENS Navigator local architecture. Size: 385 bytes.",
+      "status": "needs_review",
+      "tags": [
+        "ens navigator local architecture",
+        "local visual asset",
+        "svg",
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "path": "favicon.svg",
+        "sizeBytes": 385,
+        "lastModified": "2026-05-18T01:54:54.482Z",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "name": "favicon.svg",
+      "text": "Local local visual asset in ENS Navigator local architecture. Size: 385 bytes.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    }
+  ],
+  "people": [],
+  "questions": [
+    {
+      "id": "hyp-football-united-arch",
+      "tags": [
+        "hypothesis",
+        "architecture",
+        "football united local-first social mesh"
+      ],
+      "domain": "Football United: local-first social mesh",
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "priority": 5,
+      "question": "Hypothesis: A local-first, peer-to-peer football social mesh can bound per-device state (e.g., sliding-window + state snapshots) while retaining high witness coverage using delivery-intent gossip + opportunistic transport.",
+      "status": "inbox",
+      "text": "Hypothesis: A local-first, peer-to-peer football social mesh can bound per-device state (e.g., sliding-window + state snapshots) while retaining high witness coverage using delivery-intent gossip + opportunistic transport.",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "id": "q-bounded-crdt-pruning",
+      "tags": [
+        "bounded crdt",
+        "compaction",
+        "security",
+        "football united local-first social mesh"
+      ],
+      "domain": "Football United: local-first social mesh",
+      "priority": 5,
+      "question": "Which bounded / compacting CRDT patterns preserve convergence while pruning history, and what are their failure modes under adversarial peers?",
+      "status": "needs_review",
+      "text": "Which bounded / compacting CRDT patterns preserve convergence while pruning history, and what are their failure modes under adversarial peers?",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "id": "q-social-trust-sybil",
+      "tags": [
+        "sybil",
+        "trust graph",
+        "football united local-first social mesh"
+      ],
+      "domain": "Football United: local-first social mesh",
+      "priority": 4,
+      "question": "Which social-graph-based sybil defenses are applicable to a pitch-local mesh, and what assumptions break under small cliques?",
+      "status": "needs_review",
+      "text": "Which social-graph-based sybil defenses are applicable to a pitch-local mesh, and what assumptions break under small cliques?",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ],
+        "direction": "knowledge_to_people"
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "id": "q-isaac-sim-project-robot-type",
+      "tags": [
+        "robot type",
+        "simulation setup",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow"
+      ],
+      "domain": "Isaac Sim simulation workflow",
+      "sourceIds": [
+        "src-nvidia-isaac-urdf-importer-api-2025",
+        "src-nvidia-isaac-mjcf-import-2026"
+      ],
+      "priority": 5,
+      "question": "Which robot class is the simulation target: AMR, manipulator, drone, humanoid, legged robot, or field device?",
+      "status": "needs_review",
+      "text": "Which robot class is the simulation target: AMR, manipulator, drone, humanoid, legged robot, or field device?",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-urdf-importer-api-2025",
+          "src-nvidia-isaac-mjcf-import-2026"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "q-isaac-sim-source-modeling-tool",
+      "tags": [
+        "conversion workflow",
+        "robot model source",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow"
+      ],
+      "domain": "Isaac Sim simulation workflow",
+      "sourceIds": [
+        "src-nvidia-omniverse-asset-converter-service-2025",
+        "src-nvidia-isaac-urdf-importer-api-2025",
+        "src-nvidia-isaac-mjcf-import-2026"
+      ],
+      "priority": 5,
+      "question": "What tool produced the original model, and does the project need URDF, MJCF, CAD/mesh conversion, or native USD authoring?",
+      "status": "needs_review",
+      "text": "What tool produced the original model, and does the project need URDF, MJCF, CAD/mesh conversion, or native USD authoring?",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-omniverse-asset-converter-service-2025",
+          "src-nvidia-isaac-urdf-importer-api-2025",
+          "src-nvidia-isaac-mjcf-import-2026"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "q-isaac-sim-ros2-connection",
+      "tags": [
+        "ros2",
+        "bridge",
+        "launch",
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats",
+        "isaac sim simulation workflow"
+      ],
+      "domain": "Isaac Sim simulation workflow",
+      "sourceIds": [
+        "src-nvidia-isaac-ros2-bridge-extension-2025",
+        "src-nvidia-isaac-ros2-standalone-2026"
+      ],
+      "priority": 4,
+      "question": "Will the simulation connect to ROS 2, and if so should the bridge be enabled at app startup, via kit configuration, or from Python?",
+      "status": "needs_review",
+      "text": "Will the simulation connect to ROS 2, and if so should the bridge be enabled at app startup, via kit configuration, or from Python?",
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-nvidia-isaac-ros2-bridge-extension-2025",
+          "src-nvidia-isaac-ros2-standalone-2026"
+        ],
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "q-local-file-review-promotion",
+      "domain": "ENS Navigator local architecture",
+      "question": "Which local operator documents should be promoted into approved architecture claims after manual review?",
+      "priority": 4,
+      "status": "needs_review",
+      "sourceIds": [
+        "src-local-argos-research-spec-html",
+        "src-local-ens-navigator-spec-html",
+        "src-local-operational-twin-input-contract-html",
+        "src-local-operational-twin-substrate-spec-html",
+        "src-local-irftek-complete-substrate-architecture-html",
+        "src-local-spec-irftek-production-html",
+        "src-local-irftek-spec-html",
+        "src-local-irftek-operator-protocol-skill",
+        "src-local-skill-extracted-irftek-operator-protocol-skill-md",
+        "src-local-local-api-md",
+        "src-local-index-html",
+        "src-local-server-mjs",
+        "src-local-mcp-server-mjs",
+        "src-local-package-json",
+        "src-local-ens-navigator-launcher-ps1",
+        "src-local-ens-biotech-rd-seed-ps1",
+        "src-local-scripts-seed-biotech-rd-mjs",
+        "src-local-scripts-seed-top-scientists-mjs",
+        "src-local-favicon-svg"
+      ],
+      "text": "Which local operator documents should be promoted into approved architecture claims after manual review?",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory",
+        "ens navigator local architecture"
+      ],
+      "confidence": null,
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "sourceIds": [
+          "src-local-argos-research-spec-html",
+          "src-local-ens-navigator-spec-html",
+          "src-local-operational-twin-input-contract-html",
+          "src-local-operational-twin-substrate-spec-html",
+          "src-local-irftek-complete-substrate-architecture-html",
+          "src-local-spec-irftek-production-html",
+          "src-local-irftek-spec-html",
+          "src-local-irftek-operator-protocol-skill",
+          "src-local-skill-extracted-irftek-operator-protocol-skill-md",
+          "src-local-local-api-md",
+          "src-local-index-html",
+          "src-local-server-mjs",
+          "src-local-mcp-server-mjs",
+          "src-local-package-json",
+          "src-local-ens-navigator-launcher-ps1",
+          "src-local-ens-biotech-rd-seed-ps1",
+          "src-local-scripts-seed-biotech-rd-mjs",
+          "src-local-scripts-seed-top-scientists-mjs",
+          "src-local-favicon-svg"
+        ],
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    }
+  ],
+  "links": [
+    {
+      "fromId": "claim-delta-crdt-small-messages",
+      "domain": "Football United: local-first social mesh",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-almeida-delta-crdt-2014",
+      "id": "link-claim-delta-crdt-small-messages-src-almeida-delta-crdt-2014",
+      "from": "claim-delta-crdt-small-messages",
+      "to": "src-almeida-delta-crdt-2014",
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ]
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "fromId": "claim-rumor-needs-anti-entropy",
+      "domain": "Football United: local-first social mesh",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-demers-epidemic-1987",
+      "id": "link-claim-rumor-needs-anti-entropy-src-demers-epidemic-1987",
+      "from": "claim-rumor-needs-anti-entropy",
+      "to": "src-demers-epidemic-1987",
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ]
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "fromId": "claim-cga-binds-key-to-ipv6",
+      "domain": "Football United: local-first social mesh",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-rfc3972-2005",
+      "id": "link-claim-cga-binds-key-to-ipv6-src-rfc3972-2005",
+      "from": "claim-cga-binds-key-to-ipv6",
+      "to": "src-rfc3972-2005",
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ]
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "fromId": "claim-intercontact-powerlaw",
+      "domain": "Football United: local-first social mesh",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-pocket-switched-2005",
+      "id": "link-claim-intercontact-powerlaw-src-pocket-switched-2005",
+      "from": "claim-intercontact-powerlaw",
+      "to": "src-pocket-switched-2005",
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "",
+      "domainIds": [
+        "Football United: local-first social mesh"
+      ],
+      "provenance": {
+        "origin": "research",
+        "domainIds": [
+          "Football United: local-first social mesh"
+        ]
+      },
+      "createdAt": "2026-05-18T02:38:11.602Z",
+      "updatedAt": "2026-05-18T02:38:11.602Z"
+    },
+    {
+      "id": "link-isaac-urdf-claim-source",
+      "fromId": "claim-isaac-urdf-imports-to-usd",
+      "domain": "Isaac Sim simulation workflow",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-nvidia-isaac-urdf-importer-api-2025",
+      "from": "claim-isaac-urdf-imports-to-usd",
+      "to": "src-nvidia-isaac-urdf-importer-api-2025",
+      "tags": [
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "link-isaac-mjcf-claim-source",
+      "fromId": "claim-isaac-mjcf-imports-to-usd",
+      "domain": "Isaac Sim simulation workflow",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-nvidia-isaac-mjcf-import-2026",
+      "from": "claim-isaac-mjcf-imports-to-usd",
+      "to": "src-nvidia-isaac-mjcf-import-2026",
+      "tags": [
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "link-isaac-asset-converter-claim-source",
+      "fromId": "claim-omniverse-asset-converter-supported-formats",
+      "domain": "Isaac Sim simulation workflow",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-nvidia-omniverse-asset-converter-service-2025",
+      "from": "claim-omniverse-asset-converter-supported-formats",
+      "to": "src-nvidia-omniverse-asset-converter-service-2025",
+      "tags": [
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "link-isaac-ros2-claim-source",
+      "fromId": "claim-isaac-ros2-bridge-launch",
+      "domain": "Isaac Sim simulation workflow",
+      "relation": "supported_by",
+      "fromType": "claim",
+      "toType": "source",
+      "toId": "src-nvidia-isaac-ros2-bridge-extension-2025",
+      "from": "claim-isaac-ros2-bridge-launch",
+      "to": "src-nvidia-isaac-ros2-bridge-extension-2025",
+      "tags": [
+        "isaac sim",
+        "simulation",
+        "robotics",
+        "omniverse",
+        "file formats"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Isaac Sim simulation workflow"
+      ],
+      "provenance": {
+        "origin": "research",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Isaac Sim simulation workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:06:12.726Z",
+      "updatedAt": "2026-05-18T23:06:12.726Z"
+    },
+    {
+      "id": "link-claim-local-argos-research-spec-html-src-local-argos-research-spec-html",
+      "fromType": "claim",
+      "fromId": "claim-local-argos-research-spec-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-argos-research-spec-html",
+      "domain": "ARGOS research and memory workflow",
+      "from": "claim-local-argos-research-spec-html",
+      "to": "src-local-argos-research-spec-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ARGOS research and memory workflow"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ARGOS research and memory workflow"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-ens-navigator-spec-html-src-local-ens-navigator-spec-html",
+      "fromType": "claim",
+      "fromId": "claim-local-ens-navigator-spec-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-ens-navigator-spec-html",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-ens-navigator-spec-html",
+      "to": "src-local-ens-navigator-spec-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-operational-twin-input-contract-html-src-local-operational-twin-input-contract-html",
+      "fromType": "claim",
+      "fromId": "claim-local-operational-twin-input-contract-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-operational-twin-input-contract-html",
+      "domain": "Operational Twin substrate",
+      "from": "claim-local-operational-twin-input-contract-html",
+      "to": "src-local-operational-twin-input-contract-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Operational Twin substrate"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Operational Twin substrate"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-operational-twin-substrate-spec-html-src-local-operational-twin-substrate-spec-html",
+      "fromType": "claim",
+      "fromId": "claim-local-operational-twin-substrate-spec-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-operational-twin-substrate-spec-html",
+      "domain": "Operational Twin substrate",
+      "from": "claim-local-operational-twin-substrate-spec-html",
+      "to": "src-local-operational-twin-substrate-spec-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Operational Twin substrate"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Operational Twin substrate"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-irftek-complete-substrate-architecture-html-src-local-irftek-complete-substrate-architecture-html",
+      "fromType": "claim",
+      "fromId": "claim-local-irftek-complete-substrate-architecture-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-irftek-complete-substrate-architecture-html",
+      "domain": "Robodex / IrfTek embodied execution",
+      "from": "claim-local-irftek-complete-substrate-architecture-html",
+      "to": "src-local-irftek-complete-substrate-architecture-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-spec-irftek-production-html-src-local-spec-irftek-production-html",
+      "fromType": "claim",
+      "fromId": "claim-local-spec-irftek-production-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-spec-irftek-production-html",
+      "domain": "Robodex / IrfTek embodied execution",
+      "from": "claim-local-spec-irftek-production-html",
+      "to": "src-local-spec-irftek-production-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-irftek-spec-html-src-local-irftek-spec-html",
+      "fromType": "claim",
+      "fromId": "claim-local-irftek-spec-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-irftek-spec-html",
+      "domain": "Robodex / IrfTek embodied execution",
+      "from": "claim-local-irftek-spec-html",
+      "to": "src-local-irftek-spec-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-irftek-operator-protocol-skill-src-local-irftek-operator-protocol-skill",
+      "fromType": "claim",
+      "fromId": "claim-local-irftek-operator-protocol-skill",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-irftek-operator-protocol-skill",
+      "domain": "Robodex / IrfTek embodied execution",
+      "from": "claim-local-irftek-operator-protocol-skill",
+      "to": "src-local-irftek-operator-protocol-skill",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-skill-extracted-irftek-operator-protocol-skill-md-src-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "fromType": "claim",
+      "fromId": "claim-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "domain": "Robodex / IrfTek embodied execution",
+      "from": "claim-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "to": "src-local-skill-extracted-irftek-operator-protocol-skill-md",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Robodex / IrfTek embodied execution"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Robodex / IrfTek embodied execution"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-local-api-md-src-local-local-api-md",
+      "fromType": "claim",
+      "fromId": "claim-local-local-api-md",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-local-api-md",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-local-api-md",
+      "to": "src-local-local-api-md",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-index-html-src-local-index-html",
+      "fromType": "claim",
+      "fromId": "claim-local-index-html",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-index-html",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-index-html",
+      "to": "src-local-index-html",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-server-mjs-src-local-server-mjs",
+      "fromType": "claim",
+      "fromId": "claim-local-server-mjs",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-server-mjs",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-server-mjs",
+      "to": "src-local-server-mjs",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-mcp-server-mjs-src-local-mcp-server-mjs",
+      "fromType": "claim",
+      "fromId": "claim-local-mcp-server-mjs",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-mcp-server-mjs",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-mcp-server-mjs",
+      "to": "src-local-mcp-server-mjs",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-package-json-src-local-package-json",
+      "fromType": "claim",
+      "fromId": "claim-local-package-json",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-package-json",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-package-json",
+      "to": "src-local-package-json",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-ens-navigator-launcher-ps1-src-local-ens-navigator-launcher-ps1",
+      "fromType": "claim",
+      "fromId": "claim-local-ens-navigator-launcher-ps1",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-ens-navigator-launcher-ps1",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-ens-navigator-launcher-ps1",
+      "to": "src-local-ens-navigator-launcher-ps1",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-ens-biotech-rd-seed-ps1-src-local-ens-biotech-rd-seed-ps1",
+      "fromType": "claim",
+      "fromId": "claim-local-ens-biotech-rd-seed-ps1",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-ens-biotech-rd-seed-ps1",
+      "domain": "Expert Radar crawl tooling",
+      "from": "claim-local-ens-biotech-rd-seed-ps1",
+      "to": "src-local-ens-biotech-rd-seed-ps1",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-scripts-seed-biotech-rd-mjs-src-local-scripts-seed-biotech-rd-mjs",
+      "fromType": "claim",
+      "fromId": "claim-local-scripts-seed-biotech-rd-mjs",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-scripts-seed-biotech-rd-mjs",
+      "domain": "Expert Radar crawl tooling",
+      "from": "claim-local-scripts-seed-biotech-rd-mjs",
+      "to": "src-local-scripts-seed-biotech-rd-mjs",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-scripts-seed-top-scientists-mjs-src-local-scripts-seed-top-scientists-mjs",
+      "fromType": "claim",
+      "fromId": "claim-local-scripts-seed-top-scientists-mjs",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-scripts-seed-top-scientists-mjs",
+      "domain": "Expert Radar crawl tooling",
+      "from": "claim-local-scripts-seed-top-scientists-mjs",
+      "to": "src-local-scripts-seed-top-scientists-mjs",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "Expert Radar crawl tooling"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "Expert Radar crawl tooling"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    },
+    {
+      "id": "link-claim-local-favicon-svg-src-local-favicon-svg",
+      "fromType": "claim",
+      "fromId": "claim-local-favicon-svg",
+      "relation": "supported_by",
+      "toType": "source",
+      "toId": "src-local-favicon-svg",
+      "domain": "ENS Navigator local architecture",
+      "from": "claim-local-favicon-svg",
+      "to": "src-local-favicon-svg",
+      "tags": [
+        "local files",
+        "operator document",
+        "project inventory"
+      ],
+      "confidence": null,
+      "status": "",
+      "agentRunId": "",
+      "direction": "knowledge_to_people",
+      "domainIds": [
+        "ENS Navigator local architecture"
+      ],
+      "provenance": {
+        "origin": "operator_document",
+        "direction": "knowledge_to_people",
+        "domainIds": [
+          "ENS Navigator local architecture"
+        ]
+      },
+      "createdAt": "2026-05-18T23:18:42.381Z",
+      "updatedAt": "2026-05-18T23:18:42.381Z"
+    }
+  ],
+  "agentRuns": [],
+  "counts": {
+    "domains": 7,
+    "claims": 35,
+    "sources": 34,
+    "people": 0,
+    "questions": 7,
+    "links": 27,
+    "agentRuns": 0
+  }
+}

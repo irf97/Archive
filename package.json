@@ -1,0 +1,15 @@
+{
+  "name": "ens-navigator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "mcp": "node mcp-server.mjs",
+    "seed:biotech": "node scripts/seed-biotech-rd.mjs",
+    "seed:top-scientists": "node scripts/seed-top-scientists.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  }
+}

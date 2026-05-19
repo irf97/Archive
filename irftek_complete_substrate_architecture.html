@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IrfTek Complete Substrate Architecture</title>
+<style>
+:root {
+  --paper:#f4f1e8;
+  --paper2:#ebe5d6;
+  --ink:#161616;
+  --soft:#3f3b35;
+  --muted:#7d7568;
+  --rule:#d1c7b4;
+  --accent:#a7452c;
+  --accent2:#2f5d68;
+  --green:#496b3b;
+  --gold:#a9832e;
+  --panel:#fffaf0;
+  --code:#1c1712;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(167,69,44,.08), transparent 32%),
+    radial-gradient(circle at 90% 86%, rgba(47,93,104,.08), transparent 35%),
+    var(--paper);
+  color:var(--ink);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  line-height:1.62;
+}
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr);max-width:1420px;margin:0 auto;min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--rule);padding:28px 20px;background:rgba(244,241,232,.86);backdrop-filter:blur(14px)}
+.logo{font-size:24px;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
+.logo em{color:var(--accent);font-style:italic}
+.aside-sub{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.search{width:100%;border:1px solid var(--rule);background:var(--panel);color:var(--ink);padding:10px 12px;margin:0 0 18px;font:inherit;border-radius:0}
+nav a{display:block;text-decoration:none;color:var(--soft);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.35;padding:6px 8px;border-left:2px solid transparent}
+nav a.sub{padding-left:22px;font-size:10px;color:var(--muted)}
+nav a:hover,nav a.active{color:var(--accent);border-left-color:var(--accent);background:rgba(167,69,44,.045)}
+main{padding:54px 64px 96px;max-width:1040px}
+.masthead{border-bottom:2px solid var(--ink);padding-bottom:36px;margin-bottom:50px}
+.kicker{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h1{font-size:clamp(42px,7vw,76px);line-height:.95;letter-spacing:-.035em;font-weight:420;margin:0 0 22px}
+.lede{font-size:20px;font-style:italic;color:var(--soft);max-width:760px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.pill{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--rule);padding:7px 10px;background:rgba(255,250,240,.7);color:var(--soft)}
+.content h2{font-size:34px;line-height:1.08;letter-spacing:-.02em;font-weight:430;border-bottom:1px solid var(--rule);padding-bottom:12px;margin:70px 0 24px}
+.content h3{font-size:23px;line-height:1.15;font-weight:520;margin:34px 0 12px;color:var(--ink)}
+.content h4{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:28px 0 10px}
+p{color:var(--soft);font-size:16px;max-width:780px}
+strong{color:var(--ink)}
+ul,ol{color:var(--soft);padding-left:24px}
+li{margin:5px 0}
+hr{border:none;border-top:1px solid var(--rule);margin:38px 0}
+pre{background:var(--code);color:#f3ead8;padding:20px 22px;overflow:auto;border-left:4px solid var(--accent2);font-size:13px;line-height:1.52;margin:20px 0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+p code,li code,td code{background:var(--paper2);padding:2px 5px;color:var(--accent)}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:rgba(255,250,240,.45)}
+th,td{border-bottom:1px solid var(--rule);padding:11px 12px;text-align:left;vertical-align:top}
+th{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink)}
+blockquote{margin:26px 0;padding:20px 24px;border-left:4px solid var(--accent);background:rgba(167,69,44,.07);color:var(--soft)}
+blockquote p{margin:0}
+.content > p:first-of-type{font-size:18px;color:var(--ink)}
+.callout-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0}
+.callout-card{border:1px solid var(--rule);background:rgba(255,250,240,.55);padding:16px}
+.footer{border-top:1px solid var(--rule);margin-top:64px;padding-top:24px;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+@media(max-width:980px){.layout{display:block}aside{position:relative;height:auto}main{padding:28px 20px}.callout-grid{grid-template-columns:1fr}}
+@media print{aside{display:none}.layout{display:block}main{max-width:none;padding:0}body{background:white}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <div class="logo">IrfTek <em>Substrate</em></div>
+    <div class="aside-sub">complete architecture spec</div>
+    <input id="search" class="search" placeholder="Filter sections…" />
+    <nav><a class="" href="#the-four-specs-you-ve-written"><span>The Four Specs You&#x27;ve Written</span></a>
+<a class="sub" href="#1-argos-operational-specification"><span>1. ARGOS Operational Specification</span></a>
+<a class="sub" href="#2-argos-automated-research-spec"><span>2. Argos Automated Research Spec</span></a>
+<a class="sub" href="#3-convergent-cell-program-specification-draft"><span>3. Convergent Cell Program Specification (DRAFT)</span></a>
+<a class="sub" href="#4-ens-navigator-product-spec"><span>4. ENS Navigator Product Spec</span></a>
+<a class="" href="#the-seven-systems-the-full-stack"><span>The Seven Systems (The Full Stack)</span></a>
+<a class="sub" href="#system-descriptions"><span>System Descriptions</span></a>
+<a class="" href="#how-they-actually-work-together"><span>How They Actually Work Together</span></a>
+<a class="sub" href="#flow-1-knowledge-creation-chat-memory-execution"><span>Flow 1: Knowledge Creation (Chat → Memory → Execution)</span></a>
+<a class="sub" href="#flow-2-skill-evolution-invocation-ranking-use"><span>Flow 2: Skill Evolution (Invocation → Ranking → Use)</span></a>
+<a class="sub" href="#flow-3-research-validation-unsourced-sourced-outcome"><span>Flow 3: Research Validation (Unsourced → Sourced → Outcome)</span></a>
+<a class="" href="#the-key-architectural-decisions"><span>The Key Architectural Decisions</span></a>
+<a class="sub" href="#1-local-first-not-remote"><span>1. Local-First, Not Remote</span></a>
+<a class="sub" href="#2-approve-everything-default-with-autonomy-escape-hatch"><span>2. Approve-Everything Default (with autonomy escape hatch)</span></a>
+<a class="sub" href="#3-sourcing-before-memory-promotion"><span>3. Sourcing Before Memory Promotion</span></a>
+<a class="sub" href="#4-explicit-outcome-dependencies"><span>4. Explicit Outcome Dependencies</span></a>
+<a class="sub" href="#5-signal-over-autonomy"><span>5. Signal Over Autonomy</span></a>
+<a class="" href="#integration-points-how-data-flows-between-systems"><span>Integration Points (How Data Flows Between Systems)</span></a>
+<a class="sub" href="#argos-constellation"><span>ARGOS ↔ Constellation</span></a>
+<a class="sub" href="#argos-chatdrift"><span>ARGOS ↔ Chatdrift</span></a>
+<a class="sub" href="#argos-ens-navigator"><span>ARGOS ↔ ENS Navigator</span></a>
+<a class="sub" href="#ens-navigator-constellation"><span>ENS Navigator ↔ Constellation</span></a>
+<a class="sub" href="#all-nats-event-bus"><span>All → NATS event bus</span></a>
+<a class="sub" href="#all-mission-control-dashboard"><span>All → Mission Control Dashboard</span></a>
+<a class="" href="#what-each-spec-covers"><span>What Each Spec Covers</span></a>
+<a class="" href="#the-roadmap-what-builds-next"><span>The Roadmap (What Builds Next)</span></a>
+<a class="sub" href="#phase-a-bridge-constellation-argos-week-1"><span>Phase A: Bridge Constellation → ARGOS (Week 1)</span></a>
+<a class="sub" href="#phase-b-wire-chatdrift-argos-weeks-2-3"><span>Phase B: Wire Chatdrift → ARGOS (Weeks 2-3)</span></a>
+<a class="sub" href="#phase-c-operator-state-capture-week-3-4-you-are-here"><span>Phase C: Operator State Capture (Week 3-4) ← YOU ARE HERE</span></a>
+<a class="sub" href="#phase-d-ens-navigator-argos-loop-weeks-4-6"><span>Phase D: ENS Navigator ↔ ARGOS Loop (Weeks 4-6)</span></a>
+<a class="sub" href="#phase-e-autonomous-mutations-weeks-6-7"><span>Phase E: Autonomous Mutations (Weeks 6-7)</span></a>
+<a class="sub" href="#phase-f-mission-control-full-dashboard-weeks-7-8"><span>Phase F: Mission Control Full Dashboard (Weeks 7-8)</span></a>
+<a class="" href="#what-makes-this-different-from-typical-research-apps"><span>What Makes This Different From Typical Research Apps</span></a>
+<a class="sub" href="#not-a-summarizer"><span>Not a summarizer</span></a>
+<a class="sub" href="#not-an-autonomous-agent"><span>Not an autonomous agent</span></a>
+<a class="sub" href="#not-a-knowledge-graph"><span>Not a knowledge graph</span></a>
+<a class="sub" href="#not-a-task-manager"><span>Not a task manager</span></a>
+<a class="sub" href="#not-a-chat-exporter"><span>Not a chat exporter</span></a>
+<a class="" href="#how-you-use-this-the-user-experience"><span>How You Use This (The User Experience)</span></a>
+<a class="sub" href="#morning"><span>Morning</span></a>
+<a class="sub" href="#during-work-codex"><span>During work (Codex)</span></a>
+<a class="sub" href="#evening"><span>Evening</span></a>
+<a class="sub" href="#weekly"><span>Weekly</span></a>
+<a class="sub" href="#monthly"><span>Monthly</span></a>
+<a class="" href="#success-criteria"><span>Success Criteria</span></a>
+<a class="" href="#the-one-thing-everything-depends-on"><span>The One Thing Everything Depends On</span></a></nav>
+  </aside>
+  <main>
+    <section class="masthead">
+      <div class="kicker">Four specs · seven systems · one local-first platform</div>
+      <h1>IrfTek Complete Substrate Architecture</h1>
+      <div class="lede">Four specs, seven systems, one unified local-first research + memory + execution platform.</div>
+      <div class="meta">
+        <span class="pill">ARGOS</span><span class="pill">ENS Navigator</span><span class="pill">Constellation</span><span class="pill">Chatdrift</span><span class="pill">Postgres + NATS</span>
+      </div>
+    </section>
+    <article class="content" id="content">
+      <p><strong>Four specs, seven systems, one unified local-first research + memory + execution platform.</strong></p>
+<hr />
+<h2 id="the-four-specs-you-ve-written">The Four Specs You've Written</h2>
+<h3 id="1-argos-operational-specification">1. <strong>ARGOS Operational Specification</strong></h3>
+<ul>
+<li><strong>What it is</strong>: The memory substrate specification</li>
+<li><strong>Runtime</strong>: Phoenix server on 127.0.0.1:4020, Postgres source-of-truth</li>
+<li><strong>Contract</strong>: One desktop daemon, many MCP + HTTP clients</li>
+<li><strong>Core principle</strong>: Capture fast, slow work happens after</li>
+<li><strong>Load-bearing invariant</strong>: No hidden autonomy — canon changes require operator approval</li>
+<li><strong>Current state</strong>: Implemented through Phase 8 (event log, canons, approvals, proposals, scoring stubs)</li>
+</ul>
+<h3 id="2-argos-automated-research-spec">2. <strong>Argos Automated Research Spec</strong></h3>
+<ul>
+<li><strong>What it is</strong>: The research workflow specification for turning chats into durable knowledge</li>
+<li><strong>Flow</strong>: Chat intake → extraction → research job → ingest → review → outcomes</li>
+<li><strong>Core rule</strong>: No unsourced claims in memory; all claims need sources before promotion</li>
+<li><strong>Objects</strong>: chatIntake, hypothesis, source, claim, question, decision, domain, outcome</li>
+<li><strong>Quality gates</strong>: No source → needs_source; contradiction → disputed; task without evidence → blocked</li>
+<li><strong>Current state</strong>: Specification only; ready for implementation</li>
+</ul>
+<h3 id="3-convergent-cell-program-specification-draft">3. <strong>Convergent Cell Program Specification (DRAFT)</strong></h3>
+<ul>
+<li><strong>What it is</strong>: The normative specification of how the three systems interoperate</li>
+<li><strong>Scope</strong>: Event schema, identity/authority/trust, architecture profiles (M/P/B/H), transport, conformance</li>
+<li><strong>Status</strong>: DRAFT — honest about gaps; open items documented</li>
+<li><strong>Conformance</strong>: Levels 0–3; executable acceptance suite in §8</li>
+<li><strong>Purpose</strong>: Make the program buildable from zero; guard against &quot;vision with no wires&quot;</li>
+<li><strong>Current state</strong>: Specification only; ratification pending</li>
+</ul>
+<h3 id="4-ens-navigator-product-spec">4. <strong>ENS Navigator Product Spec</strong></h3>
+<ul>
+<li><strong>What it is</strong>: The research operations app specification</li>
+<li><strong>Purpose</strong>: Expert discovery, domain knowledge curation, outcome execution</li>
+<li><strong>Pages</strong>: Navigator, Expert Radar, Domain Knowledge, Outcomes, Ingest Queue, Spec Pages</li>
+<li><strong>Data model</strong>: Experts, pipeline, domain knowledge, outcomes, crawl jobs, ingest log, saved views</li>
+<li><strong>Local API</strong>: Read/write endpoints for expert, domain knowledge, outcomes, crawl ingestion</li>
+<li><strong>Quality gates</strong>: Source validation, contradiction detection, evidence gating on tasks</li>
+<li><strong>Current state</strong>: Implementation in progress on localhost:8787</li>
+</ul>
+<hr />
+<h2 id="the-seven-systems-the-full-stack">The Seven Systems (The Full Stack)</h2>
+<pre><code>┌──────────────────────────────────────────────────────────────────┐
+│ L0: USER                                                         │
+│ (Your hands, voice, Claude Code sessions)                       │
+└──────────────┬───────────────────────────────────────────────────┘
+               │
+        ┌──────┴──────────────────────────┐
+        │                                 │
+        ▼                                 ▼
+┌─────────────────┐            ┌──────────────────────┐
+│ SYSTEM 1        │            │ SYSTEM 2             │
+│ Constellation   │            │ Chatdrift            │
+│ (Skill Atlas)   │            │ (Drift Tracker)      │
+│ :7777 (MCP)     │            │ (Ingest + Phoenix)   │
+│                 │            │                      │
+│ -entry tracking │            │ -Claude Code parse   │
+│ -invocation log │            │ -Claude.ai export    │
+│ -skill ranking  │            │ -ChatGPT export      │
+│ -cross-links    │            │ -origin→terminal     │
+└────────┬────────┘            └──────────┬───────────┘
+         │                               │
+         │      NATS event bus           │
+         └───────────┬───────────────────┘
+                     │
+                     ▼
+        ┌────────────────────────┐
+        │ SYSTEM 3               │
+        │ ARGOS                  │
+        │ (Memory Substrate)     │
+        │ :4020 (Phoenix)        │
+        │                        │
+        │ -event log             │
+        │ -canons + versions     │
+        │ -approvals             │
+        │ -proposals             │
+        │ -operator state        │
+        │ -outcome scoring       │
+        │ -intelligence stubs    │
+        │ -MCP tools surface     │
+        └─────┬──────────────────┘
+              │
+        ┌─────┴─────────────────────────────┐
+        │                                   │
+        ▼                                   ▼
+┌─────────────────────┐      ┌──────────────────────┐
+│ SYSTEM 4            │      │ SYSTEM 5             │
+│ ENS Navigator       │      │ ARGOS Research Flow  │
+│ (Research Ops)      │      │ (Chat → Knowledge)   │
+│ :8787 (Browser UI)  │      │                      │
+│                     │      │ -chat intake capture │
+│ -expert discovery   │      │ -claim extraction    │
+│ -domain knowledge   │      │ -research jobs       │
+│ -outcomes graph     │      │ -source validation   │
+│ -ingest queue       │      │ -review lanes        │
+└──────────┬──────────┘      └──────────┬───────────┘
+           │                           │
+           └───────────┬───────────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ SYSTEM 6             │
+            │ Mission Control      │
+            │ (Dashboard)          │
+            │                      │
+            │ -unified visibility  │
+            │ -event stream        │
+            │ -approval queue      │
+            │ -operator state      │
+            │ -system health       │
+            │ -autonomous mutations│
+            │ -skill ranking       │
+            └──────────┬───────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ SYSTEM 7             │
+            │ Postgres + NATS      │
+            │ (Substrate Layer)    │
+            │                      │
+            │ -one source of truth │
+            │ -event bus           │
+            │ -audit trail         │
+            └──────────────────────┘
+</code></pre>
+<h3 id="system-descriptions">System Descriptions</h3>
+<table>
+<thead>
+<tr>
+  <th>System</th>
+  <th>Purpose</th>
+  <th>URL/Port</th>
+  <th>I/O</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Constellation</strong></td>
+  <td>Skill atlas + invocation tracking</td>
+  <td>:7777 MCP</td>
+  <td>entries, invocations</td>
+  <td>Shipped v0.2</td>
+</tr>
+<tr>
+  <td><strong>Chatdrift</strong></td>
+  <td>Drift detection across chat history</td>
+  <td>Ingest + :3000 (Phoenix)</td>
+  <td>transcripts → drift vectors</td>
+  <td>In progress</td>
+</tr>
+<tr>
+  <td><strong>ARGOS</strong></td>
+  <td>Memory substrate + approval gates</td>
+  <td>:4020 HTTP/MCP</td>
+  <td>events, canons, proposals</td>
+  <td>Phase 0-8 shipped</td>
+</tr>
+<tr>
+  <td><strong>ENS Navigator</strong></td>
+  <td>Research operations app</td>
+  <td>:8787 Browser</td>
+  <td>experts, domain knowledge, outcomes</td>
+  <td>In progress</td>
+</tr>
+<tr>
+  <td><strong>ARGOS Research Flow</strong></td>
+  <td>Chat → sourced knowledge bridge</td>
+  <td>/api/capture + /api/ingest</td>
+  <td>chats → approved claims</td>
+  <td>Spec only</td>
+</tr>
+<tr>
+  <td><strong>Mission Control</strong></td>
+  <td>Unified dashboard</td>
+  <td>:4020/dashboard</td>
+  <td>all substrate state</td>
+  <td>Reference design</td>
+</tr>
+<tr>
+  <td><strong>Postgres + NATS</strong></td>
+  <td>Data layer + event bus</td>
+  <td>localhost</td>
+  <td>persistence + events</td>
+  <td>Implemented</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="how-they-actually-work-together">How They Actually Work Together</h2>
+<h3 id="flow-1-knowledge-creation-chat-memory-execution">Flow 1: Knowledge Creation (Chat → Memory → Execution)</h3>
+<pre><code>1. You chat with Codex in Claude Code
+   └─ Session produces decisions, code, insights, questions
+
+2. Codex calls /api/capture → ARGOS event log
+   └─ Raw event: kind=codex_session, content, decision_ids
+
+3. Chatdrift ingestor reads Claude Code transcript daily
+   └─ Detects drift: &quot;this conversation started about X, ended about Y&quot;
+   └─ Emits: kind=drift_detected, scope=software, origin_intent, terminal_state
+
+4. ARGOS intelligence loop processes drift event
+   └─ Surfaces proposal: &quot;should we add entry to constellation?&quot;
+   └─ Surfaces proposal: &quot;should we create research task?&quot;
+
+5. You review in dashboard (Mission Control)
+   └─ Approve drift proposal
+   └─ Approve &quot;create research task&quot; proposal
+
+6. Research task spawns research job
+   └─ Job runs: &quot;find sources supporting this claim&quot;
+   └─ Results ingest into ENS Navigator Domain Knowledge
+
+7. ENS Navigator &quot;Outcomes&quot; creates task graph
+   └─ Task depends on sources
+   └─ Task has evidence gates
+
+8. Task completion triggers outcome scoring in ARGOS
+   └─ Score conditions on operator state at task creation
+   └─ High-signal outcomes bias next context pack
+
+9. Next Codex session receives better context pack
+   └─ Outcome-proven claims rank higher
+   └─ Scope-relevant knowledge prioritized
+   └─ Loop closes
+</code></pre>
+<h3 id="flow-2-skill-evolution-invocation-ranking-use">Flow 2: Skill Evolution (Invocation → Ranking → Use)</h3>
+<pre><code>1. You use a skill during Codex session
+   └─ Codex calls argos_invoke_skill(name, context)
+   └─ Constellation logs: invocation_count++
+
+2. Constellation dashboard shows invocation heat map
+   └─ High-invoked skills bubble to top
+   └─ Unused skills eventually demoted
+
+3. Next time you need context, pack compiler reads Constellation
+   └─ Highest-invoked skills default into pack
+   └─ Skill ranking is explicit + visible
+
+4. Outcomes from sessions using those skills feed adaptive loop
+   └─ Good outcome + high-ranked skill = skill stays ranked
+   └─ Bad outcome + high-ranked skill = skill gets downranked
+
+5. Constellation auto-suggests new entries when drift detected
+   └─ Chatdrift says &quot;new architecture pattern detected&quot;
+   └─ Claude API drafts constellation entry
+   └─ You confirm or reject
+</code></pre>
+<h3 id="flow-3-research-validation-unsourced-sourced-outcome">Flow 3: Research Validation (Unsourced → Sourced → Outcome)</h3>
+<pre><code>1. Chat intake captures raw conversation
+   └─ Stored as chatIntake object
+   └─ Marked &quot;never approved directly&quot;
+
+2. Extraction splits chat into claims, questions, hypotheses
+   └─ Claim: &quot;IPv6 CGA binds key to address&quot;
+   └─ Question: &quot;how does CGA key rotation work?&quot;
+   └─ Hypothesis: &quot;Football United should use CGA for identity&quot;
+
+3. Research job created: &quot;find sources for IPv6 CGA claim&quot;
+   └─ Codex crawls papers, RFCs, official docs
+   └─ Results posted to /api/domain-knowledge/ingest
+
+4. ENS Navigator review lanes show what needs sourcing
+   └─ Move claim from &quot;Inbox&quot; → &quot;Needs Source&quot; → &quot;Approved&quot;
+   └─ Or &quot;Disputed&quot; if contradicts existing claim
+
+5. Approved claims feed Outcomes
+   └─ Create task: &quot;draft IPv6 UDP multicast packet header&quot;
+   └─ Task depends on: claim about CGA, decision about multicast
+   └─ Task has evidence gates: must reference sources
+
+6. Task completion flows back to ARGOS outcome scoring
+   └─ High-quality research → high-signal outcome
+   └─ Next research job biased toward similar patterns
+</code></pre>
+<hr />
+<h2 id="the-key-architectural-decisions">The Key Architectural Decisions</h2>
+<h3 id="1-local-first-not-remote">1. <strong>Local-First, Not Remote</strong></h3>
+<ul>
+<li>All data on local machine</li>
+<li>One Phoenix process</li>
+<li>Postgres on localhost</li>
+<li>No cloud sync (yet)</li>
+<li>Means: your research is yours; no privacy boundary</li>
+</ul>
+<h3 id="2-approve-everything-default-with-autonomy-escape-hatch">2. <strong>Approve-Everything Default (with autonomy escape hatch)</strong></h3>
+<ul>
+<li>ARGOS INV-2: canon changes require approval by default</li>
+<li>v1.2 spec allows per-canon autonomy_policy declarations</li>
+<li>Low-stakes updates can auto-apply with audit trail</li>
+<li>High-stakes always wait in queue</li>
+<li>Means: you stay in control; speed comes from delegated authority, not hidden autonomy</li>
+</ul>
+<h3 id="3-sourcing-before-memory-promotion">3. <strong>Sourcing Before Memory Promotion</strong></h3>
+<ul>
+<li>Raw chat never becomes approved knowledge</li>
+<li>All claims must carry sourceIds</li>
+<li>Disputes surface as remediation tasks, not disappearances</li>
+<li>Rejected knowledge can still spawn pressure-test outcomes</li>
+<li>Means: memory is auditable; you can trace where every claim came from</li>
+</ul>
+<h3 id="4-explicit-outcome-dependencies">4. <strong>Explicit Outcome Dependencies</strong></h3>
+<ul>
+<li>Tasks need evidence (sources or claims) before moving to Done</li>
+<li>Dependencies block tasks until resolved</li>
+<li>Evidence gates prevent incomplete outcomes</li>
+<li>Remediation tasks for disputed knowledge</li>
+<li>Means: you can't accidentally build on sand</li>
+</ul>
+<h3 id="5-signal-over-autonomy">5. <strong>Signal Over Autonomy</strong></h3>
+<ul>
+<li>Drift detection is visible, not automatic</li>
+<li>Skill ranking is visible, not automatic</li>
+<li>Proposals surface to queue, not auto-apply (except bounded autonomy)</li>
+<li>Dashboard is the inbox</li>
+<li>Means: you can't miss what's important, and you control the pace</li>
+</ul>
+<hr />
+<h2 id="integration-points-how-data-flows-between-systems">Integration Points (How Data Flows Between Systems)</h2>
+<h3 id="argos-constellation">ARGOS ↔ Constellation</h3>
+<ul>
+<li><strong>ARGOS reads</strong>: skill entries via HTTP GET :7777/state (daily poll)</li>
+<li><strong>Constellation reads</strong>: operator state via ARGOS API</li>
+<li><strong>Data</strong>: skill invocations, usage ranking, entry metadata</li>
+<li><strong>Event</strong>: When high-invocation skill found, feed to next context pack</li>
+</ul>
+<h3 id="argos-chatdrift">ARGOS ↔ Chatdrift</h3>
+<ul>
+<li><strong>Chatdrift reads</strong>: ARGOS canons to check for architecture drift</li>
+<li><strong>ARGOS reads</strong>: drift detection results from Chatdrift</li>
+<li><strong>Data</strong>: chat transcripts, drift vectors, origin→terminal deltas</li>
+<li><strong>Event</strong>: When drift detected, create proposal in ARGOS queue</li>
+</ul>
+<h3 id="argos-ens-navigator">ARGOS ↔ ENS Navigator</h3>
+<ul>
+<li><strong>ENS Navigator reads</strong>: operator approval decisions from ARGOS queue</li>
+<li><strong>ARGOS reads</strong>: outcome tasks + evidence from ENS Navigator</li>
+<li><strong>Data</strong>: domain knowledge, claims, sources, outcomes</li>
+<li><strong>Event</strong>: When outcome task done, trigger scoring in ARGOS</li>
+</ul>
+<h3 id="ens-navigator-constellation">ENS Navigator ↔ Constellation</h3>
+<ul>
+<li><strong>Constellation reads</strong>: expert/source recommendations from domain knowledge</li>
+<li><strong>ENS Navigator reads</strong>: skill recommendations for research tasks</li>
+<li><strong>Data</strong>: people, sources, research jobs, skill invocations</li>
+<li><strong>Event</strong>: When new expertise pattern found, suggest constellation entry</li>
+</ul>
+<h3 id="all-nats-event-bus">All → NATS event bus</h3>
+<ul>
+<li><strong>Published</strong>: drift_detected, outcome_scored, skill_invoked, proposal_surfaced, canon_changed</li>
+<li><strong>Subscribers</strong>: ARGOS (proposals), Chatdrift (validation), Mission Control (dashboard)</li>
+<li><strong>Purpose</strong>: Real-time sync without polling; allows async work</li>
+</ul>
+<h3 id="all-mission-control-dashboard">All → Mission Control Dashboard</h3>
+<ul>
+<li><strong>Data sources</strong>: ARGOS events, Chatdrift drift vectors, Constellation skill ranking, ENS Navigator outcome graphs</li>
+<li><strong>Display</strong>: Unified view of substrate state</li>
+<li><strong>Interaction</strong>: Approve proposals, review outcomes, monitor system health</li>
+</ul>
+<hr />
+<h2 id="what-each-spec-covers">What Each Spec Covers</h2>
+<table>
+<thead>
+<tr>
+  <th>Spec</th>
+  <th>Covers</th>
+  <th>Next Step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>ARGOS Operational</strong></td>
+  <td>Memory substrate contract, topology, HTTP/MCP APIs, invariants, failure modes</td>
+  <td>Implement remaining phases; wire v1.2 autonomy</td>
+</tr>
+<tr>
+  <td><strong>Argos Automated Research</strong></td>
+  <td>Chat → knowledge workflow, review lanes, quality gates, agent contract</td>
+  <td>Implement chat intake, extraction, research job routing</td>
+</tr>
+<tr>
+  <td><strong>Convergent Cell Program</strong></td>
+  <td>Normative interop contract, event schema, conformance, trust model</td>
+  <td>Ratify open items; execute conformance registry</td>
+</tr>
+<tr>
+  <td><strong>ENS Navigator Product</strong></td>
+  <td>Research ops UI, expert discovery, domain knowledge curation, outcomes</td>
+  <td>Complete implementation; wire ingest pipeline</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="the-roadmap-what-builds-next">The Roadmap (What Builds Next)</h2>
+<h3 id="phase-a-bridge-constellation-argos-week-1">Phase A: Bridge Constellation → ARGOS (Week 1)</h3>
+<ul>
+<li>Daily poll: GET :7777/state</li>
+<li>Upsert constellation entries into ARGOS skills table</li>
+<li>Skills become searchable from context packs</li>
+<li><strong>Unlock</strong>: Your working vocabulary is now in the substrate</li>
+</ul>
+<h3 id="phase-b-wire-chatdrift-argos-weeks-2-3">Phase B: Wire Chatdrift → ARGOS (Weeks 2-3)</h3>
+<ul>
+<li>Drift detection events published to NATS</li>
+<li>ARGOS subscribes; surfaces as proposals</li>
+<li>Intelligence loop reads drift; suggests research tasks</li>
+<li><strong>Unlock</strong>: Architecture changes surface automatically</li>
+</ul>
+<h3 id="phase-c-operator-state-capture-week-3-4-you-are-here">Phase C: Operator State Capture (Week 3-4) ← <strong>YOU ARE HERE</strong></h3>
+<ul>
+<li>Phone PWA: 9-field morning briefing</li>
+<li>Auto-decay: energy *= 0.95 per hour</li>
+<li>Every event carries operator state provenance</li>
+<li>Adaptive scoring conditions on mood</li>
+<li><strong>Unlock</strong>: Context packs are personalized</li>
+</ul>
+<h3 id="phase-d-ens-navigator-argos-loop-weeks-4-6">Phase D: ENS Navigator ↔ ARGOS Loop (Weeks 4-6)</h3>
+<ul>
+<li>Research jobs created from blocked ARGOS tasks</li>
+<li>Source ingest feeds ARGOS claims</li>
+<li>Outcome task completion triggers ARGOS scoring</li>
+<li><strong>Unlock</strong>: Research improves memory; memory drives research</li>
+</ul>
+<h3 id="phase-e-autonomous-mutations-weeks-6-7">Phase E: Autonomous Mutations (Weeks 6-7)</h3>
+<ul>
+<li>Implement v1.2 INV-2: per-canon autonomy_policy</li>
+<li>Implement v1.2 INV-9: autonomous_mutations audit + rollback</li>
+<li>Low-stakes updates auto-apply with trail</li>
+<li>High-stakes wait in queue</li>
+<li><strong>Unlock</strong>: Speed without losing control</li>
+</ul>
+<h3 id="phase-f-mission-control-full-dashboard-weeks-7-8">Phase F: Mission Control Full Dashboard (Weeks 7-8)</h3>
+<ul>
+<li>Real-time WebSocket feed from all systems</li>
+<li>One screen: events, approvals, drifts, outcomes, skills, health</li>
+<li><strong>Unlock</strong>: Nothing hidden; everything visible</li>
+</ul>
+<hr />
+<h2 id="what-makes-this-different-from-typical-research-apps">What Makes This Different From Typical Research Apps</h2>
+<h3 id="not-a-summarizer">Not a summarizer</h3>
+<ul>
+<li>Doesn't compress conversations</li>
+<li>Preserves explicit source linkage</li>
+<li>Tracks drift (origin ≠ terminal)</li>
+<li>Prevents memory collapse</li>
+</ul>
+<h3 id="not-an-autonomous-agent">Not an autonomous agent</h3>
+<ul>
+<li>No hidden decisions</li>
+<li>Approval-gated by default</li>
+<li>Operator controls approval rate</li>
+<li>Audit trail for everything</li>
+</ul>
+<h3 id="not-a-knowledge-graph">Not a knowledge graph</h3>
+<ul>
+<li>Not a semantic web</li>
+<li>Not a belief/confidence system</li>
+<li>Evidence-gated (sources required)</li>
+<li>Quality-gated (contradictions surface, not hidden)</li>
+</ul>
+<h3 id="not-a-task-manager">Not a task manager</h3>
+<ul>
+<li>Task dependencies explicit</li>
+<li>Evidence gates prevent incomplete work</li>
+<li>Outcomes link to claims + sources</li>
+<li>Rejected knowledge becomes pressure tests</li>
+</ul>
+<h3 id="not-a-chat-exporter">Not a chat exporter</h3>
+<ul>
+<li>Chat never becomes memory directly</li>
+<li>Requires extraction → research → review</li>
+<li>Three-gate system: source, review, outcome</li>
+<li>Human always in the loop</li>
+</ul>
+<hr />
+<h2 id="how-you-use-this-the-user-experience">How You Use This (The User Experience)</h2>
+<h3 id="morning">Morning</h3>
+<ol>
+<li>Open phone PWA → fill 9-field state vector (2 min)</li>
+<li>Open dashboard → scan events + proposals (5 min)</li>
+<li>Approve high-signal proposals (varies)</li>
+</ol>
+<h3 id="during-work-codex">During work (Codex)</h3>
+<ol>
+<li>Codex runs with context pack (includes operator state + top skills)</li>
+<li>Session produces decisions → auto-captured to ARGOS</li>
+<li>You do the work; substrate captures the rest</li>
+</ol>
+<h3 id="evening">Evening</h3>
+<ol>
+<li>Chatdrift ingestor runs → detects drift</li>
+<li>ENS Navigator crawlers run → find sources</li>
+<li>Research tasks update in outcomes</li>
+</ol>
+<h3 id="weekly">Weekly</h3>
+<ol>
+<li>Check ARGOS outcome scores → bias next week's retrieval</li>
+<li>Check Constellation skill ranking → reassign high-value skills</li>
+<li>Review &quot;Disputed&quot; claims in ENS Navigator → resolve or remediate</li>
+</ol>
+<h3 id="monthly">Monthly</h3>
+<ol>
+<li>Full substrate review: what emerged? what shifted?</li>
+<li>Update ARGOS canons based on outcomes</li>
+<li>Suggest new Constellation entries based on drift patterns</li>
+</ol>
+<hr />
+<h2 id="success-criteria">Success Criteria</h2>
+<p>You'll know this is working when:</p>
+<ol>
+<li><strong>Drift is visible</strong> — Chatdrift shows you've shifted architecture every 2 weeks, and it's on the dashboard</li>
+<li><strong>Skills compound</strong> — Your top-5 skills at month-end are measurably more useful than month-start</li>
+<li><strong>Research biases</strong> — Next month's research jobs bias toward domains where you had good outcomes</li>
+<li><strong>Context improves</strong> — Codex context packs get measurably more relevant over time</li>
+<li><strong>Approval rate sustains</strong> — You can review and approve the queue in &lt;30 min/day without falling behind</li>
+<li><strong>Memory is auditable</strong> — You can trace any claim to its source and see exactly why it's approved/disputed</li>
+</ol>
+<p>If any of these isn't happening, the system is telling you something is broken or misconfigured.</p>
+<hr />
+<h2 id="the-one-thing-everything-depends-on">The One Thing Everything Depends On</h2>
+<p><strong>The approval queue must not overflow.</strong></p>
+<p>If proposals back up faster than you can review, the system collapses into silent autonomy (you give up checking) or total paralysis (you stop working).</p>
+<p>The v1.2 bounded autonomy mechanism (INV-2) and the rate-limiting in ARGOS (IL-3) exist solely to prevent this.</p>
+<p>If you find yourself with 100+ unapproved proposals sitting for more than 24 hours, pause and recalibrate:</p>
+<ul>
+<li>Lower surfacing rate (IL-3 bounds)</li>
+<li>Enable more autonomy_policy modes (INV-2)</li>
+<li>Or reduce research job volume</li>
+</ul>
+<p>The queue depth is the leading indicator of substrate health.</p>
+
+    </article>
+    <div class="footer">Generated from the uploaded IrfTek Complete Substrate Architecture markdown. Single-file HTML; no external dependencies.</div>
+  </main>
+</div>
+<script>
+const links=[...document.querySelectorAll('nav a')];
+const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+function active(){let current=sections[0];for(const s of sections){if(s.getBoundingClientRect().top<110)current=s}links.forEach(a=>a.classList.toggle('active',document.querySelector(a.getAttribute('href'))===current));}
+document.addEventListener('scroll',active);active();
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+ const q=search.value.toLowerCase().trim();
+ document.querySelectorAll('.content h2,.content h3').forEach(h=>{
+   const visible=!q || h.textContent.toLowerCase().includes(q);
+   h.style.display=visible?'':'none';
+ });
+ links.forEach(a=>{a.style.display=!q || a.textContent.toLowerCase().includes(q)?'block':'none'});
+});
+</script>
+</body>
+</html>

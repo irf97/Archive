@@ -1,0 +1,94 @@
+{
+  "agents": [
+    {
+      "id": "intake_normalizer",
+      "label": "Use Case Intake Agent",
+      "phase": "intake",
+      "inputArtifactTypes": [],
+      "outputArtifactTypes": ["use_case_packet"],
+      "allowedTools": ["local_state"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": false }
+    },
+    {
+      "id": "question_decomposer",
+      "label": "Question Decomposer Agent",
+      "phase": "diverging",
+      "inputArtifactTypes": ["use_case_packet"],
+      "outputArtifactTypes": ["research_question"],
+      "allowedTools": ["local_state"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": false }
+    },
+    {
+      "id": "source_scout_local_files",
+      "label": "Local File Scout Agent",
+      "phase": "diverging",
+      "inputArtifactTypes": ["research_question"],
+      "outputArtifactTypes": ["source_packet"],
+      "allowedTools": ["workspace_files"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": false, "provenance": "operator_document" }
+    },
+    {
+      "id": "claim_extractor",
+      "label": "Claim Extraction Agent",
+      "phase": "emerging",
+      "inputArtifactTypes": ["source_packet"],
+      "outputArtifactTypes": ["claim_packet"],
+      "allowedTools": ["artifact_bus"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": true, "defaultReviewStatus": "needs_review" }
+    },
+    {
+      "id": "concept_clusterer",
+      "label": "Emergence Agent",
+      "phase": "emerging",
+      "inputArtifactTypes": ["claim_packet", "research_question"],
+      "outputArtifactTypes": ["concept_cluster"],
+      "allowedTools": ["artifact_bus"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": false }
+    },
+    {
+      "id": "convergence_planner",
+      "label": "Convergence Planner Agent",
+      "phase": "converging",
+      "inputArtifactTypes": ["concept_cluster"],
+      "outputArtifactTypes": ["decision_candidate", "blocker"],
+      "allowedTools": ["artifact_bus"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": true }
+    },
+    {
+      "id": "outcome_compiler",
+      "label": "Outcome Compiler Agent",
+      "phase": "outcome_compiling",
+      "inputArtifactTypes": ["decision_candidate", "research_question", "blocker"],
+      "outputArtifactTypes": ["outcome_task_candidate"],
+      "allowedTools": ["outcomes"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": true }
+    },
+    {
+      "id": "twin_projector",
+      "label": "Twin Projection Agent",
+      "phase": "twin_projecting",
+      "inputArtifactTypes": ["decision_candidate", "outcome_task_candidate"],
+      "outputArtifactTypes": ["twin_delta_candidate"],
+      "allowedTools": ["operational_twins"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": true, "approvedInputsOnly": true }
+    },
+    {
+      "id": "execution_pack_compiler",
+      "label": "Execution Pack Compiler Agent",
+      "phase": "execution_packaging",
+      "inputArtifactTypes": ["twin_delta_candidate"],
+      "outputArtifactTypes": ["execution_pack_candidate", "blocker"],
+      "allowedTools": ["robodex_contract", "isaac_sim_contract"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": true, "refuseOnDisputedInputs": true }
+    },
+    {
+      "id": "mission_controller",
+      "label": "Mission Control Agent",
+      "phase": "converging",
+      "inputArtifactTypes": ["*"],
+      "outputArtifactTypes": ["mission_event"],
+      "allowedTools": ["mission_state"],
+      "policy": { "autoRunAllowed": true, "approvalRequired": false }
+    }
+  ]
+}

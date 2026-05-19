@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENS Navigator Product Spec</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --ink: #17202b;
+      --muted: #607080;
+      --panel: #ffffff;
+      --panel-2: #eef2f6;
+      --line: #d9e1ea;
+      --accent: #1e6bff;
+      --gold: #a67320;
+      --ok: #16845b;
+      --warn: #b66a00;
+      --bad: #b72f3c;
+      --shadow: 0 16px 40px rgba(23,32,43,.08);
+      --radius: 10px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(30,107,255,.08), transparent 280px),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(1200px, calc(100vw - 36px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: end;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      margin: 16px 0 0;
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .summary {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      min-width: 270px;
+      color: var(--muted);
+      font-size: 13px;
+      display: grid;
+      gap: 8px;
+    }
+    .summary b { color: var(--ink); }
+    nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 18px 0 8px;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(12px);
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 999px;
+      padding: 7px 11px;
+    }
+    section {
+      margin-top: 18px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    h2 { margin: 0 0 12px; font-size: 22px; letter-spacing: 0; }
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 14px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    p, li { color: var(--muted); }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 1px 5px;
+      color: var(--ink);
+    }
+    pre {
+      overflow: auto;
+      background: #111923;
+      color: #e7eef7;
+      border-radius: var(--radius);
+      border: 1px solid #263241;
+      padding: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, #fff, var(--panel-2));
+      padding: 14px;
+      min-width: 0;
+    }
+    .card strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(120px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .step {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel-2);
+      padding: 12px;
+      min-height: 128px;
+    }
+    .step span {
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      font-weight: 900;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .step b { display: block; margin-bottom: 5px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 8px;
+      vertical-align: top;
+      text-align: left;
+      color: var(--muted);
+    }
+    th { color: var(--ink); }
+    .tagrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag {
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--muted);
+    }
+    .ok { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 50%, var(--line)); }
+    .warn { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 50%, var(--line)); }
+    .bad { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 50%, var(--line)); }
+    footer { color: var(--muted); font-size: 12px; padding-top: 22px; }
+    @media (max-width: 900px) {
+      header, .grid, .two, .flow { grid-template-columns: 1fr; }
+      nav { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>ENS Navigator Product Spec</h1>
+        <p class="subtitle">A local-first research operations app for expert discovery, domain knowledge curation, and outcome execution. ENS Navigator keeps structured data on the local machine while exposing a browser UI and local API for agents.</p>
+      </div>
+      <aside class="summary">
+        <div><b>Current app:</b> <code>index.html</code></div>
+        <div><b>Backend:</b> <code>server.mjs</code></div>
+        <div><b>Store:</b> <code>data/*.json</code></div>
+        <div><b>URL:</b> <code>http://127.0.0.1:8787/</code></div>
+      </aside>
+    </header>
+
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#pages">Pages</a>
+      <a href="#data">Data Model</a>
+      <a href="#api">API</a>
+      <a href="#workflows">Workflows</a>
+      <a href="#quality">Quality Gates</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+
+    <section id="mission">
+      <h2>Mission</h2>
+      <p>ENS Navigator turns research activity into a navigable operating system: find experts, organize knowledge, review claims, and convert domains into executable outcome graphs.</p>
+      <div class="tagrow">
+        <span class="tag ok">local-first</span>
+        <span class="tag ok">source-grounded</span>
+        <span class="tag warn">agent-ready</span>
+        <span class="tag warn">human review loop</span>
+        <span class="tag bad">no unsupported memory promotion</span>
+      </div>
+    </section>
+
+    <section id="pages">
+      <h2>Application Pages</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Navigator</strong>
+          <p>Tracks expert-network engagements, payments, status, follow-ups, and exported CSV records.</p>
+        </div>
+        <div class="card">
+          <strong>Expert Radar</strong>
+          <p>Catalogs candidate experts, applies structured tag criteria, supports saved views, selection, bulk actions, and pipeline movement.</p>
+        </div>
+        <div class="card">
+          <strong>Domain Knowledge</strong>
+          <p>Stores domains, claims, sources, people, questions, links, review lanes, researched findings, and hypotheses.</p>
+        </div>
+        <div class="card">
+          <strong>Outcomes</strong>
+          <p>Turns ingested domains into task graphs with evidence gates, dependencies, remediation tasks, and exportable project JSON.</p>
+        </div>
+        <div class="card">
+          <strong>Ingest Queue</strong>
+          <p>Shows recent local API ingestion and crawl jobs for operational visibility.</p>
+        </div>
+        <div class="card">
+          <strong>Spec Pages</strong>
+          <p>Standalone HTML specs document Argos research memory and ENS Navigator product architecture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="data">
+      <h2>Data Model</h2>
+      <table>
+        <thead>
+          <tr><th>File</th><th>Primary contents</th><th>UI owner</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>data/oncology-experts.json</code></td><td>Expert catalog records with tag groups, scoring, sources, and questions.</td><td>Expert Radar</td></tr>
+          <tr><td><code>data/pipeline-experts.json</code></td><td>Selected pipeline candidates and outreach state.</td><td>Expert Radar / Pipeline</td></tr>
+          <tr><td><code>data/domain-knowledge.json</code></td><td>Domains, claims, sources, people, questions, links, agent runs, counts.</td><td>Domain Knowledge</td></tr>
+          <tr><td><code>data/outcomes.json</code></td><td>Outcome projects, tasks, statuses, dependencies, source IDs, claim IDs.</td><td>Outcomes</td></tr>
+          <tr><td><code>data/crawl-jobs.json</code></td><td>Local crawl job definitions, status, errors, and result counts.</td><td>Ingest Queue</td></tr>
+          <tr><td><code>data/ingest-log.json</code></td><td>Recent ingestion records across expert and knowledge flows.</td><td>Ingest Queue</td></tr>
+          <tr><td><code>data/saved-views.json</code></td><td>Reusable Expert Radar filter presets.</td><td>Expert Radar</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Core Entity Rules</h3>
+      <ul>
+        <li>Claims must retain <code>sourceIds</code> and review <code>status</code>.</li>
+        <li>Sources should identify type: paper, RFC, official doc, dataset, institutional page, or other public source.</li>
+        <li>Outcome tasks should include <code>sourceIds</code> or <code>claimIds</code> before they can be marked Done.</li>
+        <li>Rejected or disputed knowledge can still spawn Outcomes, but those tasks should be remediation or pressure-test tasks.</li>
+      </ul>
+    </section>
+
+    <section id="api">
+      <h2>Local API Surface</h2>
+      <div class="grid two">
+        <div class="card">
+          <strong>Read endpoints</strong>
+          <ul>
+            <li><code>GET /api/experts</code></li>
+            <li><code>GET /api/pipeline</code></li>
+            <li><code>GET /api/domain-knowledge</code></li>
+            <li><code>GET /api/outcomes</code></li>
+            <li><code>GET /api/ingest-log</code></li>
+            <li><code>GET /api/saved-views</code></li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Write endpoints</strong>
+          <ul>
+            <li><code>POST /api/experts/ingest</code></li>
+            <li><code>POST /api/pipeline</code></li>
+            <li><code>POST /api/domain-knowledge</code></li>
+            <li><code>POST /api/domain-knowledge/ingest</code></li>
+            <li><code>POST /api/outcomes</code></li>
+            <li><code>POST /api/crawl-and-ingest</code></li>
+          </ul>
+        </div>
+      </div>
+      <h3>Outcome Project Shape</h3>
+      <pre><code>{
+  "projects": [{
+    "id": "out-football-united",
+    "name": "Football United: Research-to-Implementation Outcomes",
+    "domains": ["Football United: local-first social mesh"],
+    "goalType": "task_graph",
+    "tasks": [{
+      "id": "task-fu-packet-header-spec",
+      "title": "Draft IPv6 UDP multicast slice-query packet header",
+      "status": "blocked",
+      "priority": 5,
+      "sourceIds": ["src-rfc3972-2005"],
+      "claimIds": ["claim-cga-binds-key-to-ipv6"],
+      "questionIds": ["hyp-football-united-arch"],
+      "dependsOn": ["task-fu-ipv6-cga-identity-spec"]
+    }]
+  }]
+}</code></pre>
+    </section>
+
+    <section id="workflows">
+      <h2>Primary Workflows</h2>
+      <div class="flow">
+        <div class="step"><span>1</span><b>Find</b><p>Use Expert Radar tags, saved views, and ingestion tools to collect relevant people.</p></div>
+        <div class="step"><span>2</span><b>Research</b><p>Ingest source-backed Domain Knowledge: claims, sources, questions, people, links.</p></div>
+        <div class="step"><span>3</span><b>Review</b><p>Move knowledge into Approved, Needs Source, Disputed, Rejected, or Hypotheses.</p></div>
+        <div class="step"><span>4</span><b>Execute</b><p>Create Outcome tasks from questions, approved claims, and disputed/needs-source remediation work.</p></div>
+        <div class="step"><span>5</span><b>Loop</b><p>Blocked Outcomes spawn research jobs or expert review packets, then update Domain Knowledge.</p></div>
+      </div>
+    </section>
+
+    <section id="quality">
+      <h2>Quality Gates</h2>
+      <table>
+        <thead>
+          <tr><th>Surface</th><th>Gate</th><th>Behavior</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Domain Knowledge</td><td>No source</td><td>Move claim/question to <code>needs_source</code> or keep as hypothesis.</td></tr>
+          <tr><td>Domain Knowledge</td><td>Contradiction</td><td>Move to <code>disputed</code> and create remediation outcome task.</td></tr>
+          <tr><td>Outcomes</td><td>No evidence</td><td>Do not allow task to move to <code>done</code>.</td></tr>
+          <tr><td>Outcomes</td><td>Unfinished dependency</td><td>Move task to <code>blocked</code> until dependency is done.</td></tr>
+          <tr><td>Expert Radar</td><td>Unsafe outreach</td><td>Keep compliance flags visible and avoid confidential/MNPI prompts.</td></tr>
+          <tr><td>API</td><td>Bad JSON/BOM</td><td>Normalize BOM/encoding before parsing.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <div class="grid two">
+        <div class="card">
+          <strong>Near term</strong>
+          <ul>
+            <li>Add chat intake and research-job stores.</li>
+            <li>Add one-click research job creation from blocked outcome tasks.</li>
+            <li>Add source health checks for broken/stale links.</li>
+            <li>Add contradiction links between claims.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Medium term</strong>
+          <ul>
+            <li>Add memory promotion audits.</li>
+            <li>Add export bundles: outcome JSON, claims JSON, sources JSON, Markdown brief.</li>
+            <li>Add richer graph inspection for task and evidence links.</li>
+            <li>Add agent run logs with input/output packet hashes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Local file: <code>ens-navigator-spec.html</code>. This spec reflects the current ENS Navigator workspace and the local app at <code>http://127.0.0.1:8787/</code>.
+    </footer>
+  </div>
+</body>
+</html>

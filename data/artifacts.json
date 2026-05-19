@@ -1,0 +1,833 @@
+{
+  "artifacts": [
+    {
+      "type": "execution_pack_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.45,
+      "parentArtifactIds": [
+        "artifact-twin_delta_candidate-mpbwqsh5-lidy2"
+      ],
+      "payload": {
+        "status": "draft",
+        "robodex": {
+          "ready": false,
+          "reason": "Requires approved operational twin state."
+        },
+        "isaacSim": {
+          "ready": false,
+          "reason": "Requires concrete robot/site artifact files."
+        },
+        "missing": [
+          "approved twin",
+          "site facts",
+          "execution approval"
+        ]
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqshe-cufg0",
+      "id": "artifact-execution_pack_candidate-mpbwqshf-t0num",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:34.131Z",
+      "updatedAt": "2026-05-19T00:41:34.131Z"
+    },
+    {
+      "type": "twin_delta_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.5,
+      "parentArtifactIds": [
+        "artifact-decision_candidate-mpbwqlwz-i8qxv"
+      ],
+      "payload": {
+        "twinId": "twin-robotics-simulation",
+        "status": "draft",
+        "proposedRealities": {
+          "physical": [],
+          "hardware": [],
+          "software": [
+            {
+              "id": "mission_pipeline_agent",
+              "class": "research_orchestrator"
+            }
+          ],
+          "social": [
+            {
+              "id": "operator_approval",
+              "class": "approval_policy"
+            }
+          ]
+        },
+        "refusalBoundary": "Do not promote to accepted twin without reviewed claim packets and operator-approved site facts."
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqsh4-ksqsh",
+      "id": "artifact-twin_delta_candidate-mpbwqsh5-lidy2",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:34.121Z",
+      "updatedAt": "2026-05-19T00:41:34.121Z"
+    },
+    {
+      "type": "outcome_task_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.68,
+      "parentArtifactIds": [
+        "artifact-research_question-mpbwqlwb-pqr3o"
+      ],
+      "payload": {
+        "title": "Resolve: What source-backed facts are required to answer: Set up an AI-run pipeline for robotics simulation and Robodex/Isaac Sim execution packs from approved operational twin knowledge?",
+        "detail": "Generated from mission question; attach source-backed claims before marking done.",
+        "priority": 5,
+        "status": "backlog",
+        "evidenceGate": "requires approved claim or source"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlx4-w2hhd",
+      "id": "artifact-outcome_task_candidate-mpbwqlx5-fxuc0",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.625Z",
+      "updatedAt": "2026-05-19T00:41:25.625Z"
+    },
+    {
+      "type": "outcome_task_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.68,
+      "parentArtifactIds": [
+        "artifact-research_question-mpbwqlwb-63cmw"
+      ],
+      "payload": {
+        "title": "Resolve: Which assumptions are operator-provided rather than externally sourced?",
+        "detail": "Generated from mission question; attach source-backed claims before marking done.",
+        "priority": 5,
+        "status": "backlog",
+        "evidenceGate": "requires approved claim or source"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlx4-w2hhd",
+      "id": "artifact-outcome_task_candidate-mpbwqlx5-y0qfp",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.625Z",
+      "updatedAt": "2026-05-19T00:41:25.625Z"
+    },
+    {
+      "type": "outcome_task_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.68,
+      "parentArtifactIds": [
+        "artifact-research_question-mpbwqlwb-d6fj8"
+      ],
+      "payload": {
+        "title": "Resolve: What contradictions or missing sources would block promotion to canon?",
+        "detail": "Generated from mission question; attach source-backed claims before marking done.",
+        "priority": 5,
+        "status": "backlog",
+        "evidenceGate": "requires approved claim or source"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlx4-w2hhd",
+      "id": "artifact-outcome_task_candidate-mpbwqlx5-yl97i",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.625Z",
+      "updatedAt": "2026-05-19T00:41:25.625Z"
+    },
+    {
+      "type": "outcome_task_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.68,
+      "parentArtifactIds": [
+        "artifact-research_question-mpbwqlwb-pwj22"
+      ],
+      "payload": {
+        "title": "Resolve: What outcome tasks are needed after the evidence pass?",
+        "detail": "Generated from mission question; attach source-backed claims before marking done.",
+        "priority": 4,
+        "status": "backlog",
+        "evidenceGate": "requires approved claim or source"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlx4-w2hhd",
+      "id": "artifact-outcome_task_candidate-mpbwqlx5-1vrnn",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.625Z",
+      "updatedAt": "2026-05-19T00:41:25.625Z"
+    },
+    {
+      "type": "outcome_task_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.68,
+      "parentArtifactIds": [
+        "artifact-research_question-mpbwqlwb-43i70"
+      ],
+      "payload": {
+        "title": "Resolve: What operational twin facts are needed before execution packaging?",
+        "detail": "Generated from mission question; attach source-backed claims before marking done.",
+        "priority": 4,
+        "status": "backlog",
+        "evidenceGate": "requires approved claim or source"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlx4-w2hhd",
+      "id": "artifact-outcome_task_candidate-mpbwqlx5-52t2s",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.625Z",
+      "updatedAt": "2026-05-19T00:41:25.625Z"
+    },
+    {
+      "type": "outcome_task_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.68,
+      "parentArtifactIds": [
+        "artifact-research_question-mpbwqlwb-8sd8y"
+      ],
+      "payload": {
+        "title": "Resolve: Which Robodex or Isaac Sim artifacts are missing?",
+        "detail": "Generated from mission question; attach source-backed claims before marking done.",
+        "priority": 4,
+        "status": "backlog",
+        "evidenceGate": "requires approved claim or source"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlx4-w2hhd",
+      "id": "artifact-outcome_task_candidate-mpbwqlx5-nnsez",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.625Z",
+      "updatedAt": "2026-05-19T00:41:25.625Z"
+    },
+    {
+      "type": "decision_candidate",
+      "reviewStatus": "needs_review",
+      "confidence": 0.7,
+      "parentArtifactIds": [
+        "artifact-concept_cluster-mpbwqlwt-kp6z9"
+      ],
+      "payload": {
+        "decision": "review_claim_packets_before_promotion",
+        "rationale": "8 extracted claim packets require operator review before canon or execution use.",
+        "nextAgent": "operator_review"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwy-hfji8",
+      "id": "artifact-decision_candidate-mpbwqlwz-i8qxv",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.619Z",
+      "updatedAt": "2026-05-19T00:41:25.619Z"
+    },
+    {
+      "type": "concept_cluster",
+      "reviewStatus": "not_required",
+      "confidence": 0.65,
+      "parentArtifactIds": [
+        "artifact-claim_packet-mpbwqlwn-y6dyy",
+        "artifact-claim_packet-mpbwqlwn-pxbi3",
+        "artifact-claim_packet-mpbwqlwn-tatql",
+        "artifact-claim_packet-mpbwqlwn-x2xip",
+        "artifact-claim_packet-mpbwqlwn-npev6",
+        "artifact-claim_packet-mpbwqlwn-ih8eq",
+        "artifact-claim_packet-mpbwqlwn-3rjtk",
+        "artifact-claim_packet-mpbwqlwn-7uwf9",
+        "artifact-research_question-mpbwqlwb-pqr3o",
+        "artifact-research_question-mpbwqlwb-63cmw",
+        "artifact-research_question-mpbwqlwb-d6fj8",
+        "artifact-research_question-mpbwqlwb-pwj22"
+      ],
+      "payload": {
+        "title": "robotics simulation + expert discovery mission cluster",
+        "concepts": [
+          "robotics simulation",
+          "expert discovery"
+        ],
+        "patterns": [
+          "source inventory must be separated from approved canon",
+          "operator review is required before promotion",
+          "execution packs must be generated from accepted twin state"
+        ],
+        "openQuestions": [
+          "What source-backed facts are required to answer: Set up an AI-run pipeline for robotics simulation and Robodex/Isaac Sim execution packs from approved operational twin knowledge?",
+          "Which assumptions are operator-provided rather than externally sourced?",
+          "What contradictions or missing sources would block promotion to canon?",
+          "What outcome tasks are needed after the evidence pass?",
+          "What operational twin facts are needed before execution packaging?",
+          "Which Robodex or Isaac Sim artifacts are missing?"
+        ]
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlws-9dqby",
+      "id": "artifact-concept_cluster-mpbwqlwt-kp6z9",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.613Z",
+      "updatedAt": "2026-05-19T00:41:25.613Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-ens-navigator-spec-html"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-fhiie"
+      ],
+      "payload": {
+        "claim": "ens-navigator-spec.html is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://ens-navigator-spec.html",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-y6dyy",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-operational-twin-input-contract-html"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-u07mo"
+      ],
+      "payload": {
+        "claim": "operational-twin-input-contract.html is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://operational-twin-input-contract.html",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-pxbi3",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-operational-twin-substrate-spec-html"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-4t7xx"
+      ],
+      "payload": {
+        "claim": "operational_twin_substrate_spec.html is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://operational_twin_substrate_spec.html",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-tatql",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-irftek-complete-substrate-architecture-html"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-fqtj9"
+      ],
+      "payload": {
+        "claim": "irftek_complete_substrate_architecture.html is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://irftek_complete_substrate_architecture.html",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-x2xip",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-spec-irftek-production-html"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-gy8nu"
+      ],
+      "payload": {
+        "claim": "SPEC_irftek-production.html is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://SPEC_irftek-production.html",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-npev6",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-irftek-spec-html"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-fl4ti"
+      ],
+      "payload": {
+        "claim": "irftek_spec.html is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://irftek_spec.html",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-ih8eq",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-server-mjs"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-tcv2e"
+      ],
+      "payload": {
+        "claim": "server.mjs is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://server.mjs",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-3rjtk",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "claim_packet",
+      "reviewStatus": "needs_review",
+      "confidence": 0.55,
+      "sourceIds": [
+        "src-local-mcp-server-mjs"
+      ],
+      "parentArtifactIds": [
+        "artifact-source_packet-mpbwqlwh-zhhis"
+      ],
+      "payload": {
+        "claim": "mcp-server.mjs is a relevant operator-provided source artifact for this mission.",
+        "caveat": "Operator document inventory claim; not external research or canon until reviewed.",
+        "sourceLocator": "local://mcp-server.mjs",
+        "evidenceType": "operator_document"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwm-bxbl1",
+      "id": "artifact-claim_packet-mpbwqlwn-7uwf9",
+      "status": "active",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.607Z",
+      "updatedAt": "2026-05-19T00:41:25.607Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "ens-navigator-spec.html",
+        "sourceType": "operator_document",
+        "locator": "local://ens-navigator-spec.html",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "ens-navigator-spec.html"
+        }
+      },
+      "sourceIds": [
+        "src-local-ens-navigator-spec-html"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-fhiie",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "operational-twin-input-contract.html",
+        "sourceType": "operator_document",
+        "locator": "local://operational-twin-input-contract.html",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "operational-twin-input-contract.html"
+        }
+      },
+      "sourceIds": [
+        "src-local-operational-twin-input-contract-html"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-u07mo",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "operational_twin_substrate_spec.html",
+        "sourceType": "operator_document",
+        "locator": "local://operational_twin_substrate_spec.html",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "operational_twin_substrate_spec.html"
+        }
+      },
+      "sourceIds": [
+        "src-local-operational-twin-substrate-spec-html"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-4t7xx",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "irftek_complete_substrate_architecture.html",
+        "sourceType": "operator_document",
+        "locator": "local://irftek_complete_substrate_architecture.html",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "irftek_complete_substrate_architecture.html"
+        }
+      },
+      "sourceIds": [
+        "src-local-irftek-complete-substrate-architecture-html"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-fqtj9",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "SPEC_irftek-production.html",
+        "sourceType": "operator_document",
+        "locator": "local://SPEC_irftek-production.html",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "SPEC_irftek-production.html"
+        }
+      },
+      "sourceIds": [
+        "src-local-spec-irftek-production-html"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-gy8nu",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "irftek_spec.html",
+        "sourceType": "operator_document",
+        "locator": "local://irftek_spec.html",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "irftek_spec.html"
+        }
+      },
+      "sourceIds": [
+        "src-local-irftek-spec-html"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-fl4ti",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "server.mjs",
+        "sourceType": "operator_document",
+        "locator": "local://server.mjs",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "server.mjs"
+        }
+      },
+      "sourceIds": [
+        "src-local-server-mjs"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-tcv2e",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "source_packet",
+      "status": "active",
+      "reviewStatus": "not_required",
+      "confidence": 1,
+      "payload": {
+        "title": "mcp-server.mjs",
+        "sourceType": "operator_document",
+        "locator": "local://mcp-server.mjs",
+        "summary": "Local workspace file selected by source_scout_local_files for mission mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m.",
+        "provenance": {
+          "origin": "operator_document",
+          "path": "mcp-server.mjs"
+        }
+      },
+      "sourceIds": [
+        "src-local-mcp-server-mjs"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwg-82ue5",
+      "parentArtifactIds": [],
+      "id": "artifact-source_packet-mpbwqlwh-zhhis",
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.601Z",
+      "updatedAt": "2026-05-19T00:41:25.601Z"
+    },
+    {
+      "type": "research_question",
+      "reviewStatus": "not_required",
+      "confidence": 0.8,
+      "payload": {
+        "question": "What source-backed facts are required to answer: Set up an AI-run pipeline for robotics simulation and Robodex/Isaac Sim execution packs from approved operational twin knowledge?",
+        "lane": "research",
+        "priority": 5
+      },
+      "parentArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwa-u0znl",
+      "id": "artifact-research_question-mpbwqlwb-pqr3o",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.595Z",
+      "updatedAt": "2026-05-19T00:41:25.595Z"
+    },
+    {
+      "type": "research_question",
+      "reviewStatus": "not_required",
+      "confidence": 0.8,
+      "payload": {
+        "question": "Which assumptions are operator-provided rather than externally sourced?",
+        "lane": "research",
+        "priority": 5
+      },
+      "parentArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwa-u0znl",
+      "id": "artifact-research_question-mpbwqlwb-63cmw",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.595Z",
+      "updatedAt": "2026-05-19T00:41:25.595Z"
+    },
+    {
+      "type": "research_question",
+      "reviewStatus": "not_required",
+      "confidence": 0.8,
+      "payload": {
+        "question": "What contradictions or missing sources would block promotion to canon?",
+        "lane": "research",
+        "priority": 5
+      },
+      "parentArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwa-u0znl",
+      "id": "artifact-research_question-mpbwqlwb-d6fj8",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.595Z",
+      "updatedAt": "2026-05-19T00:41:25.595Z"
+    },
+    {
+      "type": "research_question",
+      "reviewStatus": "not_required",
+      "confidence": 0.8,
+      "payload": {
+        "question": "What outcome tasks are needed after the evidence pass?",
+        "lane": "research",
+        "priority": 4
+      },
+      "parentArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwa-u0znl",
+      "id": "artifact-research_question-mpbwqlwb-pwj22",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.595Z",
+      "updatedAt": "2026-05-19T00:41:25.595Z"
+    },
+    {
+      "type": "research_question",
+      "reviewStatus": "not_required",
+      "confidence": 0.8,
+      "payload": {
+        "question": "What operational twin facts are needed before execution packaging?",
+        "lane": "execution_pack",
+        "priority": 4
+      },
+      "parentArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwa-u0znl",
+      "id": "artifact-research_question-mpbwqlwb-43i70",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.595Z",
+      "updatedAt": "2026-05-19T00:41:25.595Z"
+    },
+    {
+      "type": "research_question",
+      "reviewStatus": "not_required",
+      "confidence": 0.8,
+      "payload": {
+        "question": "Which Robodex or Isaac Sim artifacts are missing?",
+        "lane": "execution_pack",
+        "priority": 4
+      },
+      "parentArtifactIds": [
+        "artifact-use_case_packet-mpbwqlw4-fetfy"
+      ],
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlwa-u0znl",
+      "id": "artifact-research_question-mpbwqlwb-8sd8y",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "createdAt": "2026-05-19T00:41:25.595Z",
+      "updatedAt": "2026-05-19T00:41:25.595Z"
+    },
+    {
+      "type": "use_case_packet",
+      "reviewStatus": "not_required",
+      "payload": {
+        "useCase": "Set up an AI-run pipeline for robotics simulation and Robodex/Isaac Sim execution packs from approved operational twin knowledge",
+        "normalizedGoal": "Set up an AI-run pipeline for robotics simulation and Robodex/Isaac Sim execution packs from approved operational twin knowledge",
+        "classification": {
+          "domains": [
+            "robotics simulation",
+            "expert discovery"
+          ],
+          "target": "execution_pack",
+          "risk": "high"
+        },
+        "requiredEvidence": "source-backed claims; operator documents separated from external research",
+        "targetArtifact": "execution_pack"
+      },
+      "missionId": "mission-set-up-an-ai-run-pipeline-for-robotics-simulation-and-robodex-isaac-sim-executio-9fn8m",
+      "agentRunId": "arun-mpbwqlw4-vmn5z",
+      "parentArtifactIds": [],
+      "id": "artifact-use_case_packet-mpbwqlw4-fetfy",
+      "status": "active",
+      "sourceIds": [],
+      "claimIds": [],
+      "confidence": null,
+      "createdAt": "2026-05-19T00:41:25.588Z",
+      "updatedAt": "2026-05-19T00:41:25.588Z"
+    }
+  ]
+}
